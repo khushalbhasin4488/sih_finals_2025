@@ -1,0 +1,56 @@
+# Web Attack Signatures
+
+signatures:
+  - id: SIG-001
+    name: SQL Injection Attempt
+    severity: high
+    category: web_attack
+    description: Detects SQL injection patterns in logs
+    patterns:
+      - regex: "(?i)(union.*select|select.*from|insert.*into|delete.*from|drop.*table)"
+      - regex: "(?i)(or\\s+1\\s*=\\s*1|'\\s*or\\s*'1'\\s*=\\s*'1)"
+      - regex: "(?i)(exec\\s*\\(|execute\\s*\\()"
+    fields:
+      - raw_log
+      - parsed_fields.query_string
+      - parsed_fields.post_data
+    
+  - id: SIG-002
+    name: XSS Attempt
+    severity: medium
+    category: web_attack
+    description: Detects cross-site scripting attempts
+    patterns:
+      - regex: "(?i)<script[^>]*>.*?</script>"
+      - regex: "(?i)javascript:\\s*"
+      - regex: "(?i)on(load|error|click|mouseover)\\s*="
+    fields:
+      - raw_log
+      - parsed_fields.user_input
+      - parsed_fields.url
+    
+  - id: SIG-003
+    name: Path Traversal
+    severity: high
+    category: web_attack
+    description: Detects directory traversal attempts
+    patterns:
+      - regex: "\\.\\./|\\.\\.\\\\"
+      - regex: "(?i)(etc/passwd|windows/system32)"
+    fields:
+      - raw_log
+      - parsed_fields.path
+      - parsed_fields.file
+    
+  - id: SIG-004
+    name: Command Injection
+    severity: critical
+    category: web_attack
+    description: Detects OS command injection attempts
+    patterns:
+      - regex: "[;&|]\\s*(cat|ls|dir|whoami|id|uname)"
+      - regex: "(?i)(cmd\\.exe|/bin/sh|/bin/bash)"
+    fields:
+      - raw_log
+      - parsed_fields.command
+      - parsed_fields.input

@@ -1,0 +1,67 @@
+# MITRE ATT&CK Detection Rules
+
+rules:
+  - id: RULE-001
+    name: T1078 - Valid Accounts
+    enabled: true
+    mitre_attack:
+      technique: T1078
+      tactic: Initial Access
+    severity: medium
+    description: Detect use of valid accounts for initial access from external sources
+    logic:
+      condition: selection
+      selection:
+        event_type: login_success
+        source_ip_type: external
+        user_type: privileged
+    
+  - id: RULE-002
+    name: T1110 - Brute Force
+    enabled: true
+    mitre_attack:
+      technique: T1110
+      tactic: Credential Access
+    severity: high
+    description: Detect brute force authentication attempts
+    logic:
+      condition: selection and count
+      selection:
+        event_type: login_failed
+      count:
+        field: source_ip
+        threshold: 10
+        timeframe: 5m
+    
+  - id: RULE-003
+    name: T1071 - Application Layer Protocol (C2)
+    enabled: true
+    mitre_attack:
+      technique: T1071
+      tactic: Command and Control
+    severity: critical
+    description: Detect potential C2 communication over application layer protocols
+    logic:
+      condition: selection and frequency
+      selection:
+        protocol: http
+        dest_port: [8080, 8443, 4444, 1337]
+        dest_ip_type: external
+      frequency:
+        field: dest_ip
+        min_connections: 50
+        timeframe: 10m
+    
+  - id: RULE-004
+    name: T1003 - Credential Dumping
+    enabled: true
+    mitre_attack:
+      technique: T1003
+      tactic: Credential Access
+    severity: critical
+    description: Detect credential dumping attempts
+    logic:
+      condition: selection
+      selection:
+        event_type: process_creation
+        process_name: [mimikatz.exe, procdump.exe, pwdump.exe]

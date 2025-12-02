@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+    --color-background: #09090b;
+    --color-foreground: #fafafa;
+
+    --color-primary: #3b82f6;
+    --color-primary-foreground: #ffffff;
+
+    --color-secondary: #27272a;
+    --color-secondary-foreground: #fafafa;
+
+    --color-accent: #27272a;
+    --color-accent-foreground: #fafafa;
+
+    --color-destructive: #ef4444;
+    --color-destructive-foreground: #fafafa;
+
+    --color-muted: #27272a;
+    --color-muted-foreground: #a1a1aa;
+
+    --color-card: #09090b;
+    --color-card-foreground: #fafafa;
+
+    --color-border: #27272a;
+    --color-input: #27272a;
+
+    --radius-lg: 0.5rem;
+    --radius-md: calc(0.5rem - 2px);
+    --radius-sm: calc(0.5rem - 4px);
+
+    --animate-accordion-down: accordion-down 0.2s ease-out;
+    --animate-accordion-up: accordion-up 0.2s ease-out;
+
+    @keyframes accordion-down {
+        from {
+            height: 0
+        }
+
+        to {
+            height: var(--radix-accordion-content-height)
+        }
+    }
+
+    @keyframes accordion-up {
+        from {
+            height: var(--radix-accordion-content-height)
+        }
+
+        to {
+            height: 0
+        }
+    }
+}
+
+/* Custom Utilities */
+@utility glass {
+    @apply bg-zinc-950/70 backdrop-blur-md border border-white/10;
+}
+
+@utility glass-hover {
+    @apply hover:bg-white/5 transition-colors duration-200;
+}
+
+/* Base Styles */
+:root {
+    color-scheme: dark;
+}
+
+body {
+    @apply bg-zinc-950 text-zinc-50 antialiased selection:bg-blue-500/30;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-zinc-950;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-zinc-800 rounded-full hover:bg-zinc-700 transition-colors;
+}

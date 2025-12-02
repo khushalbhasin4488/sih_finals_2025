@@ -1,0 +1,16 @@
+app:
+  name: "Log Analyzer Tool"
+  version: "1.0.0"
+  debug: true
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+
+database:
+  path: "data/duckdb/logs.db"
+
+auth:
+  secret_key: "change-me-in-production"
+  algorithm: "HS256"
+  token_expire_minutes: 30
