@@ -463,7 +463,9 @@ class AnomalyDetector:
         metadata: Optional[Dict] = None
     ) -> Alert:
         """Create an alert for detected anomaly"""
+        import uuid
         return Alert(
+            id=str(uuid.uuid4()),
             log_id=None,
             alert_type=alert_type,
             detection_method='anomaly_detection',

@@ -19,6 +19,9 @@ from analyzers.orchestrator import AnalysisOrchestrator
 from services.analysis_service import AnalysisService
 from services.baseline_scheduler import BaselineScheduler
 
+# Import analytics routes
+from api.routes import analytics
+
 logger = structlog.get_logger()
 
 # Initialize FastAPI app
@@ -36,6 +39,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Include analytics router
+app.include_router(analytics.router)
 
 # Initialize database
 # Use parent directory's data folder since API runs from backend/
