@@ -518,6 +518,56 @@ class DuckDBManager:
                 logger.error("Error executing query", error=str(e), query=query)
                 raise
     
+    def fetch_threat_intel(
+        self,
+        indicator_type: Optional[str] = None,
+        indicator_value: Optional[str] = None
+    ) -> List[ThreatIntel]:
+        """
+        Fetch threat intelligence indicators
+        
+        Args:
+            indicator_type: Filter by indicator type
+            indicator_value: Filter by indicator value
+            
+        Returns:
+            List of ThreatIntel objects
+        """
+        with self.get_connection() as conn:
+            query = "SELECT * FROM threat_intel WHERE 1=1"
+            params = []
+            
+            if indicator_type:
+                query += " AND indicator_type = ?"
+                params.append(indicator_type)
+            
+            if indicator_value:
+                query += " AND LOWER(indicator_value) = LOWER(?)"
+                params.append(indicator_value)
+            
+            # Only fetch non-expired indicators
+            query += " AND (expires_at IS NULL OR expires_at > CURRENT_TIMESTAMP)"
+            
+            try:
+                result = conn.execute(query, params).fetchall()
+                columns = [desc[0] for desc in conn.description]
+                
+                threat_intels = []
+                for row in result:
+                    ti_dict = dict(zip(columns, row))
+                    
+                    # Parse JSON metadata
+                    if ti_dict.get('metadata'):
+                        ti_dict['metadata'] = json.loads(ti_dict['metadata']) if isinstance(ti_dict['metadata'], str) else ti_dict['metadata']
+                    
+                    threat_intels.append(ThreatIntel.from_dict(ti_dict))
+                
+                return threat_intels
+                
+            except Exception as e:
+                logger.error("Error fetching threat intel", error=str(e))
+                return []
+    
     def close(self):
         """Close database connection"""
         if self.connection:

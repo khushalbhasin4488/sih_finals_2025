@@ -73,6 +73,9 @@ class AlertResponse(BaseModel):
     source_ip: Optional[str] = None
     host: Optional[str] = None
     user: Optional[str] = None
+    # Enhanced fields for causation
+    causation_info: Optional[dict] = None
+    related_log: Optional[dict] = None
 
 class StatsResponse(BaseModel):
     total_logs: int
@@ -342,8 +345,32 @@ async def get_alerts(
             acknowledged=acknowledged
         )
         
-        return [
-            AlertResponse(
+        # Fetch related logs for alerts
+        log_ids = [a.log_id for a in alerts if a.log_id]
+        related_logs = {}
+        if log_ids:
+            logs = db_manager.fetch_logs_by_ids(log_ids)
+            related_logs = {log.id: log for log in logs}
+        
+        result = []
+        for alert in alerts:
+            # Build causation info from metadata
+            causation_info = _build_causation_info(alert)
+            
+            # Get related log if available
+            related_log = None
+            if alert.log_id and alert.log_id in related_logs:
+                log = related_logs[alert.log_id]
+                related_log = {
+                    'id': log.id,
+                    'timestamp': log.timestamp,
+                    'message': log.message,
+                    'host': log.host,
+                    'appname': log.appname,
+                    'raw': log.raw[:500] if log.raw else None  # Truncate for API
+                }
+            
+            result.append(AlertResponse(
                 id=alert.id,
                 log_id=alert.log_id,
                 alert_type=alert.alert_type,
@@ -356,10 +383,12 @@ async def get_alerts(
                 priority_score=alert.priority_score or 0.0,
                 source_ip=alert.source_ip,
                 host=alert.host,
-                user=alert.user
-            )
-            for alert in alerts
-        ]
+                user=alert.user,
+                causation_info=_build_causation_info(alert),
+                related_log=related_log
+            ))
+        
+        return result
     except Exception as e:
         logger.error("Error fetching alerts", error=str(e))
         raise HTTPException(status_code=500, detail=str(e))
@@ -569,6 +598,76 @@ async def get_alert_stats():
         logger.error("Error fetching alert stats", error=str(e))
         raise HTTPException(status_code=500, detail=str(e))
 
+def _build_causation_info(alert: Alert) -> dict:
+    """Build detailed causation information from alert metadata"""
+    metadata = alert.metadata or {}
+    causation = {
+        'detection_method': alert.detection_method,
+        'alert_type': alert.alert_type,
+        'summary': alert.description
+    }
+    
+    # Add method-specific causation details
+    if alert.detection_method == 'signature_detector':
+        causation['signature_id'] = metadata.get('signature_id')
+        causation['signature_name'] = metadata.get('signature_name')
+        causation['matched_pattern'] = metadata.get('matched_pattern')
+        causation['category'] = metadata.get('category')
+    
+    elif alert.detection_method == 'anomaly_detection':
+        causation['metric'] = metadata.get('metric')
+        causation['baseline_value'] = metadata.get('baseline_value')
+        causation['observed_value'] = metadata.get('observed_value')
+        causation['deviation'] = metadata.get('deviation')
+        causation['z_score'] = metadata.get('z_score')
+    
+    elif alert.detection_method == 'heuristic_analyzer':
+        causation['rule_id'] = metadata.get('rule_id')
+        causation['rule_name'] = metadata.get('rule_name')
+        causation['pattern_detected'] = metadata.get('pattern_detected')
+        if 'failed_count' in metadata:
+            causation['failed_attempts'] = metadata.get('failed_count')
+        if 'unique_hosts' in metadata:
+            causation['hosts_accessed'] = metadata.get('unique_hosts')
+        if 'bytes_transferred' in metadata:
+            causation['data_transferred'] = metadata.get('bytes_transferred')
+    
+    elif alert.detection_method == 'behavioral_analyzer':
+        causation['deviation_type'] = metadata.get('deviation_type')
+        causation['user_id'] = metadata.get('user_id')
+        if metadata.get('deviation_type') == 'time':
+            causation['unusual_hour'] = metadata.get('login_hour')
+            causation['typical_hours'] = metadata.get('typical_hours')
+        elif metadata.get('deviation_type') == 'location':
+            causation['unusual_ip'] = alert.source_ip
+            causation['typical_ips'] = metadata.get('typical_ips')
+        elif metadata.get('deviation_type') == 'resource':
+            causation['unusual_resource'] = metadata.get('resource')
+    
+    elif alert.detection_method == 'network_analyzer':
+        causation['network_anomaly_type'] = alert.alert_type
+        if 'unique_ports' in metadata:
+            causation['ports_scanned'] = metadata.get('unique_ports')
+        if 'connection_count' in metadata:
+            causation['connections'] = metadata.get('connection_count')
+        if 'coefficient_of_variation' in metadata:
+            causation['beaconing_regularity'] = metadata.get('coefficient_of_variation')
+    
+    elif alert.detection_method == 'rule_engine':
+        causation['rule_id'] = metadata.get('rule_id')
+        causation['rule_name'] = metadata.get('rule_name')
+        causation['mitre_technique'] = metadata.get('mitre_technique')
+        causation['mitre_tactic'] = metadata.get('mitre_tactic')
+    
+    elif alert.detection_method == 'threat_intel_matcher':
+        causation['indicator_type'] = metadata.get('indicator_type')
+        causation['indicator_value'] = metadata.get('indicator_value')
+        causation['threat_type'] = metadata.get('threat_type')
+        causation['confidence'] = metadata.get('confidence')
+        causation['source'] = metadata.get('source')
+    
+    return causation
+
 @app.get("/api/v1/anomalies/trend")
 async def get_anomaly_trend(hours: int = Query(24, ge=1, le=168)):
     """Get anomaly detection trend over time"""
@@ -613,6 +712,59 @@ async def get_anomaly_trend(hours: int = Query(24, ge=1, le=168)):
         }
     except Exception as e:
         logger.error("Error fetching anomaly trend", error=str(e))
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/v1/alerts/{alert_id}", response_model=AlertResponse)
+async def get_alert_by_id(alert_id: str):
+    """Get a specific alert by ID with full causation details"""
+    try:
+        all_alerts = db_manager.fetch_alerts(limit=100000)
+        alert = next((a for a in all_alerts if a.id == alert_id), None)
+        
+        if not alert:
+            raise HTTPException(status_code=404, detail="Alert not found")
+        
+        # Build causation info
+        causation_info = _build_causation_info(alert)
+        
+        # Get related log
+        related_log = None
+        if alert.log_id:
+            logs = db_manager.fetch_logs_by_ids([alert.log_id])
+            if logs:
+                log = logs[0]
+                related_log = {
+                    'id': log.id,
+                    'timestamp': log.timestamp,
+                    'message': log.message,
+                    'host': log.host,
+                    'appname': log.appname,
+                    'raw': log.raw,
+                    'normalized': log.normalized,
+                    'metadata': log.metadata
+                }
+        
+        return AlertResponse(
+            id=alert.id,
+            log_id=alert.log_id,
+            alert_type=alert.alert_type,
+            detection_method=alert.detection_method,
+            severity=alert.severity,
+            description=alert.description,
+            metadata=alert.metadata,
+            created_at=alert.created_at,
+            acknowledged=alert.acknowledged,
+            priority_score=alert.priority_score or 0.0,
+            source_ip=alert.source_ip,
+            host=alert.host,
+            user=alert.user,
+            causation_info=causation_info,
+            related_log=related_log
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error("Error fetching alert", error=str(e), alert_id=alert_id)
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":

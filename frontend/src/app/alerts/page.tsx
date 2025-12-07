@@ -32,6 +32,20 @@ interface Alert {
     source_ip?: string;
     host?: string;
     user?: string;
+    causation_info?: {
+        detection_method?: string;
+        alert_type?: string;
+        summary?: string;
+        [key: string]: any;
+    };
+    related_log?: {
+        id: string;
+        timestamp: string;
+        message?: string;
+        host?: string;
+        appname?: string;
+        raw?: string;
+    };
 }
 
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
@@ -44,8 +58,8 @@ const severityConfig = {
     info: { color: "text-zinc-400", bg: "bg-zinc-400/10", border: "border-zinc-400/20", icon: Info },
 };
 
-const detectionMethodConfig = {
-    signature_detection: {
+const detectionMethodConfig: Record<string, { label: string; icon: any; color: string; description: string }> = {
+    signature_detector: {
         label: "Signature",
         icon: Shield,
         color: "text-purple-400",
@@ -57,17 +71,35 @@ const detectionMethodConfig = {
         color: "text-blue-400",
         description: "Statistical analysis detecting unusual behavior"
     },
-    heuristic: {
+    heuristic_analyzer: {
         label: "Heuristic",
         icon: Activity,
         color: "text-green-400",
         description: "Rule-of-thumb based detection"
     },
-    behavioral: {
+    behavioral_analyzer: {
         label: "Behavioral",
         icon: Eye,
         color: "text-cyan-400",
         description: "Behavior pattern analysis"
+    },
+    network_analyzer: {
+        label: "Network",
+        icon: Activity,
+        color: "text-orange-400",
+        description: "Network traffic pattern analysis"
+    },
+    rule_engine: {
+        label: "Rule Engine",
+        icon: Shield,
+        color: "text-yellow-400",
+        description: "Custom correlation rules (MITRE ATT&CK)"
+    },
+    threat_intel_matcher: {
+        label: "Threat Intel",
+        icon: AlertTriangle,
+        color: "text-red-400",
+        description: "Threat intelligence indicator matching"
     },
 };
 
@@ -139,6 +171,10 @@ export default function AlertsPage() {
 
     const renderExplanation = (alert: Alert) => {
         const method = alert.detection_method;
+        const causation = alert.causation_info;
+        
+        // Use causation_info if available, otherwise fall back to metadata
+        const info = causation || alert.metadata || {};
 
         if (method === "signature_detection") {
             return (
@@ -153,26 +189,50 @@ export default function AlertsPage() {
                         </div>
                     </div>
 
-                    {alert.metadata?.signature_id && (
+                    {(info.signature_id || info.signature_name) && (
                         <div className="pl-6 space-y-2">
-                            <div className="text-xs">
-                                <span className="text-zinc-500">Signature ID:</span>
-                                <span className="ml-2 text-zinc-300 font-mono">{alert.metadata.signature_id}</span>
-                            </div>
-                            {alert.metadata?.matched_pattern && (
+                            {info.signature_id && (
+                                <div className="text-xs">
+                                    <span className="text-zinc-500">Signature ID:</span>
+                                    <span className="ml-2 text-zinc-300 font-mono">{info.signature_id}</span>
+                                </div>
+                            )}
+                            {info.signature_name && (
+                                <div className="text-xs">
+                                    <span className="text-zinc-500">Signature Name:</span>
+                                    <span className="ml-2 text-zinc-300">{info.signature_name}</span>
+                                </div>
+                            )}
+                            {info.matched_pattern && (
                                 <div className="text-xs">
                                     <span className="text-zinc-500">Matched Pattern:</span>
                                     <div className="mt-1 bg-zinc-900 rounded p-2 font-mono text-zinc-300 overflow-auto">
-                                        {alert.metadata.matched_pattern}
+                                        {info.matched_pattern}
                                     </div>
                                 </div>
                             )}
-                            {alert.metadata?.category && (
+                            {info.category && (
                                 <div className="text-xs">
                                     <span className="text-zinc-500">Attack Category:</span>
-                                    <span className="ml-2 text-zinc-300">{alert.metadata.category}</span>
+                                    <span className="ml-2 text-zinc-300">{info.category}</span>
                                 </div>
                             )}
+                        </div>
+                    )}
+                    
+                    {alert.related_log && (
+                        <div className="mt-4 pt-4 border-t border-zinc-800">
+                            <h5 className="text-sm font-semibold text-zinc-400 mb-2">Related Log</h5>
+                            <div className="bg-zinc-900 rounded-lg p-3 text-xs space-y-1">
+                                <div><span className="text-zinc-500">Host:</span> <span className="text-zinc-300">{alert.related_log.host || 'N/A'}</span></div>
+                                <div><span className="text-zinc-500">App:</span> <span className="text-zinc-300">{alert.related_log.appname || 'N/A'}</span></div>
+                                <div className="mt-2">
+                                    <span className="text-zinc-500">Message:</span>
+                                    <div className="mt-1 bg-zinc-950 rounded p-2 text-zinc-300 font-mono text-xs overflow-auto">
+                                        {alert.related_log.message || alert.related_log.raw || 'No message'}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     )}
                 </div>
@@ -193,50 +253,197 @@ export default function AlertsPage() {
                     </div>
 
                     <div className="pl-6 space-y-2">
-                        {alert.metadata?.current_value !== undefined && alert.metadata?.baseline_mean !== undefined && (
+                        {(info.observed_value !== undefined || info.current_value !== undefined) && 
+                         (info.baseline_value !== undefined || info.baseline_mean !== undefined) && (
                             <div className="grid grid-cols-2 gap-4 text-xs">
                                 <div>
-                                    <span className="text-zinc-500">Current Value:</span>
+                                    <span className="text-zinc-500">Observed Value:</span>
                                     <div className="text-lg font-bold text-white mt-1">
-                                        {typeof alert.metadata.current_value === 'number'
-                                            ? alert.metadata.current_value.toFixed(1)
-                                            : alert.metadata.current_value}
+                                        {typeof (info.observed_value ?? info.current_value) === 'number'
+                                            ? (info.observed_value ?? info.current_value).toFixed(1)
+                                            : (info.observed_value ?? info.current_value)}
                                     </div>
                                 </div>
                                 <div>
                                     <span className="text-zinc-500">Normal Baseline:</span>
                                     <div className="text-lg font-bold text-zinc-400 mt-1">
-                                        {alert.metadata.baseline_mean.toFixed(1)}
-                                        {alert.metadata.baseline_std && ` ± ${alert.metadata.baseline_std.toFixed(1)}`}
+                                        {typeof (info.baseline_value ?? info.baseline_mean) === 'number'
+                                            ? (info.baseline_value ?? info.baseline_mean).toFixed(1)
+                                            : (info.baseline_value ?? info.baseline_mean)}
+                                        {info.baseline_std && ` ± ${info.baseline_std.toFixed(1)}`}
                                     </div>
                                 </div>
                             </div>
                         )}
 
-                        {alert.metadata?.z_score && (
+                        {(info.z_score !== undefined || alert.metadata?.z_score) && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Statistical Deviation (Z-Score):</span>
                                 <div className="mt-1 flex items-center gap-2">
                                     <div className="flex-1 h-2 bg-zinc-800 rounded-full overflow-hidden">
-                                        <div
-                                            className={`h-full ${Math.abs(alert.metadata.z_score) > 3 ? 'bg-red-500' : 'bg-yellow-500'}`}
-                                            style={{ width: `${Math.min(Math.abs(alert.metadata.z_score) * 20, 100)}%` }}
-                                        />
+                                        {(() => {
+                                            const zScore = info.z_score ?? alert.metadata?.z_score ?? 0;
+                                            return (
+                                                <div
+                                                    className={`h-full ${Math.abs(zScore) > 3 ? 'bg-red-500' : 'bg-yellow-500'}`}
+                                                    style={{ width: `${Math.min(Math.abs(zScore) * 20, 100)}%` }}
+                                                />
+                                            );
+                                        })()}
                                     </div>
-                                    <span className="text-white font-mono">{alert.metadata.z_score.toFixed(2)}σ</span>
+                                    <span className="text-white font-mono">
+                                        {(info.z_score ?? alert.metadata?.z_score ?? 0).toFixed(2)}σ
+                                    </span>
                                 </div>
                                 <p className="text-zinc-500 mt-1">
-                                    {Math.abs(alert.metadata.z_score) > 3
-                                        ? "Highly unusual (>3 standard deviations)"
-                                        : "Moderately unusual (2-3 standard deviations)"}
+                                    {(() => {
+                                        const zScore = Math.abs(info.z_score ?? alert.metadata?.z_score ?? 0);
+                                        return zScore > 3
+                                            ? "Highly unusual (>3 standard deviations)"
+                                            : "Moderately unusual (2-3 standard deviations)";
+                                    })()}
                                 </p>
                             </div>
                         )}
+                        
+                        {info.metric && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Anomaly Metric:</span>
+                                <span className="ml-2 text-zinc-300 capitalize">{info.metric.replace(/_/g, ' ')}</span>
+                            </div>
+                        )}
+                        
+                        {info.deviation && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Deviation:</span>
+                                <span className="ml-2 text-red-400 font-bold">{info.deviation.toFixed(2)}%</span>
+                            </div>
+                        )}
 
-                        {alert.metadata?.failed_attempts && (
+                        {(info.failed_attempts || info.failed_count || alert.metadata?.failed_attempts) && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Failed Attempts:</span>
-                                <span className="ml-2 text-red-400 font-bold">{alert.metadata.failed_attempts}</span>
+                                <span className="ml-2 text-red-400 font-bold">
+                                    {info.failed_attempts ?? info.failed_count ?? alert.metadata?.failed_attempts}
+                                </span>
+                            </div>
+                        )}
+                        
+                        {info.rule_id && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Rule ID:</span>
+                                <span className="ml-2 text-zinc-300 font-mono">{info.rule_id}</span>
+                            </div>
+                        )}
+                        
+                        {info.rule_name && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Rule Name:</span>
+                                <span className="ml-2 text-zinc-300">{info.rule_name}</span>
+                            </div>
+                        )}
+                        
+                        {info.mitre_technique && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">MITRE Technique:</span>
+                                <span className="ml-2 text-purple-400 font-bold">{info.mitre_technique}</span>
+                            </div>
+                        )}
+                        
+                        {info.mitre_tactic && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">MITRE Tactic:</span>
+                                <span className="ml-2 text-purple-400">{info.mitre_tactic}</span>
+                            </div>
+                        )}
+                        
+                        {info.indicator_type && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Threat Intel Indicator:</span>
+                                <span className="ml-2 text-red-400 font-bold">
+                                    {info.indicator_type}: {info.indicator_value}
+                                </span>
+                            </div>
+                        )}
+                        
+                        {info.threat_type && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Threat Type:</span>
+                                <span className="ml-2 text-red-400">{info.threat_type}</span>
+                            </div>
+                        )}
+                        
+                        {info.confidence !== undefined && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Confidence:</span>
+                                <span className="ml-2 text-yellow-400 font-bold">{(info.confidence * 100).toFixed(1)}%</span>
+                            </div>
+                        )}
+                        
+                        {info.ports_scanned && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Ports Scanned:</span>
+                                <span className="ml-2 text-orange-400 font-bold">{info.ports_scanned}</span>
+                            </div>
+                        )}
+                        
+                        {info.connections && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Connections:</span>
+                                <span className="ml-2 text-orange-400 font-bold">{info.connections}</span>
+                            </div>
+                        )}
+                        
+                        {info.hosts_accessed && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Hosts Accessed:</span>
+                                <span className="ml-2 text-purple-400 font-bold">{info.hosts_accessed}</span>
+                            </div>
+                        )}
+                        
+                        {info.data_transferred && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Data Transferred:</span>
+                                <span className="ml-2 text-red-400 font-bold">
+                                    {(info.data_transferred / (1024 * 1024)).toFixed(2)} MB
+                                </span>
+                            </div>
+                        )}
+                        
+                        {info.deviation_type && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Behavioral Deviation:</span>
+                                <span className="ml-2 text-cyan-400 capitalize">{info.deviation_type.replace(/_/g, ' ')}</span>
+                            </div>
+                        )}
+                        
+                        {info.unusual_hour !== undefined && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Unusual Login Hour:</span>
+                                <span className="ml-2 text-yellow-400 font-bold">{info.unusual_hour}:00</span>
+                            </div>
+                        )}
+                        
+                        {info.unusual_ip && (
+                            <div className="text-xs">
+                                <span className="text-zinc-500">Unusual Source IP:</span>
+                                <span className="ml-2 text-red-400 font-mono">{info.unusual_ip}</span>
+                            </div>
+                        )}
+                        
+                        {alert.related_log && (
+                            <div className="mt-4 pt-4 border-t border-zinc-800">
+                                <h5 className="text-sm font-semibold text-zinc-400 mb-2">Related Log</h5>
+                                <div className="bg-zinc-900 rounded-lg p-3 text-xs space-y-1">
+                                    <div><span className="text-zinc-500">Host:</span> <span className="text-zinc-300">{alert.related_log.host || 'N/A'}</span></div>
+                                    <div><span className="text-zinc-500">App:</span> <span className="text-zinc-300">{alert.related_log.appname || 'N/A'}</span></div>
+                                    <div className="mt-2">
+                                        <span className="text-zinc-500">Message:</span>
+                                        <div className="mt-1 bg-zinc-950 rounded p-2 text-zinc-300 font-mono text-xs overflow-auto">
+                                            {alert.related_log.message || alert.related_log.raw || 'No message'}
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         )}
 
@@ -359,10 +566,13 @@ export default function AlertsPage() {
                                 className="w-full px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-white focus:outline-none focus:border-blue-500"
                             >
                                 <option value="">All Methods</option>
-                                <option value="signature_detection">Signature Detection</option>
+                                <option value="signature_detector">Signature Detection</option>
                                 <option value="anomaly_detection">Anomaly Detection</option>
-                                <option value="heuristic">Heuristic Analysis</option>
-                                <option value="behavioral">Behavioral Analysis</option>
+                                <option value="heuristic_analyzer">Heuristic Analysis</option>
+                                <option value="behavioral_analyzer">Behavioral Analysis</option>
+                                <option value="network_analyzer">Network Analysis</option>
+                                <option value="rule_engine">Rule Engine</option>
+                                <option value="threat_intel_matcher">Threat Intel</option>
                             </select>
                         </div>
 

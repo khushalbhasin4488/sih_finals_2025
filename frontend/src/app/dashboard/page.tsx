@@ -406,10 +406,23 @@ export default function DashboardPage() {
                     transition={{ delay: 0.6 }}
                     className="p-6 rounded-xl border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm"
                 >
-                    <h2 className="text-lg font-semibold mb-6">Top Alert Types</h2>
+                    <div className="flex items-center justify-between mb-6">
+                        <h2 className="text-lg font-semibold">Top Alert Types</h2>
+                        <Link 
+                            href="/alerts"
+                            className="text-sm text-blue-400 hover:text-blue-300 flex items-center gap-1"
+                        >
+                            View All Alerts
+                            <ExternalLink className="w-4 h-4" />
+                        </Link>
+                    </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         {stats.top_alert_types.map((alertType) => (
-                            <div key={alertType.type} className="p-4 rounded-lg bg-white/5 border border-zinc-800 hover:border-zinc-700 transition-colors">
+                            <Link
+                                key={alertType.type}
+                                href={`/alerts?type=${encodeURIComponent(alertType.type)}`}
+                                className="p-4 rounded-lg bg-white/5 border border-zinc-800 hover:border-zinc-700 transition-colors cursor-pointer"
+                            >
                                 <div className="flex items-center justify-between mb-2">
                                     <span className="text-sm font-medium text-white capitalize">{alertType.type.replace(/_/g, ' ')}</span>
                                     <span className="text-xs px-2 py-1 rounded-full bg-blue-500/10 text-blue-400">{alertType.count}</span>
@@ -417,7 +430,7 @@ export default function DashboardPage() {
                                 <div className="h-1.5 bg-zinc-800 rounded-full overflow-hidden">
                                     <div className="h-full bg-blue-500 rounded-full" style={{ width: '100%' }} />
                                 </div>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </motion.div>

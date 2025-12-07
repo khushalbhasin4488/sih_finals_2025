@@ -94,12 +94,53 @@ class AnalysisOrchestrator:
         except Exception as e:
             logger.error("Failed to initialize anomaly detector", error=str(e))
         
-        # TODO: Add other detectors
-        # - Heuristic analyzer
-        # - Behavioral analyzer
-        # - Rule engine
-        # - Network analyzer
-        # - Threat intel matcher
+        # Heuristic analyzer
+        try:
+            from analyzers.heuristic_analyzer import HeuristicAnalyzer
+            heuristic_analyzer = HeuristicAnalyzer(db_manager=self.db_manager)
+            self.detectors.append(heuristic_analyzer)
+            logger.info("Heuristic analyzer initialized")
+        except Exception as e:
+            logger.error("Failed to initialize heuristic analyzer", error=str(e))
+        
+        # Behavioral analyzer
+        try:
+            from analyzers.behavioral_analyzer import BehavioralAnalyzer
+            behavioral_analyzer = BehavioralAnalyzer(db_manager=self.db_manager)
+            self.detectors.append(behavioral_analyzer)
+            logger.info("Behavioral analyzer initialized")
+        except Exception as e:
+            logger.error("Failed to initialize behavioral analyzer", error=str(e))
+        
+        # Rule engine
+        try:
+            from analyzers.rule_engine import RuleEngine
+            rule_engine = RuleEngine(
+                rule_dir=self.config.get('rule_dir', '../config/rules'),
+                db_manager=self.db_manager
+            )
+            self.detectors.append(rule_engine)
+            logger.info("Rule engine initialized")
+        except Exception as e:
+            logger.error("Failed to initialize rule engine", error=str(e))
+        
+        # Network analyzer
+        try:
+            from analyzers.network_analyzer import NetworkAnalyzer
+            network_analyzer = NetworkAnalyzer(db_manager=self.db_manager)
+            self.detectors.append(network_analyzer)
+            logger.info("Network analyzer initialized")
+        except Exception as e:
+            logger.error("Failed to initialize network analyzer", error=str(e))
+        
+        # Threat intel matcher
+        try:
+            from analyzers.threat_intel_matcher import ThreatIntelMatcher
+            threat_intel_matcher = ThreatIntelMatcher(db_manager=self.db_manager)
+            self.detectors.append(threat_intel_matcher)
+            logger.info("Threat intel matcher initialized")
+        except Exception as e:
+            logger.error("Failed to initialize threat intel matcher", error=str(e))
     
     async def run_analysis_cycle(self) -> Dict[str, Any]:
         """
