@@ -71,8 +71,30 @@ class AnalysisOrchestrator:
         except Exception as e:
             logger.error("Failed to initialize signature detector", error=str(e))
         
+        # Anomaly detector with baseline manager
+        try:
+            from analyzers.baseline_manager import BaselineManager
+            from analyzers.anomaly_detector import AnomalyDetector
+            
+            baseline_manager = BaselineManager(
+                db_manager=self.db_manager,
+                baseline_file=self.config.get('baseline_file', 'data/baselines.json')
+            )
+            
+            # Update baselines on first run (can be done periodically)
+            if self.config.get('update_baselines_on_start', False):
+                logger.info("Updating baselines on startup")
+                baseline_manager.update_all_baselines(
+                    historical_days=self.config.get('baseline_days', 7)
+                )
+            
+            anomaly_detector = AnomalyDetector(baseline_manager=baseline_manager)
+            self.detectors.append(anomaly_detector)
+            logger.info("Anomaly detector initialized")
+        except Exception as e:
+            logger.error("Failed to initialize anomaly detector", error=str(e))
+        
         # TODO: Add other detectors
-        # - Anomaly detector
         # - Heuristic analyzer
         # - Behavioral analyzer
         # - Rule engine

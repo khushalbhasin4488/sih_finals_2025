@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Setup and Running Guide
 
-## Getting Started
+## Quick Start
 
-First, run the development server:
+### 1. Install Dependencies
+
+```bash
+cd frontend
+npm install
+```
+
+### 2. Configure Environment
+
+Create `.env.local` file (optional - defaults work):
+
+```bash
+# API Base URL (default: http://localhost:8000)
+NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
+```
+
+### 3. Start Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The frontend will be available at `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pages Available
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Dashboard** (`/dashboard` or `/`)
+   - Real-time statistics
+   - Alert severity distribution
+   - Top hosts and alert types
+   - Auto-refreshes every 10 seconds
 
-## Learn More
+2. **Logs** (`/logs`)
+   - Search and filter logs
+   - Filter by appname and host
+   - View log details
 
-To learn more about Next.js, take a look at the following resources:
+3. **Alerts** (`/alerts`)
+   - View signature detection results
+   - Filter by severity
+   - Expandable metadata view
+   - Auto-refreshes every 10 seconds
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Backend API must be running on port 8000
+- Node.js 18+ installed
+- Database with logs and alerts data
 
-## Deploy on Vercel
+## Running Both Backend and Frontend
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Terminal 1: Backend API
+```bash
+cd backend
+source .venv/bin/activate
+python3 -m uvicorn api.main:app --reload
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Terminal 2: Frontend
+```bash
+cd frontend
+npm run dev
+```
+
+### Terminal 3: Log Seeder (Optional)
+```bash
+python3 temp_seeder/seeder.py 10 5
+```
+
+## Troubleshooting
+
+### Frontend can't connect to API
+- Ensure backend is running on port 8000
+- Check CORS settings in `backend/api/main.py`
+- Verify `NEXT_PUBLIC_API_BASE_URL` in `.env.local`
+
+### No data showing
+- Ensure database has logs and alerts
+- Run the log seeder to generate test data
+- Check browser console for errors
+
+### 307 Redirect Loop
+- This has been fixed - dashboard page now has proper content
+- Clear browser cache if issue persists
+
+## Development
+
+### Adding New Pages
+1. Create page in `frontend/src/app/[page-name]/page.tsx`
+2. Add route to sidebar in `frontend/src/components/layout/Sidebar.tsx`
+
+### Styling
+- Uses Tailwind CSS v4
+- Dark theme by default
+- Glassmorphism effects
+- Framer Motion for animations
