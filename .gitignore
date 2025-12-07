@@ -37,6 +37,10 @@ data/duckdb/*.log
 data/duckdb/*.tmp
 data/archives/*
 
+# Seeder data (can be large)
+temp_seeder/data/
+temp_seeder/data/**/*
+
 # OS
 .DS_Store
 Thumbs.db
