@@ -14,6 +14,7 @@ import {
     ExternalLink
 } from "lucide-react";
 import Link from "next/link";
+import { SeverityPieChart, AlertTypesBarChart, HostActivityChart, AnomalyTrendChart } from "@/components/charts/DashboardCharts";
 
 interface Stats {
     total_logs: number;
@@ -202,7 +203,7 @@ export default function DashboardPage() {
                                     <stat.icon className={`w-5 h-5 ${stat.color}`} />
                                 </div>
                                 <span className={`text-xs font-medium px-2 py-1 rounded-full ${stat.trend === 'up' ? 'bg-emerald-500/10 text-emerald-400' :
-                                        'bg-zinc-500/10 text-zinc-400'
+                                    'bg-zinc-500/10 text-zinc-400'
                                     }`}>
                                     {stat.change}
                                 </span>
@@ -219,62 +220,17 @@ export default function DashboardPage() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4 }}
-                        className="p-6 rounded-xl border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm"
+                        className="p-6 rounded-xl border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm relative"
                     >
-                        <h2 className="text-lg font-semibold mb-6">Alert Severity Distribution</h2>
-                        <div className="space-y-4">
-                            <div>
-                                <div className="flex justify-between text-sm mb-2">
-                                    <span className="text-zinc-400">Critical</span>
-                                    <span className="text-red-400 font-medium">{stats.critical_alerts}</span>
-                                </div>
-                                <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
-                                    <div
-                                        className="h-full bg-red-500 rounded-full transition-all"
-                                        style={{ width: `${(stats.critical_alerts / (stats.total_alerts || 1)) * 100}%` }}
-                                    />
-                                </div>
-                            </div>
-
-                            <div>
-                                <div className="flex justify-between text-sm mb-2">
-                                    <span className="text-zinc-400">High</span>
-                                    <span className="text-orange-400 font-medium">{stats.high_alerts}</span>
-                                </div>
-                                <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
-                                    <div
-                                        className="h-full bg-orange-500 rounded-full transition-all"
-                                        style={{ width: `${(stats.high_alerts / (stats.total_alerts || 1)) * 100}%` }}
-                                    />
-                                </div>
-                            </div>
-
-                            <div>
-                                <div className="flex justify-between text-sm mb-2">
-                                    <span className="text-zinc-400">Medium</span>
-                                    <span className="text-yellow-400 font-medium">{stats.medium_alerts}</span>
-                                </div>
-                                <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
-                                    <div
-                                        className="h-full bg-yellow-500 rounded-full transition-all"
-                                        style={{ width: `${(stats.medium_alerts / (stats.total_alerts || 1)) * 100}%` }}
-                                    />
-                                </div>
-                            </div>
-
-                            <div>
-                                <div className="flex justify-between text-sm mb-2">
-                                    <span className="text-zinc-400">Low</span>
-                                    <span className="text-blue-400 font-medium">{stats.low_alerts}</span>
-                                </div>
-                                <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
-                                    <div
-                                        className="h-full bg-blue-500 rounded-full transition-all"
-                                        style={{ width: `${(stats.low_alerts / (stats.total_alerts || 1)) * 100}%` }}
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                        <h2 className="text-lg font-semibold mb-4">Alert Severity Distribution</h2>
+                        <SeverityPieChart
+                            data={{
+                                critical: stats.critical_alerts,
+                                high: stats.high_alerts,
+                                medium: stats.medium_alerts,
+                                low: stats.low_alerts
+                            }}
+                        />
                     </motion.div>
 
                     <motion.div
@@ -283,18 +239,8 @@ export default function DashboardPage() {
                         transition={{ delay: 0.5 }}
                         className="p-6 rounded-xl border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm"
                     >
-                        <h2 className="text-lg font-semibold mb-6">Top Hosts</h2>
-                        <div className="space-y-3">
-                            {stats.top_hosts.map((host, index) => (
-                                <div key={host.host} className="flex items-center justify-between p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
-                                    <div className="flex items-center gap-3">
-                                        <Server className="w-4 h-4 text-zinc-400" />
-                                        <span className="text-sm font-medium text-white">{host.host}</span>
-                                    </div>
-                                    <span className="text-sm text-zinc-400">{host.count} logs</span>
-                                </div>
-                            ))}
-                        </div>
+                        <h2 className="text-lg font-semibold mb-4">Top Hosts by Activity</h2>
+                        <HostActivityChart data={stats.top_hosts} />
                     </motion.div>
                 </div>
 
@@ -306,7 +252,7 @@ export default function DashboardPage() {
                                 <h2 className="text-2xl font-bold text-white mb-1">Anomaly Detection</h2>
                                 <p className="text-sm text-zinc-400">Statistical analysis of unusual behavior patterns</p>
                             </div>
-                            <Link 
+                            <Link
                                 href="/alerts"
                                 className="flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 hover:bg-cyan-500/20 transition-colors text-sm"
                             >
@@ -335,7 +281,7 @@ export default function DashboardPage() {
                                                 const height = (point.count / maxCount) * 100;
                                                 return (
                                                     <div key={index} className="flex-1 flex flex-col items-center">
-                                                        <div 
+                                                        <div
                                                             className="w-full bg-cyan-500 rounded-t transition-all hover:bg-cyan-400"
                                                             style={{ height: `${Math.max(height, 5)}%` }}
                                                             title={`${new Date(point.time).toLocaleTimeString()}: ${point.count} anomalies`}
@@ -382,7 +328,7 @@ export default function DashboardPage() {
                                                         <span className="text-cyan-400 font-medium">{anomalyType.count}</span>
                                                     </div>
                                                     <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
-                                                        <div 
+                                                        <div
                                                             className="h-full bg-cyan-500 rounded-full transition-all"
                                                             style={{ width: `${percentage}%` }}
                                                         />
@@ -408,7 +354,7 @@ export default function DashboardPage() {
                 >
                     <div className="flex items-center justify-between mb-6">
                         <h2 className="text-lg font-semibold">Top Alert Types</h2>
-                        <Link 
+                        <Link
                             href="/alerts"
                             className="text-sm text-blue-400 hover:text-blue-300 flex items-center gap-1"
                         >
