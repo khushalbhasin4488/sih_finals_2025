@@ -9,8 +9,11 @@ import {
     Database,
     Server,
     TrendingUp,
-    Clock
+    Clock,
+    BarChart3,
+    ExternalLink
 } from "lucide-react";
+import Link from "next/link";
 
 interface Stats {
     total_logs: number;
@@ -23,19 +26,33 @@ interface Stats {
     alerts_last_hour: number;
     top_hosts: Array<{ host: string; count: number }>;
     top_alert_types: Array<{ type: string; count: number }>;
+    anomaly_alerts?: number;
+    anomaly_alerts_last_hour?: number;
+    top_anomaly_types?: Array<{ type: string; count: number }>;
+}
+
+interface AnomalyTrend {
+    period_hours: number;
+    total_anomalies: number;
+    trend: Array<{ time: string; count: number }>;
 }
 
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
 
 export default function DashboardPage() {
     const [stats, setStats] = useState<Stats | null>(null);
+    const [anomalyTrend, setAnomalyTrend] = useState<AnomalyTrend | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         fetchStats();
+        fetchAnomalyTrend();
         // Refresh every 10 seconds
-        const interval = setInterval(fetchStats, 10000);
+        const interval = setInterval(() => {
+            fetchStats();
+            fetchAnomalyTrend();
+        }, 10000);
         return () => clearInterval(interval);
     }, []);
 
@@ -50,6 +67,19 @@ export default function DashboardPage() {
             setError(err instanceof Error ? err.message : "Unknown error");
         } finally {
             setLoading(false);
+        }
+    };
+
+    const fetchAnomalyTrend = async () => {
+        try {
+            const response = await fetch(`${API_BASE}/api/v1/anomalies/trend?hours=24`);
+            if (response.ok) {
+                const data = await response.json();
+                setAnomalyTrend(data);
+            }
+        } catch (err) {
+            // Silently fail - trend is optional
+            console.error("Error fetching anomaly trend:", err);
         }
     };
 
@@ -113,6 +143,20 @@ export default function DashboardPage() {
             border: "border-emerald-400/20"
         },
     ];
+
+    // Add anomaly detection card if data is available
+    if (stats.anomaly_alerts !== undefined) {
+        statCards.push({
+            name: "Anomaly Alerts",
+            value: stats.anomaly_alerts.toLocaleString(),
+            change: `+${stats.anomaly_alerts_last_hour || 0}`,
+            trend: (stats.anomaly_alerts_last_hour || 0) > 0 ? "up" : "neutral",
+            icon: BarChart3,
+            color: "text-cyan-400",
+            bg: "bg-cyan-400/10",
+            border: "border-cyan-400/20"
+        });
+    }
 
     return (
         <main className="min-h-screen p-8 bg-zinc-950 text-zinc-50 relative overflow-hidden">
@@ -253,6 +297,107 @@ export default function DashboardPage() {
                         </div>
                     </motion.div>
                 </div>
+
+                {/* Anomaly Detection Section */}
+                {stats.anomaly_alerts !== undefined && (
+                    <div className="mb-8">
+                        <div className="flex items-center justify-between mb-6">
+                            <div>
+                                <h2 className="text-2xl font-bold text-white mb-1">Anomaly Detection</h2>
+                                <p className="text-sm text-zinc-400">Statistical analysis of unusual behavior patterns</p>
+                            </div>
+                            <Link 
+                                href="/alerts"
+                                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 hover:bg-cyan-500/20 transition-colors text-sm"
+                            >
+                                View All Anomalies
+                                <ExternalLink className="w-4 h-4" />
+                            </Link>
+                        </div>
+
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                            {/* Anomaly Trend Chart */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.7 }}
+                                className="p-6 rounded-xl border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm"
+                            >
+                                <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
+                                    <TrendingUp className="w-5 h-5 text-cyan-400" />
+                                    Anomaly Trend (24h)
+                                </h3>
+                                {anomalyTrend && anomalyTrend.trend.length > 0 ? (
+                                    <div className="space-y-2">
+                                        <div className="flex items-end justify-between gap-1 h-32">
+                                            {anomalyTrend.trend.map((point, index) => {
+                                                const maxCount = Math.max(...anomalyTrend.trend.map(p => p.count), 1);
+                                                const height = (point.count / maxCount) * 100;
+                                                return (
+                                                    <div key={index} className="flex-1 flex flex-col items-center">
+                                                        <div 
+                                                            className="w-full bg-cyan-500 rounded-t transition-all hover:bg-cyan-400"
+                                                            style={{ height: `${Math.max(height, 5)}%` }}
+                                                            title={`${new Date(point.time).toLocaleTimeString()}: ${point.count} anomalies`}
+                                                        />
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
+                                        <div className="flex justify-between text-xs text-zinc-500 mt-2">
+                                            <span>{new Date(anomalyTrend.trend[0]?.time || '').toLocaleTimeString()}</span>
+                                            <span className="text-cyan-400 font-medium">{anomalyTrend.total_anomalies} total</span>
+                                            <span>{new Date(anomalyTrend.trend[anomalyTrend.trend.length - 1]?.time || '').toLocaleTimeString()}</span>
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <div className="h-32 flex items-center justify-center text-zinc-500 text-sm">
+                                        No anomaly trend data available
+                                    </div>
+                                )}
+                            </motion.div>
+
+                            {/* Top Anomaly Types */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.8 }}
+                                className="p-6 rounded-xl border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm"
+                            >
+                                <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
+                                    <BarChart3 className="w-5 h-5 text-cyan-400" />
+                                    Top Anomaly Types
+                                </h3>
+                                {stats.top_anomaly_types && stats.top_anomaly_types.length > 0 ? (
+                                    <div className="space-y-3">
+                                        {stats.top_anomaly_types.map((anomalyType, index) => {
+                                            const maxCount = Math.max(...stats.top_anomaly_types!.map(t => t.count));
+                                            const percentage = (anomalyType.count / maxCount) * 100;
+                                            return (
+                                                <div key={anomalyType.type} className="space-y-1">
+                                                    <div className="flex items-center justify-between text-sm">
+                                                        <span className="text-zinc-300 capitalize">
+                                                            {anomalyType.type.replace(/_/g, ' ').replace('anomaly', '').trim() || 'Unknown'}
+                                                        </span>
+                                                        <span className="text-cyan-400 font-medium">{anomalyType.count}</span>
+                                                    </div>
+                                                    <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                                                        <div 
+                                                            className="h-full bg-cyan-500 rounded-full transition-all"
+                                                            style={{ width: `${percentage}%` }}
+                                                        />
+                                                    </div>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                ) : (
+                                    <div className="text-zinc-500 text-sm">No anomaly types detected yet</div>
+                                )}
+                            </motion.div>
+                        </div>
+                    </div>
+                )}
 
                 {/* Top Alert Types */}
                 <motion.div

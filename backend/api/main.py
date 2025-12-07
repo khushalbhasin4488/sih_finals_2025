@@ -85,6 +85,10 @@ class StatsResponse(BaseModel):
     alerts_last_hour: int
     top_hosts: List[dict]
     top_alert_types: List[dict]
+    # Anomaly detection metrics
+    anomaly_alerts: int
+    anomaly_alerts_last_hour: int
+    top_anomaly_types: List[dict]
 
 # API Endpoints
 
@@ -239,6 +243,22 @@ async def get_stats():
             for alert_type, count in sorted(alert_type_counts.items(), key=lambda x: x[1], reverse=True)[:5]
         ]
         
+        # Anomaly detection metrics
+        anomaly_alerts = [a for a in all_alerts if a.detection_method == 'anomaly_detection']
+        anomaly_alerts_count = len(anomaly_alerts)
+        anomaly_alerts_last_hour = len([a for a in anomaly_alerts if a.created_at >= one_hour_ago])
+        
+        # Top anomaly types
+        anomaly_type_counts = {}
+        for alert in anomaly_alerts[:1000]:  # Recent anomaly alerts
+            alert_type = alert.alert_type or "unknown"
+            anomaly_type_counts[alert_type] = anomaly_type_counts.get(alert_type, 0) + 1
+        
+        top_anomaly_types = [
+            {"type": alert_type, "count": count}
+            for alert_type, count in sorted(anomaly_type_counts.items(), key=lambda x: x[1], reverse=True)[:5]
+        ]
+        
         return StatsResponse(
             total_logs=total_logs,
             total_alerts=total_alerts,
@@ -249,7 +269,10 @@ async def get_stats():
             logs_last_hour=logs_last_hour,
             alerts_last_hour=alerts_last_hour,
             top_hosts=top_hosts,
-            top_alert_types=top_alert_types
+            top_alert_types=top_alert_types,
+            anomaly_alerts=anomaly_alerts_count,
+            anomaly_alerts_last_hour=anomaly_alerts_last_hour,
+            top_anomaly_types=top_anomaly_types
         )
     except Exception as e:
         logger.error("Error fetching stats", error=str(e))
@@ -453,7 +476,7 @@ async def get_system_info():
 
 @app.get("/api/v1/alerts/stats")
 async def get_alert_stats():
-    """Get detailed alert statistics"""
+    """Get detailed alert statistics including anomaly detection metrics"""
     try:
         from datetime import datetime, timedelta
         
@@ -480,6 +503,37 @@ async def get_alert_stats():
             atype = alert.alert_type or "unknown"
             alert_types[atype] = alert_types.get(atype, 0) + 1
         
+        # Anomaly detection specific metrics
+        anomaly_alerts = [a for a in all_alerts if a.detection_method == 'anomaly_detection']
+        anomaly_alerts_24h = [a for a in anomaly_alerts if a.created_at >= last_24h]
+        anomaly_alerts_7d = [a for a in anomaly_alerts if a.created_at >= last_7d]
+        
+        # Anomaly type breakdown
+        anomaly_types = {}
+        for alert in anomaly_alerts[:1000]:
+            atype = alert.alert_type or "unknown"
+            anomaly_types[atype] = anomaly_types.get(atype, 0) + 1
+        
+        # Anomaly severity breakdown
+        anomaly_severity = {}
+        for alert in anomaly_alerts:
+            severity = alert.severity or "unknown"
+            anomaly_severity[severity] = anomaly_severity.get(severity, 0) + 1
+        
+        # Anomaly trend (last 24 hours, hourly buckets)
+        anomaly_trend_24h = {}
+        current_hour = last_24h.replace(minute=0, second=0, microsecond=0)
+        while current_hour <= now:
+            hour_key = current_hour.isoformat()
+            anomaly_trend_24h[hour_key] = 0
+            current_hour += timedelta(hours=1)
+        
+        for alert in anomaly_alerts_24h:
+            alert_hour = alert.created_at.replace(minute=0, second=0, microsecond=0)
+            hour_key = alert_hour.isoformat()
+            if hour_key in anomaly_trend_24h:
+                anomaly_trend_24h[hour_key] += 1
+        
         return {
             "total_alerts": len(all_alerts),
             "alerts_24h": len(alerts_24h),
@@ -491,10 +545,74 @@ async def get_alert_stats():
             "alert_types": [
                 {"type": k, "count": v}
                 for k, v in sorted(alert_types.items(), key=lambda x: x[1], reverse=True)[:10]
-            ]
+            ],
+            # Anomaly detection metrics
+            "anomaly_detection": {
+                "total_anomalies": len(anomaly_alerts),
+                "anomalies_24h": len(anomaly_alerts_24h),
+                "anomalies_7d": len(anomaly_alerts_7d),
+                "percentage_of_total": (len(anomaly_alerts) / len(all_alerts) * 100) if all_alerts else 0,
+                "anomaly_types": [
+                    {"type": k, "count": v}
+                    for k, v in sorted(anomaly_types.items(), key=lambda x: x[1], reverse=True)[:10]
+                ],
+                "severity_breakdown": {
+                    k: v for k, v in sorted(anomaly_severity.items(), key=lambda x: x[1], reverse=True)
+                },
+                "trend_24h": [
+                    {"time": k, "count": v}
+                    for k, v in sorted(anomaly_trend_24h.items())
+                ]
+            }
         }
     except Exception as e:
         logger.error("Error fetching alert stats", error=str(e))
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/v1/anomalies/trend")
+async def get_anomaly_trend(hours: int = Query(24, ge=1, le=168)):
+    """Get anomaly detection trend over time"""
+    try:
+        from datetime import datetime, timedelta
+        
+        # Get anomaly alerts
+        all_alerts = db_manager.fetch_alerts(limit=100000)
+        anomaly_alerts = [a for a in all_alerts if a.detection_method == 'anomaly_detection']
+        
+        # Group by time buckets (hourly)
+        now = datetime.now()
+        start_time = now - timedelta(hours=hours)
+        
+        # Create hourly buckets
+        buckets = {}
+        current = start_time.replace(minute=0, second=0, microsecond=0)
+        
+        while current <= now:
+            buckets[current.isoformat()] = 0
+            current += timedelta(hours=1)
+        
+        # Count anomalies per hour
+        for alert in anomaly_alerts:
+            if alert.created_at >= start_time:
+                # Round to nearest hour
+                alert_hour = alert.created_at.replace(minute=0, second=0, microsecond=0)
+                hour_key = alert_hour.isoformat()
+                if hour_key in buckets:
+                    buckets[hour_key] += 1
+        
+        # Convert to list format
+        trend_data = [
+            {"time": time, "count": count}
+            for time, count in sorted(buckets.items())
+        ]
+        
+        return {
+            "period_hours": hours,
+            "total_anomalies": len([a for a in anomaly_alerts if a.created_at >= start_time]),
+            "trend": trend_data
+        }
+    except Exception as e:
+        logger.error("Error fetching anomaly trend", error=str(e))
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":

@@ -1,0 +1,35 @@
+#!/bin/bash
+# Quick script to help generate stats
+
+echo "=========================================="
+echo "Stats Generation Helper"
+echo "=========================================="
+echo ""
+echo "This script will help you generate stats for the dashboard."
+echo ""
+echo "Step 1: Generate logs using the seeder"
+echo "  Run this in the current terminal:"
+echo "    python3 temp_seeder/seeder.py 30 2"
+echo "  Let it run for 5-10 minutes, then press Ctrl+C"
+echo ""
+echo "Step 2: Start the API (in a NEW terminal):"
+echo "    cd backend"
+echo "    source .venv/bin/activate"
+echo "    python3 -m uvicorn api.main:app --reload --host 0.0.0.0 --port 8000"
+echo ""
+echo "Step 3: Wait 60 seconds for the first analysis cycle"
+echo ""
+echo "Step 4: View stats at:"
+echo "    Dashboard: http://localhost:3000/dashboard"
+echo "    Reports: http://localhost:3000/reports"
+echo ""
+echo "=========================================="
+echo ""
+read -p "Press Enter to start the seeder now (Ctrl+C to stop after 5 minutes)..."
+
+echo "Starting seeder (30 logs every 2 seconds)..."
+echo "Let it run for at least 5 minutes to build baselines"
+echo "Press Ctrl+C when done"
+echo ""
+
+python3 temp_seeder/seeder.py 30 2

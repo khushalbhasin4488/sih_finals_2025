@@ -138,10 +138,101 @@ ATTACK_MESSAGES = {
 }
 
 
+def initialize_schema(conn):
+    """Initialize database schema - creates tables if they don't exist"""
+    # Logs table
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS logs (
+            id VARCHAR PRIMARY KEY,
+            timestamp VARCHAR,
+            raw VARCHAR,
+            appname VARCHAR,
+            file VARCHAR,
+            host VARCHAR,
+            hostname VARCHAR,
+            message VARCHAR,
+            procid INTEGER,
+            source_type VARCHAR,
+            normalized JSON,
+            metadata JSON,
+            ingestion_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    """)
+    
+    # Create indexes
+    conn.execute("""
+        CREATE INDEX IF NOT EXISTS idx_logs_timestamp 
+        ON logs(timestamp)
+    """)
+    
+    conn.execute("""
+        CREATE INDEX IF NOT EXISTS idx_logs_host 
+        ON logs(host)
+    """)
+    
+    conn.execute("""
+        CREATE INDEX IF NOT EXISTS idx_logs_appname 
+        ON logs(appname)
+    """)
+    
+    conn.execute("""
+        CREATE INDEX IF NOT EXISTS idx_logs_ingestion_time 
+        ON logs(ingestion_time)
+    """)
+    
+    # Alerts table (for API use, but create it here too)
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS alerts (
+            id VARCHAR PRIMARY KEY,
+            log_id VARCHAR,
+            alert_type VARCHAR,
+            detection_method VARCHAR,
+            severity VARCHAR,
+            description VARCHAR,
+            metadata JSON,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            acknowledged BOOLEAN DEFAULT FALSE,
+            priority_score DOUBLE,
+            source_ip VARCHAR,
+            dest_ip VARCHAR,
+            user VARCHAR,
+            host VARCHAR
+        )
+    """)
+    
+    # Create index on alerts timestamp
+    conn.execute("""
+        CREATE INDEX IF NOT EXISTS idx_alerts_created_at 
+        ON alerts(created_at)
+    """)
+
+
 def connect_db():
-    """Connect to DuckDB database"""
+    """Connect to DuckDB database with retry logic for lock conflicts"""
+    import time
     os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
-    return duckdb.connect(DB_PATH)
+    
+    # Retry logic for database locks
+    max_retries = 5
+    retry_delay = 0.5
+    
+    for attempt in range(max_retries):
+        try:
+            conn = duckdb.connect(DB_PATH)
+            # Initialize schema on first connection
+            initialize_schema(conn)
+            return conn
+        except Exception as e:
+            if "lock" in str(e).lower() or "conflicting" in str(e).lower():
+                if attempt < max_retries - 1:
+                    time.sleep(retry_delay * (attempt + 1))  # Exponential backoff
+                    continue
+                else:
+                    print(f"\n⚠️  Database lock conflict. Another process is using the database.")
+                    print(f"   Solution: Stop the API backend temporarily while seeding, or seed when API is not running.")
+                    raise
+            else:
+                raise
 
 
 def create_log_entry(app, host, ip, user, port, pid, message):
@@ -251,7 +342,24 @@ def seed_logs(batch_size=10, interval=1.0):
     print(f"Batch size: {batch_size}, Interval: {interval}s")
     print(f"Attack ratio: ~20% (will trigger signature detection)")
     print("Press Ctrl+C to stop")
-    print("Note: Connection is opened/closed per batch to allow concurrent access")
+    print()
+    print("⚠️  NOTE: DuckDB doesn't support concurrent writes.")
+    print("   If API is running, you may see lock errors.")
+    print("   Options:")
+    print("   1. Stop API temporarily while seeding")
+    print("   2. Seed when API is not running")
+    print("   3. Seeder will retry automatically on lock conflicts")
+    print()
+    
+    # Initialize schema on startup
+    print("Initializing database schema...")
+    try:
+        conn = connect_db()
+        conn.close()
+        print("✓ Database schema initialized")
+    except Exception as e:
+        print(f"⚠️  Could not initialize schema: {e}")
+        print("   Continuing anyway - schema may already exist")
     print()
     
     attack_count = 0
@@ -260,9 +368,10 @@ def seed_logs(batch_size=10, interval=1.0):
     try:
         while True:
             # Open connection for this batch
-            conn = connect_db()
-            
+            conn = None
             try:
+                conn = connect_db()
+                
                 logs = []
                 batch_attacks = 0
                 
@@ -299,9 +408,22 @@ def seed_logs(batch_size=10, interval=1.0):
                 
                 print(f"[{datetime.now().strftime('%H:%M:%S')}] Inserted {batch_size} logs ({batch_attacks} attacks, {batch_size - batch_attacks} normal) | Total: {attack_count} attacks, {normal_count} normal")
                 
+            except Exception as e:
+                if "lock" in str(e).lower() or "conflicting" in str(e).lower():
+                    print(f"\n⚠️  Database lock detected. Waiting for API to release lock...")
+                    print(f"   Tip: You can run seeder when API is stopped, or wait a moment.")
+                    time.sleep(2)  # Wait before retrying
+                    continue  # Skip this batch and retry
+                else:
+                    print(f"\n❌ Error inserting logs: {e}")
+                    raise
             finally:
-                # Close connection after each batch to allow other processes to access
-                conn.close()
+                # Always close connection after each batch to allow other processes to access
+                if conn:
+                    try:
+                        conn.close()
+                    except:
+                        pass
             
             time.sleep(interval)
             
