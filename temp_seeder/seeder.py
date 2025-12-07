@@ -103,34 +103,42 @@ def seed_logs(batch_size=10, interval=1.0):
     print(f"Starting log seeder. Writing to {DB_PATH}")
     print(f"Batch size: {batch_size}, Interval: {interval}s")
     print("Press Ctrl+C to stop")
-    
-    conn = connect_db()
+    print("Note: Connection is opened/closed per batch to allow concurrent access")
     
     try:
         while True:
-            logs = [generate_log() for _ in range(batch_size)]
+            # Open connection for this batch
+            conn = connect_db()
             
-            # Prepare data for insertion
-            # Columns: id, timestamp, raw, appname, file, host, hostname, message, procid, source_type, normalized, metadata, ingestion_time
-            data = []
-            for log in logs:
-                data.append((
-                    log["id"], log["timestamp"], log["raw"], log["appname"], 
-                    log["file"], log["host"], log["hostname"], log["message"], 
-                    log["procid"], log["source_type"], log["normalized"], 
-                    log["metadata"], log["ingestion_time"]
-                ))
+            try:
+                logs = [generate_log() for _ in range(batch_size)]
+                
+                # Prepare data for insertion
+                # Columns: id, timestamp, raw, appname, file, host, hostname, message, procid, source_type, normalized, metadata, ingestion_time
+                data = []
+                for log in logs:
+                    data.append((
+                        log["id"], log["timestamp"], log["raw"], log["appname"], 
+                        log["file"], log["host"], log["hostname"], log["message"], 
+                        log["procid"], log["source_type"], log["normalized"], 
+                        log["metadata"], log["ingestion_time"]
+                    ))
+                
+                # Insert batch
+                placeholders = "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+                conn.executemany(f"""
+                    INSERT INTO logs (
+                        id, timestamp, raw, appname, file, host, hostname, 
+                        message, procid, source_type, normalized, metadata, ingestion_time
+                    ) VALUES {placeholders}
+                """, data)
+                
+                print(f"Inserted {batch_size} logs at {datetime.now().strftime('%H:%M:%S')}")
+                
+            finally:
+                # Close connection after each batch to allow other processes to access
+                conn.close()
             
-            # Insert batch
-            placeholders = "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
-            conn.executemany(f"""
-                INSERT INTO logs (
-                    id, timestamp, raw, appname, file, host, hostname, 
-                    message, procid, source_type, normalized, metadata, ingestion_time
-                ) VALUES {placeholders}
-            """, data)
-            
-            print(f"Inserted {batch_size} logs at {datetime.now().strftime('%H:%M:%S')}")
             time.sleep(interval)
             
     except KeyboardInterrupt:
@@ -138,8 +146,7 @@ def seed_logs(batch_size=10, interval=1.0):
     except Exception as e:
         print(f"\nError: {e}")
     finally:
-        conn.close()
-        print("Database connection closed")
+        print("Seeder stopped")
 
 if __name__ == "__main__":
     # Optional arguments: batch_size, interval

@@ -1,0 +1,206 @@
+# Authentication Attack Signatures
+# Detects brute force, credential stuffing, and authentication bypass attempts
+
+signatures:
+  # Brute Force Attacks
+  - id: SIG-AUTH-001
+    name: SSH Brute Force - Failed Login
+    severity: medium
+    category: authentication_attack
+    description: Detects SSH brute force attempts
+    patterns:
+      - regex: "(?i)failed password for"
+      - regex: "(?i)authentication failure"
+      - regex: "(?i)invalid user.*from"
+    fields:
+      - raw
+      - message
+  
+  - id: SIG-AUTH-002
+    name: SSH Brute Force - Invalid User
+    severity: medium
+    category: authentication_attack
+    description: Detects SSH login attempts with invalid usernames
+    patterns:
+      - regex: "(?i)invalid user\\s+\\w+\\s+from"
+      - regex: "(?i)user\\s+\\w+\\s+not allowed"
+    fields:
+      - raw
+      - message
+  
+  - id: SIG-AUTH-003
+    name: Web Login Brute Force
+    severity: medium
+    category: authentication_attack
+    description: Detects web application brute force attempts
+    patterns:
+      - regex: "(?i)(login|authentication)\\s+(failed|failure|denied)"
+      - regex: "(?i)incorrect\\s+(password|credentials|username)"
+      - regex: "(?i)invalid\\s+(login|credentials|password)"
+    fields:
+      - raw
+      - message
+      - normalized.response_message
+  
+  - id: SIG-AUTH-004
+    name: RDP Brute Force
+    severity: high
+    category: authentication_attack
+    description: Detects RDP brute force attempts
+    patterns:
+      - regex: "(?i)rdp.*authentication\\s+failed"
+      - regex: "(?i)terminal\\s+services.*logon\\s+failure"
+      - regex: "(?i)Event\\s+ID\\s+4625"  # Windows failed logon
+    fields:
+      - raw
+      - message
+  
+  # Credential Stuffing
+  - id: SIG-AUTH-005
+    name: Credential Stuffing Pattern
+    severity: high
+    category: authentication_attack
+    description: Detects potential credential stuffing attacks
+    patterns:
+      - regex: "(?i)multiple\\s+login\\s+attempts"
+      - regex: "(?i)account\\s+locked.*multiple\\s+failed"
+    fields:
+      - raw
+      - message
+  
+  # Password Spraying
+  - id: SIG-AUTH-006
+    name: Password Spraying
+    severity: high
+    category: authentication_attack
+    description: Detects password spraying patterns
+    patterns:
+      - regex: "(?i)failed.*different\\s+accounts"
+      - regex: "(?i)multiple\\s+users.*same\\s+password"
+    fields:
+      - raw
+      - message
+  
+  # Authentication Bypass
+  - id: SIG-AUTH-007
+    name: Authentication Bypass - SQL Injection
+    severity: critical
+    category: authentication_attack
+    description: Detects SQL injection-based auth bypass
+    patterns:
+      - regex: "(?i)(admin|root|administrator)'\\s*(--|#|/\\*)"
+      - regex: "(?i)'\\s*or\\s*'1'\\s*=\\s*'1'\\s*(--|#)"
+    fields:
+      - raw
+      - message
+      - normalized.username
+      - normalized.password
+  
+  - id: SIG-AUTH-008
+    name: Authentication Bypass - NoSQL Injection
+    severity: critical
+    category: authentication_attack
+    description: Detects NoSQL injection auth bypass
+    patterns:
+      - regex: "(?i)\\$ne|\\$gt|\\$regex|\\$where"
+      - regex: "\\{\\s*\"\\$ne\":\\s*null\\s*\\}"
+    fields:
+      - raw
+      - message
+      - normalized.username
+      - normalized.password
+  
+  # Session Hijacking
+  - id: SIG-AUTH-009
+    name: Session Token Manipulation
+    severity: high
+    category: authentication_attack
+    description: Detects session token manipulation attempts
+    patterns:
+      - regex: "(?i)(session|cookie).*manipulation"
+      - regex: "(?i)invalid\\s+session\\s+token"
+    fields:
+      - raw
+      - message
+  
+  # Default Credentials
+  - id: SIG-AUTH-010
+    name: Default Credentials Usage
+    severity: high
+    category: authentication_attack
+    description: Detects use of default credentials
+    patterns:
+      - regex: "(?i)(admin|root|administrator):(admin|password|root|123456|default)"
+      - regex: "(?i)user:user|guest:guest|test:test"
+    fields:
+      - raw
+      - message
+      - normalized.username
+  
+  # Privilege Escalation
+  - id: SIG-AUTH-011
+    name: Sudo Privilege Escalation
+    severity: critical
+    category: privilege_escalation
+    description: Detects suspicious sudo usage
+    patterns:
+      - regex: "(?i)sudo\\s+su\\s+-"
+      - regex: "(?i)sudo\\s+-i"
+      - regex: "(?i)sudo\\s+/bin/(ba)?sh"
+    fields:
+      - raw
+      - message
+      - normalized.command
+  
+  - id: SIG-AUTH-012
+    name: UAC Bypass Attempt
+    severity: critical
+    category: privilege_escalation
+    description: Detects Windows UAC bypass attempts
+    patterns:
+      - regex: "(?i)eventvwr\\.exe|fodhelper\\.exe"
+      - regex: "(?i)computerdefaults\\.exe.*registry"
+    fields:
+      - raw
+      - message
+      - normalized.process_name
+  
+  # Account Manipulation
+  - id: SIG-AUTH-013
+    name: User Account Creation
+    severity: medium
+    category: persistence
+    description: Detects suspicious user account creation
+    patterns:
+      - regex: "(?i)(useradd|adduser|net\\s+user\\s+\\w+\\s+/add)"
+      - regex: "(?i)new\\s+user\\s+account\\s+created"
+    fields:
+      - raw
+      - message
+      - normalized.command
+  
+  - id: SIG-AUTH-014
+    name: Password Change Attempt
+    severity: medium
+    category: persistence
+    description: Detects password change attempts
+    patterns:
+      - regex: "(?i)(passwd|chpasswd|net\\s+user\\s+\\w+\\s+\\w+)"
+      - regex: "(?i)password\\s+changed\\s+for"
+    fields:
+      - raw
+      - message
+      - normalized.command
+  
+  # Multi-Factor Authentication Bypass
+  - id: SIG-AUTH-015
+    name: MFA Bypass Attempt
+    severity: critical
+    category: authentication_attack
+    description: Detects MFA bypass attempts
+    patterns:
+      - regex: "(?i)mfa\\s+(bypass|disabled|skipped)"
+      - regex: "(?i)two.factor.*bypass"
+    fields:
+      - raw
+      - message

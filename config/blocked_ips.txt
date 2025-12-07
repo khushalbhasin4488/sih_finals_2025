@@ -1,0 +1,21 @@
+# Blocked/Malicious IP Addresses
+# One IP per line, lines starting with # are comments
+
+# Known malicious IPs (examples - replace with real threat intelligence)
+192.0.2.1
+198.51.100.1
+203.0.113.1
+
+# Tor exit nodes (examples)
+185.220.101.1
+185.220.101.2
+
+# Known C2 servers (examples)
+45.142.212.61
+89.248.165.75
+
+# Botnet IPs (examples)
+103.109.247.10
+185.244.25.145
+
+# Add your blocked IPs below:

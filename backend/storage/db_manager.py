@@ -29,24 +29,21 @@ class DuckDBManager:
             db_path: Path to DuckDB database file
         """
         self.db_path = db_path
-        self.connection = None
+        self.connection = None  # No persistent connection
         
         # Ensure database directory exists
         Path(db_path).parent.mkdir(parents=True, exist_ok=True)
         
-        # Initialize connection
-        self._connect()
-        
-        # Initialize schema
-        self._initialize_schema()
+        # Initialize schema using temporary connection
+        with self.get_connection() as conn:
+            self._initialize_schema_with_conn(conn)
         
         logger.info("DuckDB manager initialized", db_path=db_path)
     
     def _connect(self):
-        """Establish connection to DuckDB"""
+        """Establish connection to DuckDB (deprecated - use get_connection instead)"""
         try:
-            self.connection = duckdb.connect(self.db_path)
-            logger.info("Connected to DuckDB", db_path=self.db_path)
+            return duckdb.connect(self.db_path)
         except Exception as e:
             logger.error("Failed to connect to DuckDB", error=str(e))
             raise
@@ -55,127 +52,132 @@ class DuckDBManager:
     def get_connection(self):
         """
         Context manager for database connections
-        Ensures connection is properly managed
+        Opens a new connection for each use to avoid locking issues
         """
+        conn = None
         try:
-            if self.connection is None:
-                self._connect()
-            yield self.connection
+            conn = duckdb.connect(self.db_path)
+            yield conn
         except Exception as e:
             logger.error("Database connection error", error=str(e))
             raise
+        finally:
+            if conn:
+                conn.close()
     
-    def _initialize_schema(self):
+    def _initialize_schema_with_conn(self, conn):
         """
-        Initialize database schema
+        Initialize database schema with provided connection
         Creates tables if they don't exist
+        
+        Args:
+            conn: DuckDB connection object
         """
-        with self.get_connection() as conn:
-            # Logs table - flexible schema to handle different log formats
-            # Using JSON type for flexible fields
-            conn.execute("""
-                CREATE TABLE IF NOT EXISTS logs (
-                    id VARCHAR PRIMARY KEY,
-                    timestamp VARCHAR,
-                    raw VARCHAR,
-                    appname VARCHAR,
-                    file VARCHAR,
-                    host VARCHAR,
-                    hostname VARCHAR,
-                    message VARCHAR,
-                    procid INTEGER,
-                    source_type VARCHAR,
-                    normalized JSON,
-                    metadata JSON,
-                    ingestion_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-                )
-            """)
-            
-            # Create indexes for common query patterns
-            conn.execute("""
-                CREATE INDEX IF NOT EXISTS idx_logs_timestamp 
-                ON logs(timestamp)
-            """)
-            
-            conn.execute("""
-                CREATE INDEX IF NOT EXISTS idx_logs_host 
-                ON logs(host)
-            """)
-            
-            conn.execute("""
-                CREATE INDEX IF NOT EXISTS idx_logs_appname 
-                ON logs(appname)
-            """)
-            
-            conn.execute("""
-                CREATE INDEX IF NOT EXISTS idx_logs_ingestion_time 
-                ON logs(ingestion_time)
-            """)
-            
-            # Alerts table
-            conn.execute("""
-                CREATE TABLE IF NOT EXISTS alerts (
-                    id VARCHAR PRIMARY KEY,
-                    log_id VARCHAR,
-                    alert_type VARCHAR,
-                    detection_method VARCHAR,
-                    severity VARCHAR,
-                    description VARCHAR,
-                    metadata JSON,
-                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                    acknowledged BOOLEAN DEFAULT FALSE,
-                    priority_score DOUBLE,
-                    source_ip VARCHAR,
-                    dest_ip VARCHAR,
-                    user VARCHAR,
-                    host VARCHAR
-                )
-            """)
-            
-            conn.execute("""
-                CREATE INDEX IF NOT EXISTS idx_alerts_created_at 
-                ON alerts(created_at)
-            """)
-            
-            conn.execute("""
-                CREATE INDEX IF NOT EXISTS idx_alerts_severity 
-                ON alerts(severity)
-            """)
-            
-            # Threat intelligence table
-            conn.execute("""
-                CREATE TABLE IF NOT EXISTS threat_intel (
-                    id VARCHAR PRIMARY KEY,
-                    indicator_type VARCHAR,
-                    indicator_value VARCHAR,
-                    threat_type VARCHAR,
-                    confidence DOUBLE,
-                    source VARCHAR,
-                    metadata JSON,
-                    created_at TIMESTAMP,
-                    expires_at TIMESTAMP
-                )
-            """)
-            
-            conn.execute("""
-                CREATE INDEX IF NOT EXISTS idx_threat_intel_indicator 
-                ON threat_intel(indicator_type, indicator_value)
-            """)
-            
-            # Detection rules table
-            conn.execute("""
-                CREATE TABLE IF NOT EXISTS detection_rules (
-                    id VARCHAR PRIMARY KEY,
-                    rule_name VARCHAR,
-                    rule_type VARCHAR,
-                    rule_definition JSON,
-                    enabled BOOLEAN DEFAULT TRUE,
-                    created_at TIMESTAMP,
-                    updated_at TIMESTAMP
-                )
-            """)
-            
-            logger.info("Database schema initialized")
+        # Logs table - flexible schema to handle different log formats
+        # Using JSON type for flexible fields
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS logs (
+                id VARCHAR PRIMARY KEY,
+                timestamp VARCHAR,
+                raw VARCHAR,
+                appname VARCHAR,
+                file VARCHAR,
+                host VARCHAR,
+                hostname VARCHAR,
+                message VARCHAR,
+                procid INTEGER,
+                source_type VARCHAR,
+                normalized JSON,
+                metadata JSON,
+                ingestion_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+        
+        # Create indexes for common query patterns
+        conn.execute("""
+            CREATE INDEX IF NOT EXISTS idx_logs_timestamp 
+            ON logs(timestamp)
+        """)
+        
+        conn.execute("""
+            CREATE INDEX IF NOT EXISTS idx_logs_host 
+            ON logs(host)
+        """)
+        
+        conn.execute("""
+            CREATE INDEX IF NOT EXISTS idx_logs_appname 
+            ON logs(appname)
+        """)
+        
+        conn.execute("""
+            CREATE INDEX IF NOT EXISTS idx_logs_ingestion_time 
+            ON logs(ingestion_time)
+        """)
+        
+        # Alerts table
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS alerts (
+                id VARCHAR PRIMARY KEY,
+                log_id VARCHAR,
+                alert_type VARCHAR,
+                detection_method VARCHAR,
+                severity VARCHAR,
+                description VARCHAR,
+                metadata JSON,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                acknowledged BOOLEAN DEFAULT FALSE,
+                priority_score DOUBLE,
+                source_ip VARCHAR,
+                dest_ip VARCHAR,
+                user VARCHAR,
+                host VARCHAR
+            )
+        """)
+        
+        conn.execute("""
+            CREATE INDEX IF NOT EXISTS idx_alerts_created_at 
+            ON alerts(created_at)
+        """)
+        
+        conn.execute("""
+            CREATE INDEX IF NOT EXISTS idx_alerts_severity 
+            ON alerts(severity)
+        """)
+        
+        # Threat intelligence table
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS threat_intel (
+                id VARCHAR PRIMARY KEY,
+                indicator_type VARCHAR,
+                indicator_value VARCHAR,
+                threat_type VARCHAR,
+                confidence DOUBLE,
+                source VARCHAR,
+                metadata JSON,
+                created_at TIMESTAMP,
+                expires_at TIMESTAMP
+            )
+        """)
+        
+        conn.execute("""
+            CREATE INDEX IF NOT EXISTS idx_threat_intel_indicator 
+            ON threat_intel(indicator_type, indicator_value)
+        """)
+        
+        # Detection rules table
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS detection_rules (
+                id VARCHAR PRIMARY KEY,
+                rule_name VARCHAR,
+                rule_type VARCHAR,
+                rule_definition JSON,
+                enabled BOOLEAN DEFAULT TRUE,
+                created_at TIMESTAMP,
+                updated_at TIMESTAMP
+            )
+        """)
+        
+        logger.info("Database schema initialized")
     
     def fetch_logs(
         self,

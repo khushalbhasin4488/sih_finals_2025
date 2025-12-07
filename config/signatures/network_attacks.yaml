@@ -1,0 +1,261 @@
+# Network Attack Signatures
+# Detects network-based attacks, scanning, and suspicious traffic patterns
+
+signatures:
+  # Port Scanning
+  - id: SIG-NET-001
+    name: Port Scan - SYN Scan
+    severity: medium
+    category: network_attack
+    description: Detects SYN port scanning activity
+    patterns:
+      - regex: "(?i)syn\\s+scan"
+      - regex: "(?i)port\\s+scan.*syn"
+    fields:
+      - raw
+      - message
+  
+  - id: SIG-NET-002
+    name: Port Scan - Multiple Ports
+    severity: medium
+    category: network_attack
+    description: Detects scanning of multiple ports
+    patterns:
+      - regex: "(?i)(nmap|masscan|zmap)"
+      - regex: "(?i)scanning\\s+\\d+\\s+ports"
+    fields:
+      - raw
+      - message
+  
+  # DDoS Attacks
+  - id: SIG-NET-003
+    name: DDoS - SYN Flood
+    severity: high
+    category: network_attack
+    description: Detects SYN flood attacks
+    patterns:
+      - regex: "(?i)syn\\s+flood"
+      - regex: "(?i)possible\\s+syn\\s+flooding"
+    fields:
+      - raw
+      - message
+  
+  - id: SIG-NET-004
+    name: DDoS - UDP Flood
+    severity: high
+    category: network_attack
+    description: Detects UDP flood attacks
+    patterns:
+      - regex: "(?i)udp\\s+flood"
+      - regex: "(?i)excessive\\s+udp\\s+traffic"
+    fields:
+      - raw
+      - message
+  
+  - id: SIG-NET-005
+    name: DDoS - HTTP Flood
+    severity: high
+    category: network_attack
+    description: Detects HTTP flood attacks
+    patterns:
+      - regex: "(?i)http\\s+flood"
+      - regex: "(?i)excessive\\s+http\\s+requests"
+    fields:
+      - raw
+      - message
+  
+  # DNS Attacks
+  - id: SIG-NET-006
+    name: DNS Tunneling
+    severity: high
+    category: network_attack
+    description: Detects DNS tunneling attempts
+    patterns:
+      - regex: "(?i)dns\\s+tunnel"
+      - regex: "(?i)suspicious\\s+dns\\s+query"
+      - regex: "[a-z0-9]{50,}\\.(com|net|org)"  # Long subdomain
+    fields:
+      - raw
+      - message
+      - normalized.dns_query
+  
+  - id: SIG-NET-007
+    name: DNS Amplification Attack
+    severity: high
+    category: network_attack
+    description: Detects DNS amplification DDoS
+    patterns:
+      - regex: "(?i)dns\\s+amplification"
+      - regex: "(?i)large\\s+dns\\s+response"
+    fields:
+      - raw
+      - message
+  
+  # Man-in-the-Middle
+  - id: SIG-NET-008
+    name: ARP Spoofing
+    severity: critical
+    category: network_attack
+    description: Detects ARP spoofing/poisoning
+    patterns:
+      - regex: "(?i)arp\\s+(spoof|poison)"
+      - regex: "(?i)duplicate\\s+ip\\s+address"
+    fields:
+      - raw
+      - message
+  
+  - id: SIG-NET-009
+    name: SSL/TLS MITM
+    severity: critical
+    category: network_attack
+    description: Detects SSL/TLS man-in-the-middle attacks
+    patterns:
+      - regex: "(?i)ssl\\s+certificate\\s+(mismatch|invalid|untrusted)"
+      - regex: "(?i)tls\\s+handshake\\s+failure"
+    fields:
+      - raw
+      - message
+  
+  # Protocol Attacks
+  - id: SIG-NET-010
+    name: SMB Attack - EternalBlue
+    severity: critical
+    category: network_attack
+    description: Detects EternalBlue SMB exploit attempts
+    patterns:
+      - regex: "(?i)ms17-010"
+      - regex: "(?i)eternalblue"
+      - regex: "(?i)smb.*exploit"
+    fields:
+      - raw
+      - message
+  
+  - id: SIG-NET-011
+    name: SMB Brute Force
+    severity: high
+    category: network_attack
+    description: Detects SMB brute force attempts
+    patterns:
+      - regex: "(?i)smb.*authentication\\s+failed"
+      - regex: "(?i)smb.*access\\s+denied"
+    fields:
+      - raw
+      - message
+  
+  # Suspicious Traffic Patterns
+  - id: SIG-NET-012
+    name: Beaconing Traffic
+    severity: high
+    category: network_attack
+    description: Detects C2 beaconing patterns
+    patterns:
+      - regex: "(?i)periodic\\s+connection"
+      - regex: "(?i)regular\\s+interval.*external"
+    fields:
+      - raw
+      - message
+  
+  - id: SIG-NET-013
+    name: Data Exfiltration - Large Transfer
+    severity: critical
+    category: data_exfiltration
+    description: Detects large data transfers to external IPs
+    patterns:
+      - regex: "(?i)large\\s+data\\s+transfer"
+      - regex: "(?i)\\d+\\s*[GM]B.*transferred"
+    fields:
+      - raw
+      - message
+  
+  - id: SIG-NET-014
+    name: Tor Network Usage
+    severity: medium
+    category: network_attack
+    description: Detects Tor network connections
+    patterns:
+      - regex: "(?i)tor\\s+connection"
+      - regex: "(?i)onion\\s+router"
+    fields:
+      - raw
+      - message
+  
+  # VPN/Proxy Detection
+  - id: SIG-NET-015
+    name: Suspicious VPN Connection
+    severity: low
+    category: network_attack
+    description: Detects connections from known VPN providers
+    patterns:
+      - regex: "(?i)(nordvpn|expressvpn|protonvpn)"
+      - regex: "(?i)vpn.*connection"
+    fields:
+      - raw
+      - message
+  
+  # Firewall Evasion
+  - id: SIG-NET-016
+    name: Firewall Rule Modification
+    severity: critical
+    category: defense_evasion
+    description: Detects firewall rule changes
+    patterns:
+      - regex: "(?i)(iptables|ufw|firewalld).*delete"
+      - regex: "(?i)firewall.*rule.*(removed|disabled)"
+    fields:
+      - raw
+      - message
+      - normalized.command
+  
+  # Lateral Movement
+  - id: SIG-NET-017
+    name: Lateral Movement - PSExec
+    severity: high
+    category: lateral_movement
+    description: Detects PSExec lateral movement
+    patterns:
+      - regex: "(?i)psexec"
+      - regex: "(?i)\\\\\\\\.*\\\\admin\\$"
+    fields:
+      - raw
+      - message
+  
+  - id: SIG-NET-018
+    name: Lateral Movement - WMI
+    severity: high
+    category: lateral_movement
+    description: Detects WMI-based lateral movement
+    patterns:
+      - regex: "(?i)wmic.*process\\s+call\\s+create"
+      - regex: "(?i)wmi.*remote\\s+execution"
+    fields:
+      - raw
+      - message
+      - normalized.command
+  
+  # Reverse Shell
+  - id: SIG-NET-019
+    name: Reverse Shell Connection
+    severity: critical
+    category: command_and_control
+    description: Detects reverse shell connections
+    patterns:
+      - regex: "(?i)(nc|netcat).*-e\\s+/bin/(ba)?sh"
+      - regex: "(?i)bash\\s+-i\\s+>&\\s+/dev/tcp"
+      - regex: "(?i)python.*socket.*connect"
+    fields:
+      - raw
+      - message
+      - normalized.command
+  
+  # Covert Channels
+  - id: SIG-NET-020
+    name: ICMP Tunneling
+    severity: high
+    category: command_and_control
+    description: Detects ICMP tunneling for C2
+    patterns:
+      - regex: "(?i)icmp\\s+tunnel"
+      - regex: "(?i)suspicious\\s+icmp\\s+traffic"
+    fields:
+      - raw
+      - message

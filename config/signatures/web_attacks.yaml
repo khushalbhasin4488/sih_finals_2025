@@ -1,56 +1,245 @@
 # Web Attack Signatures
+# Detects common web application attacks
 
 signatures:
-  - id: SIG-001
-    name: SQL Injection Attempt
+  # SQL Injection Attacks
+  - id: SIG-WEB-001
+    name: SQL Injection - UNION Based
     severity: high
     category: web_attack
-    description: Detects SQL injection patterns in logs
+    description: Detects UNION-based SQL injection attempts
     patterns:
-      - regex: "(?i)(union.*select|select.*from|insert.*into|delete.*from|drop.*table)"
-      - regex: "(?i)(or\\s+1\\s*=\\s*1|'\\s*or\\s*'1'\\s*=\\s*'1)"
-      - regex: "(?i)(exec\\s*\\(|execute\\s*\\()"
+      - regex: "(?i)union\\s+(all\\s+)?select"
+      - regex: "(?i)\\bunion\\b.{1,100}\\bselect\\b"
     fields:
-      - raw_log
-      - parsed_fields.query_string
-      - parsed_fields.post_data
-    
-  - id: SIG-002
-    name: XSS Attempt
+      - raw
+      - message
+      - normalized.query_string
+      - normalized.post_data
+  
+  - id: SIG-WEB-002
+    name: SQL Injection - Boolean Based
+    severity: high
+    category: web_attack
+    description: Detects boolean-based SQL injection
+    patterns:
+      - regex: "(?i)(or|and)\\s+['\"]?\\d+['\"]?\\s*=\\s*['\"]?\\d+['\"]?"
+      - regex: "(?i)(or|and)\\s+['\"]?[a-z]+['\"]?\\s*=\\s*['\"]?[a-z]+['\"]?"
+      - regex: "(?i)'\\s*or\\s*'1'\\s*=\\s*'1"
+      - regex: "(?i)\"\\s*or\\s*\"1\"\\s*=\\s*\"1"
+    fields:
+      - raw
+      - message
+      - normalized.query_string
+  
+  - id: SIG-WEB-003
+    name: SQL Injection - Time Based
+    severity: high
+    category: web_attack
+    description: Detects time-based blind SQL injection
+    patterns:
+      - regex: "(?i)\\b(sleep|benchmark|waitfor\\s+delay)\\s*\\("
+      - regex: "(?i)pg_sleep\\s*\\("
+    fields:
+      - raw
+      - message
+      - normalized.query_string
+  
+  - id: SIG-WEB-004
+    name: SQL Injection - Stacked Queries
+    severity: critical
+    category: web_attack
+    description: Detects stacked query SQL injection
+    patterns:
+      - regex: "(?i);\\s*(drop|delete|insert|update|create)\\s+(table|database|user)"
+      - regex: "(?i);\\s*exec(ute)?\\s*\\("
+    fields:
+      - raw
+      - message
+      - normalized.query_string
+  
+  # Cross-Site Scripting (XSS)
+  - id: SIG-WEB-005
+    name: XSS - Script Tag Injection
     severity: medium
     category: web_attack
-    description: Detects cross-site scripting attempts
+    description: Detects script tag injection attempts
     patterns:
       - regex: "(?i)<script[^>]*>.*?</script>"
-      - regex: "(?i)javascript:\\s*"
-      - regex: "(?i)on(load|error|click|mouseover)\\s*="
+      - regex: "(?i)<script[^>]*>"
     fields:
-      - raw_log
-      - parsed_fields.user_input
-      - parsed_fields.url
-    
-  - id: SIG-003
-    name: Path Traversal
+      - raw
+      - message
+      - normalized.user_input
+      - normalized.query_string
+  
+  - id: SIG-WEB-006
+    name: XSS - Event Handler Injection
+    severity: medium
+    category: web_attack
+    description: Detects event handler-based XSS
+    patterns:
+      - regex: "(?i)\\bon(load|error|click|mouseover|focus|blur|change|submit)\\s*="
+      - regex: "(?i)<\\w+[^>]*\\son\\w+\\s*="
+    fields:
+      - raw
+      - message
+      - normalized.user_input
+  
+  - id: SIG-WEB-007
+    name: XSS - JavaScript Protocol
+    severity: medium
+    category: web_attack
+    description: Detects javascript protocol XSS
+    patterns:
+      - regex: "(?i)javascript:\\s*"
+      - regex: "(?i)vbscript:\\s*"
+      - regex: "(?i)data:text/html"
+    fields:
+      - raw
+      - message
+      - normalized.user_input
+  
+  # Path Traversal
+  - id: SIG-WEB-008
+    name: Path Traversal - Directory Traversal
     severity: high
     category: web_attack
     description: Detects directory traversal attempts
     patterns:
       - regex: "\\.\\./|\\.\\.\\\\"
-      - regex: "(?i)(etc/passwd|windows/system32)"
+      - regex: "%2e%2e[/\\\\]"
+      - regex: "\\.\\.%2f|\\.\\.%5c"
     fields:
-      - raw_log
-      - parsed_fields.path
-      - parsed_fields.file
-    
-  - id: SIG-004
-    name: Command Injection
+      - raw
+      - message
+      - normalized.path
+      - normalized.file
+  
+  - id: SIG-WEB-009
+    name: Path Traversal - Sensitive Files
+    severity: critical
+    category: web_attack
+    description: Detects attempts to access sensitive system files
+    patterns:
+      - regex: "(?i)(etc/passwd|etc/shadow|windows/system32|boot\\.ini)"
+      - regex: "(?i)\\b(web\\.config|wp-config\\.php|\\.env|\\.git/config)\\b"
+    fields:
+      - raw
+      - message
+      - normalized.path
+  
+  # Command Injection
+  - id: SIG-WEB-010
+    name: Command Injection - Shell Commands
     severity: critical
     category: web_attack
     description: Detects OS command injection attempts
     patterns:
-      - regex: "[;&|]\\s*(cat|ls|dir|whoami|id|uname)"
-      - regex: "(?i)(cmd\\.exe|/bin/sh|/bin/bash)"
+      - regex: "[;&|]\\s*(cat|ls|dir|whoami|id|uname|pwd|wget|curl)\\b"
+      - regex: "\\$\\(.*\\)|`.*`"
+      - regex: "(?i)(cmd\\.exe|/bin/(ba)?sh|powershell)"
     fields:
-      - raw_log
-      - parsed_fields.command
-      - parsed_fields.input
+      - raw
+      - message
+      - normalized.command
+      - normalized.user_input
+  
+  - id: SIG-WEB-011
+    name: Command Injection - Command Chaining
+    severity: critical
+    category: web_attack
+    description: Detects command chaining attempts
+    patterns:
+      - regex: "[;&|]{1,2}\\s*\\w+"
+      - regex: "\\|\\s*(nc|netcat|telnet|bash|sh)\\b"
+    fields:
+      - raw
+      - message
+      - normalized.command
+  
+  # Local File Inclusion (LFI)
+  - id: SIG-WEB-012
+    name: Local File Inclusion
+    severity: high
+    category: web_attack
+    description: Detects local file inclusion attempts
+    patterns:
+      - regex: "(?i)(include|require)(_once)?\\s*\\(.*\\$"
+      - regex: "(?i)php://input|php://filter|expect://|data://"
+    fields:
+      - raw
+      - message
+      - normalized.query_string
+  
+  # Remote File Inclusion (RFI)
+  - id: SIG-WEB-013
+    name: Remote File Inclusion
+    severity: critical
+    category: web_attack
+    description: Detects remote file inclusion attempts
+    patterns:
+      - regex: "(?i)(http|https|ftp)://.*\\.(txt|php|asp|jsp)"
+      - regex: "(?i)\\?.*=https?://"
+    fields:
+      - raw
+      - message
+      - normalized.query_string
+  
+  # XML External Entity (XXE)
+  - id: SIG-WEB-014
+    name: XXE Attack
+    severity: high
+    category: web_attack
+    description: Detects XML External Entity injection
+    patterns:
+      - regex: "(?i)<!ENTITY.*SYSTEM"
+      - regex: "(?i)<!DOCTYPE.*\\[.*<!ENTITY"
+    fields:
+      - raw
+      - message
+      - normalized.post_data
+  
+  # Server-Side Request Forgery (SSRF)
+  - id: SIG-WEB-015
+    name: SSRF Attack
+    severity: high
+    category: web_attack
+    description: Detects Server-Side Request Forgery attempts
+    patterns:
+      - regex: "(?i)(localhost|127\\.0\\.0\\.1|0\\.0\\.0\\.0|\\[::1\\])"
+      - regex: "(?i)(169\\.254\\.|192\\.168\\.|10\\.|172\\.(1[6-9]|2[0-9]|3[01])\\.)"
+    fields:
+      - raw
+      - message
+      - normalized.url
+      - normalized.query_string
+  
+  # LDAP Injection
+  - id: SIG-WEB-016
+    name: LDAP Injection
+    severity: high
+    category: web_attack
+    description: Detects LDAP injection attempts
+    patterns:
+      - regex: "\\*\\)|\\(\\|"
+      - regex: "\\(\\&\\(|\\(\\!\\("
+    fields:
+      - raw
+      - message
+      - normalized.user_input
+  
+  # Template Injection
+  - id: SIG-WEB-017
+    name: Server-Side Template Injection
+    severity: critical
+    category: web_attack
+    description: Detects template injection attempts
+    patterns:
+      - regex: "\\{\\{.*\\}\\}|\\{%.*%\\}"
+      - regex: "\\$\\{.*\\}"
+      - regex: "<%.*%>"
+    fields:
+      - raw
+      - message
+      - normalized.user_input
