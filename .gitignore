@@ -32,6 +32,9 @@ htmlcov/
 
 # Data
 data/duckdb/*.db
+data/duckdb/*.db.wal
+data/duckdb/*.log
+data/duckdb/*.tmp
 data/archives/*
 
 # OS
@@ -44,7 +47,12 @@ dist/
 build/
 *.tsbuildinfo
 
+# Next.js
+.next/
+out/
+
 # Misc
 *.bak
 *.tmp
 .cache/
+.log
