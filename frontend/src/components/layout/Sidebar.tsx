@@ -21,7 +21,6 @@ const navigation = [
     { name: "Alerts", href: "/alerts", icon: AlertTriangle },
     { name: "Rules", href: "/rules", icon: Shield },
     { name: "Threat Intel", href: "/threat-intel", icon: Globe },
-    { name: "Reports", href: "/reports", icon: FileBarChart },
     { name: "Settings", href: "/settings", icon: Settings },
 ];
 
