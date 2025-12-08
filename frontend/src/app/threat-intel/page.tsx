@@ -166,8 +166,8 @@ export default function ThreatIntelPage() {
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id as any)}
                             className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors whitespace-nowrap ${activeTab === tab.id
-                                    ? "bg-blue-600 text-white"
-                                    : "bg-zinc-800 text-zinc-400 hover:bg-zinc-700"
+                                ? "bg-blue-600 text-white"
+                                : "bg-zinc-800 text-zinc-400 hover:bg-zinc-700"
                                 }`}
                         >
                             <tab.icon className="w-4 h-4" />
@@ -419,8 +419,8 @@ export default function ThreatIntelPage() {
                                         animate={{ opacity: 1, scale: 1 }}
                                         transition={{ delay: index * 0.05 }}
                                         className={`p-4 rounded-lg border transition-all ${technique.count > 0
-                                                ? "bg-red-500/10 border-red-500/30"
-                                                : "bg-zinc-800/50 border-zinc-700"
+                                            ? "bg-red-500/10 border-red-500/30"
+                                            : "bg-zinc-800/50 border-zinc-700"
                                             }`}
                                     >
                                         <div className="flex items-center justify-between mb-2">
@@ -451,8 +451,8 @@ export default function ThreatIntelPage() {
                                     <div
                                         key={phase}
                                         className={`px-3 py-2 rounded-lg text-sm ${index < 6
-                                                ? "bg-red-500/10 border border-red-500/20 text-red-400"
-                                                : "bg-zinc-800 border border-zinc-700 text-zinc-400"
+                                            ? "bg-red-500/10 border border-red-500/20 text-red-400"
+                                            : "bg-zinc-800 border border-zinc-700 text-zinc-400"
                                             }`}
                                     >
                                         {phase}

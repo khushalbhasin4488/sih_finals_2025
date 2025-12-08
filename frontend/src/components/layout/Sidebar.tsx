@@ -41,7 +41,7 @@ export default function Sidebar() {
                     </div>
                     <div>
                         <h1 className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-400">
-                            Log Analyzer
+                            KHUSHAL
                         </h1>
                         <p className="text-xs text-zinc-500">Security Monitor</p>
                     </div>

@@ -4,10 +4,9 @@ import Sidebar from "../components/layout/Sidebar";
 import { NetworkProvider } from "@/lib/NetworkContext";
 
 export const metadata: Metadata = {
-    title: "Log Analyzer - Security Monitoring",
-    description: "Advanced log analysis and security monitoring system",
+    title: "KHUSHAL- Knowledge‑driven Hybrid Unified Security & Hacking Analysis Lab",
+    description: "",
 };
-
 export default function RootLayout({
     children,
 }: Readonly<{

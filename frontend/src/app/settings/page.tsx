@@ -240,8 +240,8 @@ export default function SettingsPage() {
                                     key={source}
                                     onClick={() => toggleSource(source)}
                                     className={`flex items-center justify-between p-4 rounded-lg border transition-all ${selectedSources.has(source)
-                                            ? "bg-blue-500/10 border-blue-500/30 text-white"
-                                            : "bg-zinc-800/50 border-zinc-700 text-zinc-400 hover:border-zinc-600"
+                                        ? "bg-blue-500/10 border-blue-500/30 text-white"
+                                        : "bg-zinc-800/50 border-zinc-700 text-zinc-400 hover:border-zinc-600"
                                         }`}
                                 >
                                     <div className="flex items-center gap-3">
@@ -272,8 +272,8 @@ export default function SettingsPage() {
                         </span>
                     </div>
                 </motion.div>
-
-                {/* Hosts Selection */}
+                {/* 
+                Hosts Selection
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -344,7 +344,7 @@ export default function SettingsPage() {
                             {selectedHosts.size === 0 ? "All hosts will be analyzed" : "Only selected hosts will be analyzed"}
                         </span>
                     </div>
-                </motion.div>
+                </motion.div> */}
 
                 {/* System Status */}
                 {systemInfo && (
