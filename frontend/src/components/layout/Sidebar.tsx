@@ -19,8 +19,8 @@ const navigation = [
     { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
     { name: "Logs", href: "/logs", icon: FileText },
     { name: "Alerts", href: "/alerts", icon: AlertTriangle },
-    { name: "Rules", href: "/rules", icon: Shield },
     { name: "Threat Intel", href: "/threat-intel", icon: Globe },
+    { name: "Ingest", href: "/ingest", icon: FileBarChart },
     { name: "Settings", href: "/settings", icon: Settings },
 ];
 

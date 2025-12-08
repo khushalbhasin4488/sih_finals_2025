@@ -1,0 +1,188 @@
+[
+    {
+        "id": "ingestion-001",
+        "timestamp": "2025-12-08T11:45:00.000000",
+        "host": "web-server-01",
+        "source_type": "web",
+        "appname": "nginx",
+        "message": "192.168.1.100 - - [08/Dec/2025:11:45:00 +0000] \"GET /api/users HTTP/1.1\" 200 1024",
+        "source_ip": "192.168.1.100"
+    },
+    {
+        "id": "ingestion-002",
+        "timestamp": "2025-12-08T11:45:05.000000",
+        "host": "auth-server-01",
+        "source_type": "auth",
+        "appname": "sshd",
+        "source_ip": "10.0.0.50",
+        "user": "admin",
+        "message": "Accepted password for admin from 10.0.0.50 port 22 ssh2",
+        "event_type": "login_success"
+    },
+    {
+        "id": "ingestion-003",
+        "timestamp": "2025-12-08T11:45:10.000000",
+        "host": "auth-server-01",
+        "source_type": "auth",
+        "appname": "sshd",
+        "source_ip": "185.220.101.45",
+        "user": "root",
+        "message": "Failed password for root from 185.220.101.45 port 44532 ssh2",
+        "event_type": "login_failed"
+    },
+    {
+        "id": "ingestion-004",
+        "timestamp": "2025-12-08T11:45:15.000000",
+        "host": "web-server-01",
+        "source_type": "web",
+        "appname": "nginx",
+        "message": "185.220.101.45 - - [08/Dec/2025:11:45:15 +0000] \"GET /search?q=' OR '1'='1 HTTP/1.1\" 200 1456",
+        "source_ip": "185.220.101.45"
+    },
+    {
+        "id": "ingestion-005",
+        "timestamp": "2025-12-08T11:45:20.000000",
+        "host": "firewall-01",
+        "source_type": "firewall",
+        "appname": "iptables",
+        "message": "IN=eth0 OUT= MAC=00:... SRC=185.220.101.45 DST=10.0.0.1 PROTO=TCP SPT=54321 DPT=22 FLAGS=SYN",
+        "source_ip": "185.220.101.45"
+    },
+    {
+        "id": "ingestion-006",
+        "timestamp": "2025-12-08T11:45:25.000000",
+        "host": "app-server-01",
+        "source_type": "system",
+        "appname": "systemd",
+        "message": "Started User Manager for UID 1000."
+    },
+    {
+        "id": "ingestion-007",
+        "timestamp": "2025-12-08T11:45:30.000000",
+        "host": "web-server-01",
+        "source_type": "web",
+        "appname": "nginx",
+        "message": "185.220.101.45 - - [08/Dec/2025:11:45:30 +0000] \"GET /admin/../../../etc/passwd HTTP/1.1\" 200 1456",
+        "source_ip": "185.220.101.45"
+    },
+    {
+        "id": "ingestion-008",
+        "timestamp": "2025-12-08T11:45:35.000000",
+        "host": "auth-server-01",
+        "source_type": "auth",
+        "appname": "sshd",
+        "source_ip": "185.220.101.45",
+        "user": "admin",
+        "message": "Failed password for admin from 185.220.101.45 port 44533 ssh2",
+        "event_type": "login_failed"
+    },
+    {
+        "id": "ingestion-009",
+        "timestamp": "2025-12-08T11:45:40.000000",
+        "host": "db-server-01",
+        "source_type": "database",
+        "appname": "postgresql",
+        "message": "LOG: connection received: host=192.168.1.50 port=45678"
+    },
+    {
+        "id": "ingestion-010",
+        "timestamp": "2025-12-08T11:45:45.000000",
+        "host": "app-server-01",
+        "source_type": "system",
+        "appname": "systemd",
+        "message": "Disk space usage at 85%"
+    },
+    {
+        "id": "ingestion-011",
+        "timestamp": "2025-12-08T11:45:50.000000",
+        "host": "web-server-01",
+        "source_type": "web",
+        "appname": "nginx",
+        "message": "192.168.1.100 - - [08/Dec/2025:11:45:50 +0000] \"POST /api/login HTTP/1.1\" 200 512",
+        "source_ip": "192.168.1.100"
+    },
+    {
+        "id": "ingestion-012",
+        "timestamp": "2025-12-08T11:45:55.000000",
+        "host": "auth-server-01",
+        "source_type": "auth",
+        "appname": "sshd",
+        "source_ip": "185.220.101.45",
+        "user": "administrator",
+        "message": "Failed password for administrator from 185.220.101.45 port 44534 ssh2",
+        "event_type": "login_failed"
+    },
+    {
+        "id": "ingestion-013",
+        "timestamp": "2025-12-08T11:46:00.000000",
+        "host": "firewall-01",
+        "source_type": "firewall",
+        "appname": "iptables",
+        "message": "IN=eth0 OUT= MAC=00:... SRC=185.220.101.45 DST=10.0.0.1 PROTO=TCP SPT=54322 DPT=443 FLAGS=SYN",
+        "source_ip": "185.220.101.45"
+    },
+    {
+        "id": "ingestion-014",
+        "timestamp": "2025-12-08T11:46:05.000000",
+        "host": "web-server-01",
+        "source_type": "web",
+        "appname": "nginx",
+        "message": "185.220.101.45 - - [08/Dec/2025:11:46:05 +0000] \"GET /admin?cmd=<script>alert('xss')</script> HTTP/1.1\" 200 1024",
+        "source_ip": "185.220.101.45"
+    },
+    {
+        "id": "ingestion-015",
+        "timestamp": "2025-12-08T11:46:10.000000",
+        "host": "app-server-01",
+        "source_type": "system",
+        "appname": "systemd",
+        "message": "Connection closed by remote host"
+    },
+    {
+        "id": "ingestion-016",
+        "timestamp": "2025-12-08T11:46:15.000000",
+        "host": "auth-server-01",
+        "source_type": "auth",
+        "appname": "sshd",
+        "source_ip": "185.220.101.45",
+        "user": "root",
+        "message": "Failed password for root from 185.220.101.45 port 44535 ssh2",
+        "event_type": "login_failed"
+    },
+    {
+        "id": "ingestion-017",
+        "timestamp": "2025-12-08T11:46:20.000000",
+        "host": "web-server-01",
+        "source_type": "web",
+        "appname": "nginx",
+        "message": "192.168.1.101 - - [08/Dec/2025:11:46:20 +0000] \"GET /assets/main.js HTTP/1.1\" 200 4096",
+        "source_ip": "192.168.1.101"
+    },
+    {
+        "id": "ingestion-018",
+        "timestamp": "2025-12-08T11:46:25.000000",
+        "host": "db-server-01",
+        "source_type": "database",
+        "appname": "postgresql",
+        "message": "LOG: authentication failed for user postgres"
+    },
+    {
+        "id": "ingestion-019",
+        "timestamp": "2025-12-08T11:46:30.000000",
+        "host": "firewall-01",
+        "source_type": "firewall",
+        "appname": "iptables",
+        "message": "IN=eth0 OUT= MAC=00:... SRC=10.0.0.25 DST=10.0.0.1 PROTO=TCP SPT=12345 DPT=80 FLAGS=SYN"
+    },
+    {
+        "id": "ingestion-020",
+        "timestamp": "2025-12-08T11:46:35.000000",
+        "host": "auth-server-01",
+        "source_type": "auth",
+        "appname": "sshd",
+        "source_ip": "185.220.101.45",
+        "user": "test",
+        "message": "Failed password for test from 185.220.101.45 port 44536 ssh2",
+        "event_type": "login_failed"
+    }
+]
