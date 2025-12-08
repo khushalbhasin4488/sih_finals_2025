@@ -1,0 +1,405 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Eventlog",
+                    "@Guid": "{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1102"
+                },
+                "Version": "0",
+                "Level": "4",
+                "Task": "104",
+                "Opcode": "0",
+                "Keywords": "0x4020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 19:27:55.274059+00:00"
+                },
+                "EventRecordID": "4987",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "824",
+                    "@ThreadID": "6060"
+                },
+                "Channel": "Security",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "UserData": {
+                "LogFileCleared": {
+                    "@xmlns:auto-ns3": "http://schemas.microsoft.com/win/2004/08/events",
+                    "@xmlns": "http://manifests.microsoft.com/win/2004/08/windows/eventlog",
+                    "SubjectUserSid": "S-1-5-21-3583694148-1414552638-2922671848-1000",
+                    "SubjectUserName": "IEUser",
+                    "SubjectDomainName": "IEWIN7",
+                    "SubjectLogonId": "0x000000000000ffa8"
+                }
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4663"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "12800",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 19:31:15.355062+00:00"
+                },
+                "EventRecordID": "4988",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "4",
+                    "@ThreadID": "68"
+                },
+                "Channel": "Security",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "SubjectUserSid",
+                        "#text": "S-1-5-21-3583694148-1414552638-2922671848-1000"
+                    },
+                    {
+                        "@Name": "SubjectUserName",
+                        "#text": "IEUser"
+                    },
+                    {
+                        "@Name": "SubjectDomainName",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SubjectLogonId",
+                        "#text": "0x000000000000ffa8"
+                    },
+                    {
+                        "@Name": "ObjectServer",
+                        "#text": "Security"
+                    },
+                    {
+                        "@Name": "ObjectType",
+                        "#text": "File"
+                    },
+                    {
+                        "@Name": "ObjectName",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\Opera Software\\Opera Stable\\Login Data"
+                    },
+                    {
+                        "@Name": "HandleId",
+                        "#text": "0x00000050"
+                    },
+                    {
+                        "@Name": "AccessList",
+                        "#text": "%%4416"
+                    },
+                    {
+                        "@Name": "AccessMask",
+                        "#text": "0x00000001"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "0x0000134c"
+                    },
+                    {
+                        "@Name": "ProcessName",
+                        "#text": "C:\\Users\\Defau1t\\wsus.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4663"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "12800",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 19:33:05.308187+00:00"
+                },
+                "EventRecordID": "4989",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "4",
+                    "@ThreadID": "56"
+                },
+                "Channel": "Security",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "SubjectUserSid",
+                        "#text": "S-1-5-21-3583694148-1414552638-2922671848-1000"
+                    },
+                    {
+                        "@Name": "SubjectUserName",
+                        "#text": "IEUser"
+                    },
+                    {
+                        "@Name": "SubjectDomainName",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SubjectLogonId",
+                        "#text": "0x000000000000ffa8"
+                    },
+                    {
+                        "@Name": "ObjectServer",
+                        "#text": "Security"
+                    },
+                    {
+                        "@Name": "ObjectType",
+                        "#text": "File"
+                    },
+                    {
+                        "@Name": "ObjectName",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\kushu3sd.default\\key4.db"
+                    },
+                    {
+                        "@Name": "HandleId",
+                        "#text": "0x00000050"
+                    },
+                    {
+                        "@Name": "AccessList",
+                        "#text": "%%4416"
+                    },
+                    {
+                        "@Name": "AccessMask",
+                        "#text": "0x00000001"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "0x0000134c"
+                    },
+                    {
+                        "@Name": "ProcessName",
+                        "#text": "C:\\Users\\Defau1t\\wsus.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4663"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "12800",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 19:33:18.699755+00:00"
+                },
+                "EventRecordID": "4990",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "4",
+                    "@ThreadID": "56"
+                },
+                "Channel": "Security",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "SubjectUserSid",
+                        "#text": "S-1-5-21-3583694148-1414552638-2922671848-1000"
+                    },
+                    {
+                        "@Name": "SubjectUserName",
+                        "#text": "IEUser"
+                    },
+                    {
+                        "@Name": "SubjectDomainName",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SubjectLogonId",
+                        "#text": "0x000000000000ffa8"
+                    },
+                    {
+                        "@Name": "ObjectServer",
+                        "#text": "Security"
+                    },
+                    {
+                        "@Name": "ObjectType",
+                        "#text": "File"
+                    },
+                    {
+                        "@Name": "ObjectName",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\kushu3sd.default\\logins.json"
+                    },
+                    {
+                        "@Name": "HandleId",
+                        "#text": "0x00000050"
+                    },
+                    {
+                        "@Name": "AccessList",
+                        "#text": "%%4416"
+                    },
+                    {
+                        "@Name": "AccessMask",
+                        "#text": "0x00000001"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "0x0000134c"
+                    },
+                    {
+                        "@Name": "ProcessName",
+                        "#text": "C:\\Users\\Defau1t\\wsus.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4663"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "12800",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 19:33:50.134295+00:00"
+                },
+                "EventRecordID": "4991",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "4",
+                    "@ThreadID": "44"
+                },
+                "Channel": "Security",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "SubjectUserSid",
+                        "#text": "S-1-5-21-3583694148-1414552638-2922671848-1000"
+                    },
+                    {
+                        "@Name": "SubjectUserName",
+                        "#text": "IEUser"
+                    },
+                    {
+                        "@Name": "SubjectDomainName",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SubjectLogonId",
+                        "#text": "0x000000000000ffa8"
+                    },
+                    {
+                        "@Name": "ObjectServer",
+                        "#text": "Security"
+                    },
+                    {
+                        "@Name": "ObjectType",
+                        "#text": "File"
+                    },
+                    {
+                        "@Name": "ObjectName",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Login Data"
+                    },
+                    {
+                        "@Name": "HandleId",
+                        "#text": "0x00000050"
+                    },
+                    {
+                        "@Name": "AccessList",
+                        "#text": "%%4416"
+                    },
+                    {
+                        "@Name": "AccessMask",
+                        "#text": "0x00000001"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "0x0000134c"
+                    },
+                    {
+                        "@Name": "ProcessName",
+                        "#text": "C:\\Users\\Defau1t\\wsus.exe"
+                    }
+                ]
+            }
+        }
+    }
+]

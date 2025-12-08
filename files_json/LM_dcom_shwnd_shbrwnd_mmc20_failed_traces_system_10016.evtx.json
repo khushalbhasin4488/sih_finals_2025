@@ -1,0 +1,346 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-DistributedCOM",
+                    "@Guid": "{1B562E86-B7AA-4131-BADC-B6F3A001407E}",
+                    "@EventSourceName": "DCOM"
+                },
+                "EventID": {
+                    "@Qualifiers": "0",
+                    "#text": "10016"
+                },
+                "Version": "0",
+                "Level": "2",
+                "Task": "0",
+                "Opcode": "0",
+                "Keywords": "0x8080000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-02-28 22:35:55.910273+00:00"
+                },
+                "EventRecordID": "4451",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "848",
+                    "@ThreadID": "888"
+                },
+                "Channel": "System",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-21-3461203602-4096304019-2269080069-1000"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "param1",
+                        "#text": "application-specific"
+                    },
+                    {
+                        "@Name": "param2",
+                        "#text": "Remote"
+                    },
+                    {
+                        "@Name": "param3",
+                        "#text": "Launch"
+                    },
+                    {
+                        "@Name": "param4",
+                        "#text": "{C08AFD90-F2A1-11D1-8455-00A0C91F3880}"
+                    },
+                    {
+                        "@Name": "param5",
+                        "#text": "{C08AFD90-F2A1-11D1-8455-00A0C91F3880}"
+                    },
+                    {
+                        "@Name": "param6",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "param7",
+                        "#text": "IEUser"
+                    },
+                    {
+                        "@Name": "param8",
+                        "#text": "S-1-5-21-3461203602-4096304019-2269080069-1000"
+                    },
+                    {
+                        "@Name": "param9",
+                        "#text": "10.0.2.17"
+                    },
+                    {
+                        "@Name": "param10",
+                        "#text": "Unavailable"
+                    },
+                    {
+                        "@Name": "param11",
+                        "#text": "Unavailable"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-DistributedCOM",
+                    "@Guid": "{1B562E86-B7AA-4131-BADC-B6F3A001407E}",
+                    "@EventSourceName": "DCOM"
+                },
+                "EventID": {
+                    "@Qualifiers": "0",
+                    "#text": "10016"
+                },
+                "Version": "0",
+                "Level": "2",
+                "Task": "0",
+                "Opcode": "0",
+                "Keywords": "0x8080000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-02-28 22:35:57.025608+00:00"
+                },
+                "EventRecordID": "4452",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "848",
+                    "@ThreadID": "924"
+                },
+                "Channel": "System",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "param1",
+                        "#text": "application-specific"
+                    },
+                    {
+                        "@Name": "param2",
+                        "#text": "Local"
+                    },
+                    {
+                        "@Name": "param3",
+                        "#text": "Launch"
+                    },
+                    {
+                        "@Name": "param4",
+                        "#text": "Windows.SecurityCenter.WscBrokerManager"
+                    },
+                    {
+                        "@Name": "param5",
+                        "#text": "Unavailable"
+                    },
+                    {
+                        "@Name": "param6",
+                        "#text": "NT AUTHORITY"
+                    },
+                    {
+                        "@Name": "param7",
+                        "#text": "SYSTEM"
+                    },
+                    {
+                        "@Name": "param8",
+                        "#text": "S-1-5-18"
+                    },
+                    {
+                        "@Name": "param9",
+                        "#text": "LocalHost (Using LRPC)"
+                    },
+                    {
+                        "@Name": "param10",
+                        "#text": "Unavailable"
+                    },
+                    {
+                        "@Name": "param11",
+                        "#text": "Unavailable"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-DistributedCOM",
+                    "@Guid": "{1B562E86-B7AA-4131-BADC-B6F3A001407E}",
+                    "@EventSourceName": "DCOM"
+                },
+                "EventID": {
+                    "@Qualifiers": "0",
+                    "#text": "10016"
+                },
+                "Version": "0",
+                "Level": "2",
+                "Task": "0",
+                "Opcode": "0",
+                "Keywords": "0x8080000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-02-28 22:35:57.043055+00:00"
+                },
+                "EventRecordID": "4453",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "848",
+                    "@ThreadID": "884"
+                },
+                "Channel": "System",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "param1",
+                        "#text": "application-specific"
+                    },
+                    {
+                        "@Name": "param2",
+                        "#text": "Local"
+                    },
+                    {
+                        "@Name": "param3",
+                        "#text": "Launch"
+                    },
+                    {
+                        "@Name": "param4",
+                        "#text": "Windows.SecurityCenter.SecurityAppBroker"
+                    },
+                    {
+                        "@Name": "param5",
+                        "#text": "Unavailable"
+                    },
+                    {
+                        "@Name": "param6",
+                        "#text": "NT AUTHORITY"
+                    },
+                    {
+                        "@Name": "param7",
+                        "#text": "SYSTEM"
+                    },
+                    {
+                        "@Name": "param8",
+                        "#text": "S-1-5-18"
+                    },
+                    {
+                        "@Name": "param9",
+                        "#text": "LocalHost (Using LRPC)"
+                    },
+                    {
+                        "@Name": "param10",
+                        "#text": "Unavailable"
+                    },
+                    {
+                        "@Name": "param11",
+                        "#text": "Unavailable"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-DistributedCOM",
+                    "@Guid": "{1B562E86-B7AA-4131-BADC-B6F3A001407E}",
+                    "@EventSourceName": "DCOM"
+                },
+                "EventID": {
+                    "@Qualifiers": "0",
+                    "#text": "10016"
+                },
+                "Version": "0",
+                "Level": "2",
+                "Task": "0",
+                "Opcode": "0",
+                "Keywords": "0x8080000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-02-28 22:36:08.667000+00:00"
+                },
+                "EventRecordID": "4454",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "848",
+                    "@ThreadID": "888"
+                },
+                "Channel": "System",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-21-3461203602-4096304019-2269080069-1000"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "param1",
+                        "#text": "application-specific"
+                    },
+                    {
+                        "@Name": "param2",
+                        "#text": "Remote"
+                    },
+                    {
+                        "@Name": "param3",
+                        "#text": "Launch"
+                    },
+                    {
+                        "@Name": "param4",
+                        "#text": "{49B2791A-B1AE-4C90-9B8E-E860BA07F889}"
+                    },
+                    {
+                        "@Name": "param5",
+                        "#text": "{7E0423CD-1119-0928-900C-E6D4A52A0715}"
+                    },
+                    {
+                        "@Name": "param6",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "param7",
+                        "#text": "IEUser"
+                    },
+                    {
+                        "@Name": "param8",
+                        "#text": "S-1-5-21-3461203602-4096304019-2269080069-1000"
+                    },
+                    {
+                        "@Name": "param9",
+                        "#text": "10.0.2.17"
+                    },
+                    {
+                        "@Name": "param10",
+                        "#text": "Unavailable"
+                    },
+                    {
+                        "@Name": "param11",
+                        "#text": "Unavailable"
+                    }
+                ]
+            }
+        }
+    }
+]

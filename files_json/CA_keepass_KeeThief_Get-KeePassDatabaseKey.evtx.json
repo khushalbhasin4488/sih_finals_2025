@@ -1,0 +1,176 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 18:55:04.710608+00:00"
+                },
+                "EventRecordID": "7070",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1816",
+                    "@ThreadID": "1228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 18:55:04.710"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-a512-5cc4-0000-0010c05e1b00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "2856"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-a201-5cc4-0000-00104f500800}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "2364"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Program Files\\KeePass Password Safe 2\\KeePass.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "3796"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x76FAEC4B"
+                    },
+                    {
+                        "@Name": "StartModule",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll"
+                    },
+                    {
+                        "@Name": "StartFunction",
+                        "#text": "DbgUiRemoteBreakin"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 18:55:04.980137+00:00"
+                },
+                "EventRecordID": "7071",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1816",
+                    "@ThreadID": "1228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 18:55:04.980"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-a512-5cc4-0000-0010c05e1b00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "2856"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-a201-5cc4-0000-00104f500800}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "2364"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Program Files\\KeePass Password Safe 2\\KeePass.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "1384"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x06160000"
+                    },
+                    {
+                        "@Name": "StartModule"
+                    },
+                    {
+                        "@Name": "StartFunction"
+                    }
+                ]
+            }
+        }
+    }
+]

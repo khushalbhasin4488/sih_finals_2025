@@ -1,0 +1,794 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-05-24 01:13:47.756140+00:00"
+                },
+                "EventRecordID": "196361",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2812",
+                    "@ThreadID": "3656"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-05-24 01:13:47.752"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-ca4b-5ec9-0000-0010b8cb3700}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3960"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Tools\\PrivEsc\\RogueWinRM.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "RogueWinRM.exe  -p c:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Tools\\PrivEsc\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\LOCAL SERVICE"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-bdd1-5ec9-0000-0020e5030000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000003e5"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B3F79385346A863655D33F8EB1060A03FF116B50,MD5=74F57B3E897A4960DCDD5B7E8A54F9DF,SHA256=BAC5FC4FA68E57E2BEE2FC5670BA914EF1707B16F52D2EE773956275E00A5EBB,IMPHASH=B684AEBFA64CE862E264968DC97605F0"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-bea0-5ec9-0000-001096421600}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "8036"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-05-24 01:13:48.864511+00:00"
+                },
+                "EventRecordID": "196366",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2812",
+                    "@ThreadID": "3656"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-05-24 01:13:48.854"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-ca4c-5ec9-0000-001093d53700}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3044"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Host Process for Windows Services"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "svchost.exe"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "C:\\Windows\\System32\\svchost.exe -k netsvcs -p -s BITS"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-bdd1-5ec9-0000-0020e7030000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=A1385CE20AD79F55DF235EFFD9780C31442AA234,MD5=8A0A29438052FAED8A2532DA50455756,SHA256=7FD065BAC18C5278777AE44908101CDFED72D26FA741367F0AD4D02020787AB6,IMPHASH=247B9220E5D9B720A82B2C8B5069AD69"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-bdd1-5ec9-0000-001006540000}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "596"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\services.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\services.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-05-24 01:13:50.327171+00:00"
+                },
+                "EventRecordID": "196371",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2812",
+                    "@ThreadID": "3656"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-05-24 01:13:50.301"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-ca4e-5ec9-0000-00109fe23700}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1516"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.592 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "Cmd.Exe"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "c:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-bdd1-5ec9-0000-0020e7030000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=8C5437CD76A89EC983E3B364E219944DA3DAB464,MD5=975B45B669930B0CC773EAF2B414206F,SHA256=3656F37A1C6951EC4496FABB8EE957D3A6E3C276D5A3785476B482C9C0D32EA2,IMPHASH=272245E2988E1E430500B852C4FB5E18"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-ca4b-5ec9-0000-0010b8cb3700}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3960"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Users\\IEUser\\Tools\\PrivEsc\\RogueWinRM.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "RogueWinRM.exe  -p c:\\Windows\\System32\\cmd.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "5"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "5",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-05-24 01:13:50.330776+00:00"
+                },
+                "EventRecordID": "196372",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2812",
+                    "@ThreadID": "3656"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-05-24 01:13:50.315"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-ca4b-5ec9-0000-0010b8cb3700}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3960"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Tools\\PrivEsc\\RogueWinRM.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-05-24 01:13:51.206106+00:00"
+                },
+                "EventRecordID": "196373",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2812",
+                    "@ThreadID": "3488"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-05-24 01:13:50.129"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-ca4c-5ec9-0000-001093d53700}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3044"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49680"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "5985"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-05-24 01:13:51.206385+00:00"
+                },
+                "EventRecordID": "196374",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2812",
+                    "@ThreadID": "3488"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-05-24 01:13:50.129"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-ca4b-5ec9-0000-0010b8cb3700}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3960"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Tools\\PrivEsc\\RogueWinRM.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\LOCAL SERVICE"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49680"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "5985"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-05-24 01:13:54.120171+00:00"
+                },
+                "EventRecordID": "196375",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2812",
+                    "@ThreadID": "3656"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-05-24 01:13:54.117"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-ca52-5ec9-0000-001027fa3700}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4456"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\whoami.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "whoami - displays logged on user information"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "whoami.exe"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "whoami"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-bdd1-5ec9-0000-0020e7030000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=47D7864D26FC67E0D60391CBF170D33DA518C322,MD5=43C2D3293AD939241DF61B3630A9D3B6,SHA256=1D5491E3C468EE4B4EF6EDFF4BBC7D06EE83180F6F0B1576763EA2EFE049493A,IMPHASH=7FF0758B766F747CE57DFAC70743FB88"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-ca4e-5ec9-0000-00109fe23700}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1516"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "c:\\Windows\\System32\\cmd.exe"
+                    }
+                ]
+            }
+        }
+    }
+]

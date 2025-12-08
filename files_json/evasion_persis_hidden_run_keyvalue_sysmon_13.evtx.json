@@ -1,0 +1,75 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-04 14:18:58.268711+00:00"
+                },
+                "EventRecordID": "306346",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3400",
+                    "@ThreadID": "4136"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Persistence - Hidden Run value detected"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-04 14:18:58.231"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-8fd2-5f00-0000-0010c15d2200}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3728"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\Public\\tools\\evasion\\a.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "\"c:\\windows\\tasks\\taskhost.exe\""
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -10,7 +10,6 @@ import uuid
 
 from storage.db_manager import DuckDBManager
 from storage.models import LogEntry, Alert
-from analyzers.signature_detector import SignatureDetector
 
 logger = structlog.get_logger()
 
@@ -59,88 +58,51 @@ class AnalysisOrchestrator:
         )
     
     def _initialize_detectors(self):
-        """Initialize all detection engines"""
-        # Signature detector
+        """Initialize the 4 focused detection engines"""
+        
+        # 1. Brute Force Detector (Authentication Attacks)
         try:
-            signature_detector = SignatureDetector(
-                signature_dir=self.config.get('signature_dir', 'config/signatures'),
-                blocked_ips_file=self.config.get('blocked_ips_file', 'config/blocked_ips.txt')
+            from analyzers.brute_force_detector import BruteForceDetector
+            brute_force_detector = BruteForceDetector(
+                rules_file=self.config.get('signature_dir', 'config/signatures') + '/auth_attacks.yaml'
             )
-            self.detectors.append(signature_detector)
-            logger.info("Signature detector initialized")
+            self.detectors.append(brute_force_detector)
+            logger.info("Brute force detector initialized")
         except Exception as e:
-            logger.error("Failed to initialize signature detector", error=str(e))
+            logger.error("Failed to initialize brute force detector", error=str(e))
         
-        # Anomaly detector with baseline manager
+        # 2. Web Attack Detector
         try:
-            from analyzers.baseline_manager import BaselineManager
-            from analyzers.anomaly_detector import AnomalyDetector
-            
-            baseline_manager = BaselineManager(
-                db_manager=self.db_manager,
-                baseline_file=self.config.get('baseline_file', 'data/baselines.json')
+            from analyzers.web_attack_detector import WebAttackDetector
+            web_attack_detector = WebAttackDetector(
+                rules_file=self.config.get('signature_dir', 'config/signatures') + '/web_attacks.yaml'
             )
-            
-            # Update baselines on first run (can be done periodically)
-            if self.config.get('update_baselines_on_start', False):
-                logger.info("Updating baselines on startup")
-                baseline_manager.update_all_baselines(
-                    historical_days=self.config.get('baseline_days', 7)
-                )
-            
-            anomaly_detector = AnomalyDetector(baseline_manager=baseline_manager)
-            self.detectors.append(anomaly_detector)
-            logger.info("Anomaly detector initialized")
+            self.detectors.append(web_attack_detector)
+            logger.info("Web attack detector initialized")
         except Exception as e:
-            logger.error("Failed to initialize anomaly detector", error=str(e))
+            logger.error("Failed to initialize web attack detector", error=str(e))
         
-        # Heuristic analyzer
+        # 3. Network Pattern Detector
         try:
-            from analyzers.heuristic_analyzer import HeuristicAnalyzer
-            heuristic_analyzer = HeuristicAnalyzer(db_manager=self.db_manager)
-            self.detectors.append(heuristic_analyzer)
-            logger.info("Heuristic analyzer initialized")
+            from analyzers.network_pattern_detector import NetworkPatternDetector
+            network_pattern_detector = NetworkPatternDetector()
+            self.detectors.append(network_pattern_detector)
+            logger.info("Network pattern detector initialized")
         except Exception as e:
-            logger.error("Failed to initialize heuristic analyzer", error=str(e))
+            logger.error("Failed to initialize network pattern detector", error=str(e))
         
-        # Behavioral analyzer
+        # 4. Privilege Abuse Detector
         try:
-            from analyzers.behavioral_analyzer import BehavioralAnalyzer
-            behavioral_analyzer = BehavioralAnalyzer(db_manager=self.db_manager)
-            self.detectors.append(behavioral_analyzer)
-            logger.info("Behavioral analyzer initialized")
-        except Exception as e:
-            logger.error("Failed to initialize behavioral analyzer", error=str(e))
-        
-        # Rule engine
-        try:
-            from analyzers.rule_engine import RuleEngine
-            rule_engine = RuleEngine(
-                rule_dir=self.config.get('rule_dir', '../config/rules'),
-                db_manager=self.db_manager
+            from analyzers.privilege_abuse_detector import PrivilegeAbuseDetector
+            privilege_abuse_detector = PrivilegeAbuseDetector(
+                rules_file=self.config.get('signature_dir', 'config/signatures') + '/privilege_abuse.yaml'
             )
-            self.detectors.append(rule_engine)
-            logger.info("Rule engine initialized")
+            self.detectors.append(privilege_abuse_detector)
+            logger.info("Privilege abuse detector initialized")
         except Exception as e:
-            logger.error("Failed to initialize rule engine", error=str(e))
+            logger.error("Failed to initialize privilege abuse detector", error=str(e))
         
-        # Network analyzer
-        try:
-            from analyzers.network_analyzer import NetworkAnalyzer
-            network_analyzer = NetworkAnalyzer(db_manager=self.db_manager)
-            self.detectors.append(network_analyzer)
-            logger.info("Network analyzer initialized")
-        except Exception as e:
-            logger.error("Failed to initialize network analyzer", error=str(e))
-        
-        # Threat intel matcher
-        try:
-            from analyzers.threat_intel_matcher import ThreatIntelMatcher
-            threat_intel_matcher = ThreatIntelMatcher(db_manager=self.db_manager)
-            self.detectors.append(threat_intel_matcher)
-            logger.info("Threat intel matcher initialized")
-        except Exception as e:
-            logger.error("Failed to initialize threat intel matcher", error=str(e))
+        logger.info("All detectors initialized", total_detectors=len(self.detectors))
     
     async def run_analysis_cycle(self) -> Dict[str, Any]:
         """

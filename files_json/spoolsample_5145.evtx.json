@@ -1,0 +1,94 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "5145"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "12811",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-09-01 11:54:22.450676+00:00"
+                },
+                "EventRecordID": "160445",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "4",
+                    "@ThreadID": "6420"
+                },
+                "Channel": "Security",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "SubjectUserSid",
+                        "#text": "S-1-5-21-3461203602-4096304019-2269080069-1000"
+                    },
+                    {
+                        "@Name": "SubjectUserName",
+                        "#text": "IEUser"
+                    },
+                    {
+                        "@Name": "SubjectDomainName",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SubjectLogonId",
+                        "#text": "0x00000000022329ce"
+                    },
+                    {
+                        "@Name": "ObjectType",
+                        "#text": "File"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "10.0.2.17"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "51009"
+                    },
+                    {
+                        "@Name": "ShareName",
+                        "#text": "\\\\*\\IPC$"
+                    },
+                    {
+                        "@Name": "ShareLocalPath"
+                    },
+                    {
+                        "@Name": "RelativeTargetName",
+                        "#text": "spoolss"
+                    },
+                    {
+                        "@Name": "AccessMask",
+                        "#text": "0x0012019f"
+                    },
+                    {
+                        "@Name": "AccessList",
+                        "#text": "%%1538\n\t\t\t\t%%1541\n\t\t\t\t%%4416\n\t\t\t\t%%4417\n\t\t\t\t%%4418\n\t\t\t\t%%4419\n\t\t\t\t%%4420\n\t\t\t\t%%4423\n\t\t\t\t%%4424"
+                    },
+                    {
+                        "@Name": "AccessReason",
+                        "#text": "-"
+                    }
+                ]
+            }
+        }
+    }
+]

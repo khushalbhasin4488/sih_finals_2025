@@ -1,0 +1,988 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 04:01:42.385506+00:00"
+                },
+                "EventRecordID": "4857",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "984",
+                    "@ThreadID": "2352"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 04:01:42.375"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0fa6-5cea-0000-001049b50a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3836"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\info.rar\\jjs.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "8.0.1710.11"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Java(TM) Platform SE binary"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Java(TM) Platform SE 8"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Oracle Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Users\\IEUser\\Desktop\\info.rar\\jjs.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\info.rar\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-0f31-5cea-0000-002062290100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000012962"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=8CC66ED54FBEFF205151898D65F6415400124553,MD5=64FDBD98584331982A15B1F2DF7F08DA,SHA256=B5DE10A0091B7AAF491BDB810BCE6DAB3F6B4A1C7A917722B5DE014E4A08B6EB,IMPHASH=D3310CE6CBCACB3A9F0809BC33E38ABE"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-0f32-5cea-0000-0010b5460100}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1372"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 04:01:42.545736+00:00"
+                },
+                "EventRecordID": "4858",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "984",
+                    "@ThreadID": "2364"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Evasion - Possible DLL Side Loading via jjs.exe"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 04:01:42.505"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0fa6-5cea-0000-001049b50a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3836"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\info.rar\\jjs.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\info.rar\\jli.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=E6F33CBE295026319CF9DB3CA665BC2BC9D978AC,MD5=CE150468126EAE5D99359DDE3197B6EA,SHA256=02B95EF7A33A87CC2B3B6FD47DB03E711045974E1ECF631D3BA9E076E1E374E9,IMPHASH=D386CCEF9C3130690E1183697F8E3ED9"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "false"
+                    },
+                    {
+                        "@Name": "Signature"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Unavailable"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 04:01:42.625851+00:00"
+                },
+                "EventRecordID": "4859",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "984",
+                    "@ThreadID": "2352"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 04:01:42.565"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-8dbd-5cea-0000-0010d75d0000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "452"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\services.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\System\\CurrentControlSet\\services\\HxUpdateServiceInfo\\Start"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "DWORD (0x00000002)"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 04:01:42.645880+00:00"
+                },
+                "EventRecordID": "4860",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "984",
+                    "@ThreadID": "2352"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 04:01:42.565"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-8dbd-5cea-0000-0010d75d0000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "452"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\services.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\System\\CurrentControlSet\\services\\HxUpdateServiceInfo\\ImagePath"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "\"C:\\Users\\IEUser\\Desktop\\info.rar\\jjs.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 04:01:42.966341+00:00"
+                },
+                "EventRecordID": "4861",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "984",
+                    "@ThreadID": "2352"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 04:01:42.946"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0fa6-5cea-0000-0010fec30a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3884"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\info.rar\\jjs.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "8.0.1710.11"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Java(TM) Platform SE binary"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Java(TM) Platform SE 8"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Oracle Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Users\\IEUser\\Desktop\\info.rar\\jjs.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-8dbd-5cea-0000-0020e7030000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=8CC66ED54FBEFF205151898D65F6415400124553,MD5=64FDBD98584331982A15B1F2DF7F08DA,SHA256=B5DE10A0091B7AAF491BDB810BCE6DAB3F6B4A1C7A917722B5DE014E4A08B6EB,IMPHASH=D3310CE6CBCACB3A9F0809BC33E38ABE"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-8dbd-5cea-0000-0010d75d0000}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "452"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\services.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\services.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 04:01:42.966341+00:00"
+                },
+                "EventRecordID": "4862",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "984",
+                    "@ThreadID": "2352"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Evasion - Possible DLL Side Loading via jjs.exe"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 04:01:42.956"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0fa6-5cea-0000-0010fec30a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3884"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\info.rar\\jjs.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\info.rar\\jli.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=E6F33CBE295026319CF9DB3CA665BC2BC9D978AC,MD5=CE150468126EAE5D99359DDE3197B6EA,SHA256=02B95EF7A33A87CC2B3B6FD47DB03E711045974E1ECF631D3BA9E076E1E374E9,IMPHASH=D386CCEF9C3130690E1183697F8E3ED9"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "false"
+                    },
+                    {
+                        "@Name": "Signature"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Unavailable"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 04:01:43.567204+00:00"
+                },
+                "EventRecordID": "4863",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "984",
+                    "@ThreadID": "2352"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 04:01:43.557"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0fa7-5cea-0000-001064c60a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3908"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Host Process for Windows Services"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "C:\\Windows\\system32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-8dbd-5cea-0000-0020e7030000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=4AF001B3C3816B860660CF2DE2C0FD3C1DFB4878,MD5=54A47F6B5E09A77E61649109C6A08866,SHA256=121118A0F5E0E8C933EFD28C9901E54E42792619A8A3A6D11E1F0025A7324BC2,IMPHASH=58E185299ECCA757FE68BA83A6495FDE"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-0fa6-5cea-0000-0010fec30a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3884"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\info.rar\\jjs.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Users\\IEUser\\Desktop\\info.rar\\jjs.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 04:01:43.567204+00:00"
+                },
+                "EventRecordID": "4865",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "984",
+                    "@ThreadID": "2352"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 04:01:43.567"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-0fa6-5cea-0000-0010fec30a00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3884"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\info.rar\\jjs.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-0fa7-5cea-0000-001064c60a00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "3908"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "3916"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x00060000"
+                    },
+                    {
+                        "@Name": "StartModule"
+                    },
+                    {
+                        "@Name": "StartFunction"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "5"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "5",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 04:01:44.047895+00:00"
+                },
+                "EventRecordID": "4873",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "984",
+                    "@ThreadID": "2352"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 04:01:44.047"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0fa6-5cea-0000-001049b50a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3836"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\info.rar\\jjs.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "5"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "5",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 04:01:44.598688+00:00"
+                },
+                "EventRecordID": "4874",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "984",
+                    "@ThreadID": "2352"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 04:01:44.578"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0fa6-5cea-0000-0010fec30a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3884"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\info.rar\\jjs.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 04:01:47.082258+00:00"
+                },
+                "EventRecordID": "4875",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "984",
+                    "@ThreadID": "2352"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 04:01:47.052"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-0f32-5cea-0000-001004510100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1416"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\spoolsv.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Print\\Printers\\DefaultSpoolDirectory"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "C:\\Windows\\system32\\spool\\PRINTERS"
+                    }
+                ]
+            }
+        }
+    }
+]

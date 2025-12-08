@@ -1,0 +1,206 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-08 21:41:52.449709+00:00"
+                },
+                "EventRecordID": "308049",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2268",
+                    "@ThreadID": "3800"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "DeleteKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-08 21:41:52.432"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-3d4d-5f06-0000-00104cb13b00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1392"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\regedit.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-08 21:42:01.653030+00:00"
+                },
+                "EventRecordID": "308050",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2268",
+                    "@ThreadID": "3800"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "CreateKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-08 21:42:01.646"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-3aad-5f06-0000-001004942c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "5364"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\mmc.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-08 21:43:13.791714+00:00"
+                },
+                "EventRecordID": "308055",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2268",
+                    "@ThreadID": "3800"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "CreateKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-08 21:43:13.786"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-3aad-5f06-0000-001004942c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "5364"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\mmc.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU"
+                    }
+                ]
+            }
+        }
+    }
+]

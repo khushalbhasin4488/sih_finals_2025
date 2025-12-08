@@ -1,0 +1,428 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-01-23 19:09:34.052507+00:00"
+                },
+                "EventRecordID": "2861",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2152",
+                    "@ThreadID": "3092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-01-23 19:09:33.519"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-ef6d-5e29-0000-0010a243f100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "5484"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\ProgramData\\USOShared\\SharpRDP.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "1.0.0.0"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "SharpRDP"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "SharpRDP"
+                    },
+                    {
+                        "@Name": "Company"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "SharpRDP.exe"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "SharpRDP.exe  computername=192.168.56.1 command=\"C:\\Temp\\file.exe\" username=domain\\user password=password"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\ProgramData\\USOShared\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-eb92-5e29-0000-0020a80dd500}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000d50da8"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "7"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=D95EC4806527B4C2F2A129CCF33B7835BAD3AB4B,MD5=83820781DDAF24913A2E3051CD6BE6C0,SHA256=EEAA9445F41A4B9B5A2695B2CE5DA94DB25104104B533AF7E1320B50DEED0C0D,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-eef2-5e29-0000-00106174ef00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "724"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\System32\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-01-23 19:09:34.657116+00:00"
+                },
+                "EventRecordID": "2862",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2152",
+                    "@ThreadID": "3092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Execution - Image Loaded from suspicious path"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-01-23 19:09:33.911"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-ef6d-5e29-0000-0010a243f100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "5484"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\ProgramData\\USOShared\\SharpRDP.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\ProgramData\\USOShared\\AxInterop.MSTSCLib.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "1.0.0.0"
+                    },
+                    {
+                        "@Name": "Description"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "AxInterop.MSTSCLib.dll"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=7E613165F4E4696AB13D8D5F3F889131EBC186E0,MD5=A482BE452F384E446FD9F3A91986FCD4,SHA256=9DDAE70F550B452ABE3C75A6036845ABD4134F858C1DEC3343762D97A9CF8450,IMPHASH=DAE02F32A21E03CE65412F6E56942DAA"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "false"
+                    },
+                    {
+                        "@Name": "Signature"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Unavailable"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-01-23 19:09:34.657581+00:00"
+                },
+                "EventRecordID": "2863",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2152",
+                    "@ThreadID": "3092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Execution - Image Loaded from suspicious path"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-01-23 19:09:33.911"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-ef6d-5e29-0000-0010a243f100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "5484"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\ProgramData\\USOShared\\SharpRDP.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\ProgramData\\USOShared\\AxInterop.MSTSCLib.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "1.0.0.0"
+                    },
+                    {
+                        "@Name": "Description"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "AxInterop.MSTSCLib.dll"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=7E613165F4E4696AB13D8D5F3F889131EBC186E0,MD5=A482BE452F384E446FD9F3A91986FCD4,SHA256=9DDAE70F550B452ABE3C75A6036845ABD4134F858C1DEC3343762D97A9CF8450,IMPHASH=DAE02F32A21E03CE65412F6E56942DAA"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "false"
+                    },
+                    {
+                        "@Name": "Signature"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Unavailable"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-01-23 19:09:34.660561+00:00"
+                },
+                "EventRecordID": "2864",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2152",
+                    "@ThreadID": "3092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "LM - suspicious RDP Client"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-01-23 19:09:33.977"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-ef6d-5e29-0000-0010a243f100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "5484"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\ProgramData\\USOShared\\SharpRDP.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Windows\\SysWOW64\\mstscax.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.348 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Remote Desktop Services ActiveX Client"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "mstscax.dll"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=359B2E4C537B00DD450D1E7B3465EE1BA094E8D6,MD5=654534BAC7465961F302C7A990DFDC8D,SHA256=D9827ABED81572C296BB6A63863515BA7B9EB1C8164A4E92A97E1FF0BD04AAB1,IMPHASH=1EA1D2F3BE5D1C352344C4CBF6A7614C"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "Microsoft Windows"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    }
+]

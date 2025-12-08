@@ -1,0 +1,1001 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-14 17:17:26.440651+00:00"
+                },
+                "EventRecordID": "32008",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1580",
+                    "@ThreadID": "3960"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-14 17:17:24.597"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-f2ec-5cda-0000-0010f1631500}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4092"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "insecurebank\\Administrator"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.59.4.20"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "alice.insecurebank.local"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49583"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.59.4.11"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "DC1"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "389"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "ldap"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-14 17:17:26.738626+00:00"
+                },
+                "EventRecordID": "32009",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1580",
+                    "@ThreadID": "3960"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-14 17:17:24.660"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-f2ec-5cda-0000-0010f1631500}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4092"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "insecurebank\\Administrator"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.59.4.20"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "alice.insecurebank.local"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49584"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.59.4.11"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "DC1"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "389"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "ldap"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-14 17:17:38.250959+00:00"
+                },
+                "EventRecordID": "32010",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1580",
+                    "@ThreadID": "3960"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-14 17:17:36.213"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-ec1e-5cda-0000-0010eb030000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.59.4.20"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "alice.insecurebank.local"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49586"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.59.4.24"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "edward"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "445"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "microsoft-ds"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-14 17:17:38.250959+00:00"
+                },
+                "EventRecordID": "32011",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1580",
+                    "@ThreadID": "3960"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-14 17:17:36.234"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-ec1e-5cda-0000-0010eb030000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.59.4.20"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "alice.insecurebank.local"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49587"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.59.4.21"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "bob"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "445"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "microsoft-ds"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-14 17:17:38.250959+00:00"
+                },
+                "EventRecordID": "32012",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1580",
+                    "@ThreadID": "3960"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-14 17:17:36.249"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-ec1e-5cda-0000-0010eb030000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.59.4.20"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "alice.insecurebank.local"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49588"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.59.4.22"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "CHARLES"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "445"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "microsoft-ds"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-14 17:17:38.250959+00:00"
+                },
+                "EventRecordID": "32013",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1580",
+                    "@ThreadID": "3960"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-14 17:17:36.266"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-ec1e-5cda-0000-0010eb030000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.59.4.20"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "alice.insecurebank.local"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49589"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.59.4.25"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "FRED"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "445"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "microsoft-ds"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-14 17:17:38.250959+00:00"
+                },
+                "EventRecordID": "32014",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1580",
+                    "@ThreadID": "3960"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-14 17:17:36.306"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-ec1e-5cda-0000-0010eb030000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.59.4.20"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "alice.insecurebank.local"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49590"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.59.4.11"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "DC1"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "445"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "microsoft-ds"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-14 17:17:38.250959+00:00"
+                },
+                "EventRecordID": "32015",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1580",
+                    "@ThreadID": "3960"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-14 17:17:36.338"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-ec1e-5cda-0000-0010eb030000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.59.4.20"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "alice.insecurebank.local"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49592"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.59.4.23"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "dave"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "445"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "microsoft-ds"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-14 17:17:38.250959+00:00"
+                },
+                "EventRecordID": "32016",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1580",
+                    "@ThreadID": "3960"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-14 17:17:36.353"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-ec1e-5cda-0000-0010eb030000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.59.4.20"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "alice.insecurebank.local"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49593"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.59.4.12"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "DEV_SERVER"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "445"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "microsoft-ds"
+                    }
+                ]
+            }
+        }
+    }
+]

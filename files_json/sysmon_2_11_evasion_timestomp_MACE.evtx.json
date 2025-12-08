@@ -1,0 +1,142 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-30 10:12:45.583363+00:00"
+                },
+                "EventRecordID": "8930",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1956",
+                    "@ThreadID": "1636"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-30 10:12:45.583"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-1efa-5cc8-0000-0010d3de1c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3292"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\bs.ps1"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-04-30 10:12:45.583"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "2"
+                },
+                "Version": "4",
+                "Level": "4",
+                "Task": "2",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-30 10:13:42.052113+00:00"
+                },
+                "EventRecordID": "8931",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1956",
+                    "@ThreadID": "1636"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-30 10:13:42.052"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-16cd-5cc8-0000-0010483a0600}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2836"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\bs.ps1"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2016-02-02 15:30:02.000"
+                    },
+                    {
+                        "@Name": "PreviousCreationUtcTime",
+                        "#text": "2019-04-30 10:12:45.583"
+                    }
+                ]
+            }
+        }
+    }
+]

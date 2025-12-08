@@ -1,0 +1,181 @@
+# Privilege Abuse and Escalation Signatures
+# Detects privilege escalation, account manipulation, and lateral movement
+
+signatures:
+  # Sudo Abuse
+  - id: PRIV-001
+    name: Root Shell Escalation via Sudo
+    severity: critical
+    category: privilege_escalation
+    description: Detects sudo commands that spawn a root shell
+    patterns:
+      - regex: "(?i)sudo\\s+su\\s*-"
+      - regex: "(?i)sudo\\s+-i"
+    fields:
+      - message
+      - raw
+  
+  - id: PRIV-002
+    name: Sudo Shell Spawn
+    severity: critical
+    category: privilege_escalation
+    description: Detects sudo commands spawning interactive shells
+    patterns:
+      - regex: "(?i)sudo\\s+/bin/(ba)?sh"
+      - regex: "(?i)sudo\\s+.*sh\\s*$"
+    fields:
+      - message
+      - raw
+  
+  - id: PRIV-003
+    name: Password Change via Sudo
+    severity: high
+    category: privilege_escalation
+    description: Detects password changes using sudo
+    patterns:
+      - regex: "(?i)sudo\\s+.*passwd"
+      - regex: "(?i)sudo\\s+chpasswd"
+    fields:
+      - message
+      - raw
+  
+  - id: PRIV-004
+    name: Adding User to Root/Admin Group
+    severity: critical
+    category: privilege_escalation
+    description: Detects adding users to privileged groups
+    patterns:
+      - regex: "(?i)usermod.*-G.*(root|wheel|sudo|admin)"
+      - regex: "(?i)usermod.*-a.*-G.*(root|wheel|sudo|admin)"
+    fields:
+      - message
+      - raw
+  
+  # Account Creation and Manipulation
+  - id: PRIV-005
+    name: User Account Creation
+    severity: medium
+    category: account_manipulation
+    description: Detects new user account creation
+    patterns:
+      - regex: "(?i)useradd\\s+"
+      - regex: "(?i)adduser\\s+"
+      - regex: "(?i)net\\s+user.*\\/add"
+    fields:
+      - message
+      - raw
+  
+  - id: PRIV-006
+    name: User Account Deletion
+    severity: medium
+    category: account_manipulation
+    description: Detects user account deletion
+    patterns:
+      - regex: "(?i)userdel\\s+"
+      - regex: "(?i)deluser\\s+"
+    fields:
+      - message
+      - raw
+  
+  - id: PRIV-007
+    name: User Account Modification
+    severity: medium
+    category: account_manipulation
+    description: Detects user account modifications
+    patterns:
+      - regex: "(?i)usermod\\s+"
+      - regex: "(?i)chsh\\s+"
+      - regex: "(?i)chfn\\s+"
+    fields:
+      - message
+      - raw
+  
+  # Permission Changes
+  - id: PRIV-008
+    name: SUID Binary Creation
+    severity: critical
+    category: privilege_escalation
+    description: Detects creation of SUID binaries (common backdoor)
+    patterns:
+      - regex: "(?i)chmod\\s+(4|2)\\d{3}"
+      - regex: "(?i)chmod\\s+u\\+s"
+    fields:
+      - message
+      - raw
+  
+  - id: PRIV-009
+    name: Critical File Permission Change
+    severity: high
+    category: privilege_escalation
+    description: Detects permission changes on critical system files
+    patterns:
+      - regex: "(?i)chmod.*(etc/passwd|etc/shadow|etc/sudoers)"
+      - regex: "(?i)chown.*(etc/passwd|etc/shadow|etc/sudoers)"
+    fields:
+      - message
+      - raw
+  
+  # Sudoers File Manipulation
+  - id: PRIV-010
+    name: Sudoers File Modification
+    severity: critical
+    category: privilege_escalation
+    description: Detects modifications to sudoers file
+    patterns:
+      - regex: "(?i)(visudo|sudoers)"
+      - regex: "(?i)etc/sudoers"
+    fields:
+      - message
+      - raw
+  
+  # Lateral Movement
+  - id: PRIV-011
+    name: SSH Key Manipulation
+    severity: high
+    category: lateral_movement
+    description: Detects SSH key additions or modifications
+    patterns:
+      - regex: "(?i)authorized_keys"
+      - regex: "(?i)\\.ssh/id_rsa"
+    fields:
+      - message
+      - raw
+  
+  - id: PRIV-012
+    name: Remote Command Execution
+    severity: high
+    category: lateral_movement
+    description: Detects remote command execution attempts
+    patterns:
+      - regex: "(?i)ssh.*-c\\s+"
+      - regex: "(?i)psexec"
+      - regex: "(?i)winrm"
+    fields:
+      - message
+      - raw
+  
+  # Service Manipulation
+  - id: PRIV-013
+    name: Service Creation or Modification
+    severity: medium
+    category: persistence
+    description: Detects creation or modification of system services
+    patterns:
+      - regex: "(?i)systemctl\\s+(enable|start|daemon-reload)"
+      - regex: "(?i)service.*start"
+      - regex: "(?i)chkconfig"
+    fields:
+      - message
+      - raw
+  
+  - id: PRIV-014
+    name: Cron Job Creation
+    severity: medium
+    category: persistence
+    description: Detects cron job creation for persistence
+    patterns:
+      - regex: "(?i)crontab\\s+-e"
+      - regex: "(?i)etc/cron"
+    fields:
+      - message
+      - raw

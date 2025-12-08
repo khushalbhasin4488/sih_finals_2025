@@ -1,0 +1,1334 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-09-03 11:04:07.207048+00:00"
+                },
+                "EventRecordID": "35076",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3144",
+                    "@ThreadID": "3948"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-09-03 11:04:05.797"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-48a4-5d6e-0000-001072958000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3008"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\inetsrv\\w3wp.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IIS APPPOOL\\DefaultAppPool"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49947"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "3389"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "ms-wbt-server"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-09-03 11:04:07.207130+00:00"
+                },
+                "EventRecordID": "35077",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3144",
+                    "@ThreadID": "3948"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-09-03 11:04:05.797"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-9874-5d6e-0000-0010c1c20000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "8"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\NETWORK SERVICE"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "3389"
+                    },
+                    {
+                        "@Name": "SourcePortName",
+                        "#text": "ms-wbt-server"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "49947"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-09-03 11:04:56.358688+00:00"
+                },
+                "EventRecordID": "35079",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3144",
+                    "@ThreadID": "3948"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-09-03 11:04:55.147"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-48a4-5d6e-0000-001072958000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3008"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\inetsrv\\w3wp.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IIS APPPOOL\\DefaultAppPool"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49948"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "3389"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "ms-wbt-server"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-09-03 11:04:58.463053+00:00"
+                },
+                "EventRecordID": "35080",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3144",
+                    "@ThreadID": "3948"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-09-03 11:04:55.147"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-9874-5d6e-0000-0010c1c20000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "8"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\NETWORK SERVICE"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "3389"
+                    },
+                    {
+                        "@Name": "SourcePortName",
+                        "#text": "ms-wbt-server"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "49948"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-09-03 11:05:22.837679+00:00"
+                },
+                "EventRecordID": "35118",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3144",
+                    "@ThreadID": "3948"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-09-03 11:05:21.532"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-986d-5d6e-0000-0010eb030000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "udp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.0.2.15"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "137"
+                    },
+                    {
+                        "@Name": "SourcePortName",
+                        "#text": "netbios-ns"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.255.255.255"
+                    },
+                    {
+                        "@Name": "DestinationHostname"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "137"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "netbios-ns"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-09-03 11:05:22.837749+00:00"
+                },
+                "EventRecordID": "35119",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3144",
+                    "@ThreadID": "3948"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-09-03 11:05:21.532"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-986d-5d6e-0000-0010eb030000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "udp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.255.255.255"
+                    },
+                    {
+                        "@Name": "SourceHostname"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "137"
+                    },
+                    {
+                        "@Name": "SourcePortName",
+                        "#text": "netbios-ns"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.0.2.15"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "137"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "netbios-ns"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-09-03 11:33:24.177710+00:00"
+                },
+                "EventRecordID": "35202",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3144",
+                    "@ThreadID": "3948"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-09-03 11:33:22.873"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-4f81-5d6e-0000-001001818b00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "8892"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\inetsrv\\w3wp.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IIS APPPOOL\\DefaultAppPool"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49949"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "445"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "microsoft-ds"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-09-03 11:33:24.177923+00:00"
+                },
+                "EventRecordID": "35203",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3144",
+                    "@ThreadID": "3948"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-09-03 11:33:22.873"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-986d-5d6e-0000-0010eb030000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "445"
+                    },
+                    {
+                        "@Name": "SourcePortName",
+                        "#text": "microsoft-ds"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "49949"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-09-03 11:34:37.129225+00:00"
+                },
+                "EventRecordID": "35205",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3144",
+                    "@ThreadID": "3948"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-09-03 11:34:35.937"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-4f81-5d6e-0000-001001818b00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "8892"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\inetsrv\\w3wp.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IIS APPPOOL\\DefaultAppPool"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49950"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "445"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "microsoft-ds"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-09-03 11:34:37.129370+00:00"
+                },
+                "EventRecordID": "35206",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3144",
+                    "@ThreadID": "3948"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-09-03 11:34:35.937"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-986d-5d6e-0000-0010eb030000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "445"
+                    },
+                    {
+                        "@Name": "SourcePortName",
+                        "#text": "microsoft-ds"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "49950"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-09-03 11:36:26.005428+00:00"
+                },
+                "EventRecordID": "35209",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3144",
+                    "@ThreadID": "3948"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-09-03 11:36:24.649"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-986d-5d6e-0000-0010eb030000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "udp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.0.2.15"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "137"
+                    },
+                    {
+                        "@Name": "SourcePortName",
+                        "#text": "netbios-ns"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.255.255.255"
+                    },
+                    {
+                        "@Name": "DestinationHostname"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "137"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "netbios-ns"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-09-03 11:36:26.005493+00:00"
+                },
+                "EventRecordID": "35210",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3144",
+                    "@ThreadID": "3948"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-09-03 11:36:24.649"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-986d-5d6e-0000-0010eb030000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "udp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.255.255.255"
+                    },
+                    {
+                        "@Name": "SourceHostname"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "137"
+                    },
+                    {
+                        "@Name": "SourcePortName",
+                        "#text": "netbios-ns"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.0.2.15"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "137"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "netbios-ns"
+                    }
+                ]
+            }
+        }
+    }
+]

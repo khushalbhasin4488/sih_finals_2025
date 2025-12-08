@@ -1,0 +1,1403 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:28.612995+00:00"
+                },
+                "EventRecordID": "5694",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:28.568"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a104-5d46-0000-00102b92bc03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "7616"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\UACME.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "3.1.9.1905"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "UACMe main module"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "UACMe"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Hazardous Environments"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "UACME.exe  53"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-56a3-5d45-0000-0020fbd31800}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000018d3fb"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=9E57914D39FBFE785C915E225011892613C4714C,MD5=D57E778DF10F801F47119A04BE990FFD,SHA256=D76815CE3F4B9FE7A611D6F536F65AF313E2AB2F8BB52EF0998487D89A6E7378,IMPHASH=B6789EDFE23DDA911AE37C87444D3DCB"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-5a29-5d45-0000-0010deb99000}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "5780"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\system32\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:28.807909+00:00"
+                },
+                "EventRecordID": "5695",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:28.756"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a104-5d46-0000-0010c79cbc03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "7312"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\reg.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Registry Console Tool"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "C:\\Windows\\system32\\reg.exe add HKEY_CURRENT_USER\\Software\\Classes\\Folder\\shell\\open\\command /v \"DelegateExecute\" /t REG_SZ /d \"\" /f"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-56a3-5d45-0000-0020fbd31800}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000018d3fb"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=429DF8371B437209D79DC97978C33157D1A71C4B,MD5=8A93ACAC33151793F8D52000071C0B06,SHA256=19316D4266D0B776D9B2A05D5903D8CBC8F0EA1520E9C2A7E6D5960B6FA4DCAF,IMPHASH=BE482BE427FE212CFEF2CDA0E61F19AC"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-56a4-5d45-0000-0010a5fa1800}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "4772"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\sihost.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "sihost.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:28.893192+00:00"
+                },
+                "EventRecordID": "5696",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:28.869"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a104-5d46-0000-0010c79cbc03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "7312"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\reg.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000_Classes\\Folder\\shell\\open\\command\\DelegateExecute"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "(Empty)"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:28.925642+00:00"
+                },
+                "EventRecordID": "5697",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:28.917"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a104-5d46-0000-001092a6bc03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2576"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\reg.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Registry Console Tool"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "C:\\Windows\\system32\\reg.exe add HKEY_CURRENT_USER\\Software\\Classes\\Folder\\shell\\open\\command /v \"\" /t REG_SZ /d \"C:\\Windows\\system32\\cmd.exe\" /f"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-56a3-5d45-0000-0020fbd31800}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000018d3fb"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=429DF8371B437209D79DC97978C33157D1A71C4B,MD5=8A93ACAC33151793F8D52000071C0B06,SHA256=19316D4266D0B776D9B2A05D5903D8CBC8F0EA1520E9C2A7E6D5960B6FA4DCAF,IMPHASH=BE482BE427FE212CFEF2CDA0E61F19AC"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-56a4-5d45-0000-0010a5fa1800}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "4772"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\sihost.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "sihost.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:29.060589+00:00"
+                },
+                "EventRecordID": "5698",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "PrivEsc - UAC bypass UACME-53"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:29.025"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a104-5d46-0000-001092a6bc03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2576"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\reg.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000_Classes\\Folder\\shell\\open\\command\\(Default)"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:29.409803+00:00"
+                },
+                "EventRecordID": "5699",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:29.199"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a105-5d46-0000-001071b8bc03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4512"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\sdclt.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Microsoft\u00ae Windows Backup"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\sdclt.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-56a3-5d45-0000-0020fbd31800}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000018d3fb"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=99C4ECC452300FD9E29CD009814E75BA29F0F71F,MD5=BEA1DCD574DE36E43D618373AEBFFEA8,SHA256=801DD9B98F263862E076461217FC2C774AA514E5482D0EA0ACCE6ED31BB4731B,IMPHASH=AACB1F271E52307A5D3490C6FC19417E"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-a104-5d46-0000-00102b92bc03}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "7616"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\UACME.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "UACME.exe  53"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:29.431166+00:00"
+                },
+                "EventRecordID": "5700",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:29.311"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a105-5d46-0000-001020c0bc03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "7604"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\consent.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Consent UI for administrative applications"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "consent.exe 896 300 000002806445E5C0"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-d4e9-5d45-0000-0020e7030000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=9329B2362078DE27242DD4534F588AF3264BF0BF,MD5=27992D7EBE51AEC655A088DE88BAD5C9,SHA256=8F112431143A22BAAAFB448EEFD63BF90E7691C890AC69A296574FD07BA03EC6,IMPHASH=522D83761201075834F05037F5307949"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-5769-5d45-0000-001044e83300}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "896"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s Appinfo"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:30.395226+00:00"
+                },
+                "EventRecordID": "5701",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:29.934"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a105-5d46-0000-00103bebbc03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4532"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\sdclt.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Microsoft\u00ae Windows Backup"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\sdclt.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-56a3-5d45-0000-0020b3d31800}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000018d3b3"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=99C4ECC452300FD9E29CD009814E75BA29F0F71F,MD5=BEA1DCD574DE36E43D618373AEBFFEA8,SHA256=801DD9B98F263862E076461217FC2C774AA514E5482D0EA0ACCE6ED31BB4731B,IMPHASH=AACB1F271E52307A5D3490C6FC19417E"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-a104-5d46-0000-00102b92bc03}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "7616"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\UACME.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "UACME.exe  53"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:30.752831+00:00"
+                },
+                "EventRecordID": "5702",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:30.346"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a106-5d46-0000-00107201bd03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1380"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\control.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Control Panel"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\control.exe\"  /name Microsoft.BackupAndRestoreCenter"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-56a3-5d45-0000-0020b3d31800}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000018d3b3"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=391FF1F690C0912C217B3CF625900D4F50128867,MD5=88EA810385F455C74306D71C4879C61C,SHA256=4774A931C9D97828323C9E829917D82C27A05DAB9FEA6A0CEF9EBBA59942231F,IMPHASH=7A8EC2645C24D85DE8216D63022623C0"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-a105-5d46-0000-00103bebbc03}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "4532"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\sdclt.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\system32\\sdclt.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:30.972589+00:00"
+                },
+                "EventRecordID": "5703",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:30.702"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a106-5d46-0000-00102425bd03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "6604"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\cmd.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-56a3-5d45-0000-0020b3d31800}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000018d3b3"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=8C5437CD76A89EC983E3B364E219944DA3DAB464,MD5=975B45B669930B0CC773EAF2B414206F,SHA256=3656F37A1C6951EC4496FABB8EE957D3A6E3C276D5A3785476B482C9C0D32EA2,IMPHASH=272245E2988E1E430500B852C4FB5E18"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-a106-5d46-0000-00107201bd03}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1380"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\control.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\System32\\control.exe\"  /name Microsoft.BackupAndRestoreCenter"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:35.391457+00:00"
+                },
+                "EventRecordID": "5704",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "DeleteValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:35.385"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a104-5d46-0000-00102b92bc03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "7616"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000_Classes\\Folder\\shell\\open\\command"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:35.397312+00:00"
+                },
+                "EventRecordID": "5705",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "DeleteValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:35.385"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a104-5d46-0000-00102b92bc03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "7616"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000_Classes\\Folder\\shell\\open\\command\\DelegateExecute"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:35.402941+00:00"
+                },
+                "EventRecordID": "5706",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "DeleteKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:35.385"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a104-5d46-0000-00102b92bc03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "7616"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000_Classes\\Folder\\shell\\open\\command"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "5"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "5",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-04 09:10:35.454962+00:00"
+                },
+                "EventRecordID": "5707",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2780",
+                    "@ThreadID": "3676"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-04 09:10:35.449"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-a104-5d46-0000-00102b92bc03}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "7616"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\UACME.exe"
+                    }
+                ]
+            }
+        }
+    }
+]

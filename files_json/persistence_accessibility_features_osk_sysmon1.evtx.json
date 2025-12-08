@@ -1,0 +1,321 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-16 16:08:30.516571+00:00"
+                },
+                "EventRecordID": "18916",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1744",
+                    "@ThreadID": "2120"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "DC1.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "technique_id=T1076,technique_name=Remote Desktop Protocol"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "CreateKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-16 16:08:30.515"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{dfae8213-8afe-5cdd-0000-001035b90a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1684"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\LogonUI.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-16 16:08:34.867569+00:00"
+                },
+                "EventRecordID": "18917",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1744",
+                    "@ThreadID": "2120"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "DC1.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "technique_id=T1015,technique_name=Accessibility Features"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-16 16:08:34.853"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{dfae8213-8b02-5cdd-0000-00109bca0a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1720"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\osk.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.3.9600.17415 (winblue_r4.141028-1500)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\osk.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{dfae8213-832f-5cdd-0000-0020e7030000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "2"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=7C3D7281E1151FE4127923F4B4C3CD36438E1A12,MD5=F5AE03DE0AD60F5B17B82F2CD68402FE,SHA256=6F88FB88FFB0F1D5465C2826E5B4F523598B1B8378377C8378FFEBC171BAD18B,IMPHASH=77AED1ADAF24B344F08C8AD1432908C3"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{dfae8213-8b00-5cdd-0000-001043c20a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1112"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\Utilman.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "utilman.exe /debug"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-16 16:08:40.360594+00:00"
+                },
+                "EventRecordID": "18918",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1744",
+                    "@ThreadID": "2120"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "DC1.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "technique_id=T1033,technique_name=System Owner/User Discovery"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-16 16:08:40.350"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{dfae8213-8b08-5cdd-0000-001011ce0a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3764"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\whoami.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.3.9600.16384 (winblue_rtm.130821-1623)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "whoami - displays logged on user information"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "whoami"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{dfae8213-832f-5cdd-0000-0020e7030000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "2"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=E06B89D9B87A8A4E5A8B7A5307C3BA88E0A01D41,MD5=D609D59A042C04A50EB41EC5D52F7471,SHA256=16C4CEE8C7BF4070E25A32F0B95857FA5CEC51E47D246E6FBAD69887460961B2,IMPHASH=98A3BC461E82881A801A12AAA668BD47"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{dfae8213-8b02-5cdd-0000-00109bca0a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1720"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\osk.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\System32\\osk.exe\""
+                    }
+                ]
+            }
+        }
+    }
+]

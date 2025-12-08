@@ -1,0 +1,374 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-16 01:31:36.426870+00:00"
+                },
+                "EventRecordID": "17984",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1792",
+                    "@ThreadID": "2232"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "DC1.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-16 01:31:36.408"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{dfae8213-bd78-5cdc-0000-0010c7fe1200}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3948"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\winrshost.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.3.9600.17415 (winblue_r4.141028-1500)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Host Process for WinRM's Remote Shell plugin"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "C:\\Windows\\system32\\WinrsHost.exe -Embedding"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "insecurebank\\Administrator"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{dfae8213-bd78-5cdc-0000-002005fe1200}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000012fe05"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=E25A9835F02E2149C6153DA3DF3D680BA7442B37,MD5=C4FFB616FE5B81E61F70073732CBBB81,SHA256=8142A15194183BAB9FE1967ABD0961D633D6030D3753099A67150F9C4AB6D4FB,IMPHASH=C92CADF837D82C0615FEC138C16A9D40"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{dfae8213-bb19-5cdc-0000-001003760000}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "580"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\svchost.exe -k DcomLaunch"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-16 01:31:36.454893+00:00"
+                },
+                "EventRecordID": "17985",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1792",
+                    "@ThreadID": "2232"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "DC1.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-16 01:31:36.443"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{dfae8213-bd78-5cdc-0000-001091041300}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3136"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.3.9600.16384 (winblue_rtm.130821-1623)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "C:\\Windows\\system32\\cmd.exe /C ipconfig"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\administrator\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "insecurebank\\Administrator"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{dfae8213-bd78-5cdc-0000-002005fe1200}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000012fe05"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=7C3D7281E1151FE4127923F4B4C3CD36438E1A12,MD5=F5AE03DE0AD60F5B17B82F2CD68402FE,SHA256=6F88FB88FFB0F1D5465C2826E5B4F523598B1B8378377C8378FFEBC171BAD18B,IMPHASH=77AED1ADAF24B344F08C8AD1432908C3"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{dfae8213-bd78-5cdc-0000-0010c7fe1200}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3948"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\winrshost.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\WinrsHost.exe -Embedding"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-16 01:31:36.456890+00:00"
+                },
+                "EventRecordID": "17986",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1792",
+                    "@ThreadID": "2232"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "DC1.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-16 01:31:36.447"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{dfae8213-bd78-5cdc-0000-001074051300}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1744"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\ipconfig.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.3.9600.16384 (winblue_rtm.130821-1623)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "IP Configuration Utility"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "ipconfig"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\administrator\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "insecurebank\\Administrator"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{dfae8213-bd78-5cdc-0000-002005fe1200}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000012fe05"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=588D711E3D5F141987BF2C1B397C59EF1997C0E1,MD5=BF379376C124B19A7535CBA8EA179802,SHA256=21E8B9BD30650E96C36E976AE35B01E409199C244E6A5480A746692C01D78B84,IMPHASH=AA00C6A177971304329C748A6D5820DB"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{dfae8213-bd78-5cdc-0000-001091041300}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3136"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\cmd.exe /C ipconfig"
+                    }
+                ]
+            }
+        }
+    }
+]

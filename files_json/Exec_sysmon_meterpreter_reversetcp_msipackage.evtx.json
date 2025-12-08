@@ -1,0 +1,810 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "2"
+                },
+                "Version": "4",
+                "Level": "4",
+                "Task": "2",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-30 22:48:58.901474+00:00"
+                },
+                "EventRecordID": "10147",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1936",
+                    "@ThreadID": "1644"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-30 22:48:58.901"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-d0da-5cc8-0000-00109b5a3c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "868"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\msiexec.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Local\\Temp\\302a23.msi"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-04-30 22:43:38.892"
+                    },
+                    {
+                        "@Name": "PreviousCreationUtcTime",
+                        "#text": "2019-04-30 22:48:58.901"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-30 22:48:59.260851+00:00"
+                },
+                "EventRecordID": "10148",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1936",
+                    "@ThreadID": "1644"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-30 22:48:59.151"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-d0db-5cc8-0000-0010488a3c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1892"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\VSSVC.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Microsoft\u00ae Volume Shadow Copy Service"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "C:\\Windows\\system32\\vssvc.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-4322-5cc9-0000-0020e7030000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=99894AEF71D9D3527F392CD71F66571110593876,MD5=209A3B1901B83AEB8527ED211CCE9E4C,SHA256=1A431F6409F8E0531F600F8F988ECECECB902DA26BBAAF1DE74A5CAC29A7CB44,IMPHASH=212B2417B4778F3EE9DE3F60458E953F"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-4321-5cc9-0000-001070530000}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "464"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\services.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\services.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "2"
+                },
+                "Version": "4",
+                "Level": "4",
+                "Task": "2",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-30 22:49:08.760851+00:00"
+                },
+                "EventRecordID": "10149",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1936",
+                    "@ThreadID": "1644"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-30 22:49:07.901"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-d0da-5cc8-0000-0010216f3c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2080"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\msiexec.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Windows\\Installer\\304d1c.msi"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-04-30 22:43:38.892"
+                    },
+                    {
+                        "@Name": "PreviousCreationUtcTime",
+                        "#text": "2019-04-30 22:49:07.854"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-30 22:49:09.542101+00:00"
+                },
+                "EventRecordID": "10150",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1936",
+                    "@ThreadID": "1644"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-30 22:49:08.432"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-d0da-5cc8-0000-0010216f3c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2080"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\msiexec.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\InProgress\\(Default)"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "C:\\Windows\\Installer\\304d1d.ipi"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-30 22:49:09.760851+00:00"
+                },
+                "EventRecordID": "10151",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1936",
+                    "@ThreadID": "1644"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-30 22:49:08.604"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-d0e4-5cc8-0000-00103cb73e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3680"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\Installer\\MSI4FFD.tmp"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "2.2.14"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "ApacheBench command line utility"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Apache HTTP Server"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Apache Software Foundation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\Installer\\MSI4FFD.tmp\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-c494-5cc8-0000-0020e4ff0000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000ffe4"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=06B1640F88EDC6A7CE3303CB14A505A86B061616,MD5=E40CF1CC132F25719F86F0FC5870910D,SHA256=A89385CCD4BE489CD069C65DA10A0B952CB3DE9090EF4C9F02E1368392CD66C5,IMPHASH=481F47BBB2C9C21E108D65F52B04C448"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-d0da-5cc8-0000-0010216f3c00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2080"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\msiexec.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\msiexec.exe /V"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-30 22:49:09.792101+00:00"
+                },
+                "EventRecordID": "10152",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1936",
+                    "@ThreadID": "1484"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-30 22:49:08.698"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-d0e4-5cc8-0000-001022b53e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2168"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\msiexec.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Windows\\System32\\vbscript.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "5.8.9600.16428"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Microsoft \u00ae VBScript"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft \u00ae VBScript"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=BCF66BE6C4D4FB0775E199C32EE2154AAC97F901,MD5=D4C89F6BCCC04D43BAC82F795A552DA5,SHA256=F7F7BF8C86CD2C6A27D20076B5713FBD60647CE0716DFEC0BB65895E92AE0830,IMPHASH=9F8EEA636265FC0065E869A2EAEFE7AF"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "Microsoft Windows"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-30 22:49:10.198349+00:00"
+                },
+                "EventRecordID": "10153",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1936",
+                    "@ThreadID": "1644"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-30 22:49:09.276"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-d0e5-5cc8-0000-0010dadf3e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2892"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7601.17514 (win7sp1_rtm.101119-1850)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "cmd"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-c494-5cc8-0000-0020e4ff0000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000ffe4"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EE8CBF12D87C4D388F09B4F69BED2E91682920B5,MD5=AD7B9C14083B52BC532FBA5948342B98,SHA256=17F746D82695FA9B35493B41859D39D786D32B23A9D2E00F4011DEC7A02402AE,IMPHASH=CEEFB55F764020CC5C5F8F23349AB163"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-d0e4-5cc8-0000-00103cb73e00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3680"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\Installer\\MSI4FFD.tmp"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\Installer\\MSI4FFD.tmp\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-30 22:52:27.588976+00:00"
+                },
+                "EventRecordID": "10154",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1936",
+                    "@ThreadID": "1644"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-30 22:52:27.588"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-d1ab-5cc8-0000-0010db1e4400}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1372"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\whoami.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "whoami - displays logged on user information"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "whoami"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-c494-5cc8-0000-0020e4ff0000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000ffe4"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=DC058F52AD8ACBD316827B6DCAC2434AB3CC515C,MD5=0EBF71E33EF09CA65D9683AFA999C473,SHA256=599EFD455AEEEFE2044A9B597061F271595033F5D0DF2C99DFDBCA8394BBCEC3,IMPHASH=C5352B949915AB8CD5E1844790D19274"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-d0e5-5cc8-0000-0010dadf3e00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2892"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "cmd"
+                    }
+                ]
+            }
+        }
+    }
+]

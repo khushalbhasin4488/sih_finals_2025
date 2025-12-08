@@ -1,0 +1,1952 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:07.308922+00:00"
+                },
+                "EventRecordID": "370",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:07.297"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-0010bfa83e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1912"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\com-hijack.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Users\\IEUser\\Downloads\\com-hijack.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-39cc-5ce3-0000-002096c70000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000c796"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=6F598827EFE472BC8D98CD173AD49B35B041000C,MD5=4177769EEF9E078971DA6EE31BDAE45F,SHA256=E624863387832C7BBE47D17A346AAB6A76638A2C9B5368FD7308A28775F1478A,IMPHASH=9E0317422070F8D5638E230F22763466"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-39cd-5ce3-0000-0010a0e30000}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1376"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:07.463144+00:00"
+                },
+                "EventRecordID": "371",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:07.375"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-0010bfa83e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1912"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\com-hijack.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\ProgramData\\demo.dll"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-05-20 23:39:21.672"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:07.474159+00:00"
+                },
+                "EventRecordID": "372",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:07.375"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-0010bfa83e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1912"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\com-hijack.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3583694148-1414552638-2922671848-1000_CLASSES\\CLSID\\{BCDE0395-E52F-467C-8E3D-C4579291692E}\\InprocServer32\\(Default)"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "C:\\ProgramData\\demo.dll"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:07.474159+00:00"
+                },
+                "EventRecordID": "373",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:07.375"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-0010bfa83e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1912"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\com-hijack.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\test.bat"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-05-20 23:39:21.672"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:07.474159+00:00"
+                },
+                "EventRecordID": "374",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:07.386"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-001071ad3e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3944"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7601.17514 (win7sp1_rtm.101119-1850)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "C:\\Windows\\system32\\cmd.exe /c test.bat"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-39cc-5ce3-0000-002096c70000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000c796"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EE8CBF12D87C4D388F09B4F69BED2E91682920B5,MD5=AD7B9C14083B52BC532FBA5948342B98,SHA256=17F746D82695FA9B35493B41859D39D786D32B23A9D2E00F4011DEC7A02402AE,IMPHASH=CEEFB55F764020CC5C5F8F23349AB163"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-0010bfa83e00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1912"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\com-hijack.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Users\\IEUser\\Downloads\\com-hijack.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:07.474159+00:00"
+                },
+                "EventRecordID": "375",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:07.386"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{365abb72-47bb-5ce3-0000-0010bfa83e00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "1912"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "3120"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\com-hijack.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{365abb72-47bb-5ce3-0000-001071ad3e00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "3944"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+4534c|C:\\Windows\\system32\\kernel32.dll+5112b|C:\\Windows\\system32\\kernel32.dll+5cc2f|C:\\Windows\\system32\\kernel32.dll+20ae|C:\\Windows\\system32\\kernel32.dll+8f5e3|C:\\Users\\IEUser\\Downloads\\com-hijack.exe+1d37|C:\\Users\\IEUser\\Downloads\\com-hijack.exe+202b|C:\\Users\\IEUser\\Downloads\\com-hijack.exe+3b4d|C:\\Windows\\system32\\kernel32.dll+4ef8c|C:\\Windows\\SYSTEM32\\ntdll.dll+6367a|C:\\Windows\\SYSTEM32\\ntdll.dll+6364d"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:07.474159+00:00"
+                },
+                "EventRecordID": "376",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:07.386"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-00108cad3e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3176"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7601.17514 (win7sp1_rtm.101119-1850)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "C:\\Windows\\system32\\cmd.exe /c pause"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-39cc-5ce3-0000-002096c70000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000c796"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EE8CBF12D87C4D388F09B4F69BED2E91682920B5,MD5=AD7B9C14083B52BC532FBA5948342B98,SHA256=17F746D82695FA9B35493B41859D39D786D32B23A9D2E00F4011DEC7A02402AE,IMPHASH=CEEFB55F764020CC5C5F8F23349AB163"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-0010bfa83e00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1912"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\com-hijack.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Users\\IEUser\\Downloads\\com-hijack.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:07.474159+00:00"
+                },
+                "EventRecordID": "377",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:07.386"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{365abb72-47bb-5ce3-0000-0010bfa83e00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "1912"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "3120"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\com-hijack.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{365abb72-47bb-5ce3-0000-00108cad3e00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "3176"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+4534c|C:\\Windows\\system32\\kernel32.dll+5112b|C:\\Windows\\system32\\kernel32.dll+5cc2f|C:\\Windows\\system32\\kernel32.dll+20ae|C:\\Users\\IEUser\\Downloads\\com-hijack.exe+9dbd|C:\\Users\\IEUser\\Downloads\\com-hijack.exe+4d65|C:\\Users\\IEUser\\Downloads\\com-hijack.exe+4c18|C:\\Users\\IEUser\\Downloads\\com-hijack.exe+2ae5|C:\\Users\\IEUser\\Downloads\\com-hijack.exe+2035|C:\\Users\\IEUser\\Downloads\\com-hijack.exe+3b4d|C:\\Windows\\system32\\kernel32.dll+4ef8c|C:\\Windows\\SYSTEM32\\ntdll.dll+6367a|C:\\Windows\\SYSTEM32\\ntdll.dll+6364d"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:07.518223+00:00"
+                },
+                "EventRecordID": "378",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:07.397"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-001053af3e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3168"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "66.0.5"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Firefox"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Firefox"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Mozilla Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-39cc-5ce3-0000-002096c70000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000c796"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B18D536DA2242D6D9BB66CBE63CF312ABC9987A8,MD5=6AC1B75613E6143F94FF7A933B7993FC,SHA256=ABCE2767221B43127068C82BE7EBDF66FAA38B72F67676311FA4589075502A7F,IMPHASH=C5596CA4210F5F3474B68D7D54A73D16"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-001071ad3e00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3944"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\cmd.exe /c test.bat"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:07.870729+00:00"
+                },
+                "EventRecordID": "379",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:07.837"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-001019c53e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3936"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "66.0.5"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Firefox"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Firefox"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Mozilla Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"3168.0.153744822\\2027949517\" -parentBuildID 20190507012018 -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\" - 3168 \"\\\\.\\pipe\\gecko-crash-server-pipe.3168\" 956 gpu"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-39cc-5ce3-0000-002096c70000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000c796"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B18D536DA2242D6D9BB66CBE63CF312ABC9987A8,MD5=6AC1B75613E6143F94FF7A933B7993FC,SHA256=ABCE2767221B43127068C82BE7EBDF66FAA38B72F67676311FA4589075502A7F,IMPHASH=C5596CA4210F5F3474B68D7D54A73D16"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-001053af3e00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3168"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:08.224337+00:00"
+                },
+                "EventRecordID": "380",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:08.191"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-001053af3e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3168"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\ProgramData\\demo.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=263AF863339D5F077CC419F7022B768644E8C3C6,MD5=1FCA8060B5CE9E240200D36B43B56500,SHA256=CEB59283C30F6BC6B78973B6813EC31A7B2734AB22FB709DE3153AD26882BD83,IMPHASH=0ADAA39553FF0E3D8B44F011FD3C461E"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "false"
+                    },
+                    {
+                        "@Name": "Signature"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Unavailable"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:08.279417+00:00"
+                },
+                "EventRecordID": "381",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:08.224"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47bc-5ce3-0000-00107ddd3e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2596"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\calc.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Calculator"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\calc.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-39cc-5ce3-0000-002096c70000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000c796"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=9018A7D6CDBE859A430E8794E73381F77C840BE0,MD5=60B7C0FEAD45F2066E5B805A91F4F0FC,SHA256=80C10EE5F21F92F89CBC293A59D2FD4C01C7958AACAD15642558DB700943FA22,IMPHASH=F93B5D76132F6E6068946EC238813CE1"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-001053af3e00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3168"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:08.717041+00:00"
+                },
+                "EventRecordID": "382",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:08.628"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-001053af3e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3168"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\ProgramData\\demo.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=263AF863339D5F077CC419F7022B768644E8C3C6,MD5=1FCA8060B5CE9E240200D36B43B56500,SHA256=CEB59283C30F6BC6B78973B6813EC31A7B2734AB22FB709DE3153AD26882BD83,IMPHASH=0ADAA39553FF0E3D8B44F011FD3C461E"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "false"
+                    },
+                    {
+                        "@Name": "Signature"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Unavailable"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:08.728058+00:00"
+                },
+                "EventRecordID": "383",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:08.628"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47bc-5ce3-0000-001044ee3e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3860"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\calc.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Calculator"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\calc.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-39cc-5ce3-0000-002096c70000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000c796"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=9018A7D6CDBE859A430E8794E73381F77C840BE0,MD5=60B7C0FEAD45F2066E5B805A91F4F0FC,SHA256=80C10EE5F21F92F89CBC293A59D2FD4C01C7958AACAD15642558DB700943FA22,IMPHASH=F93B5D76132F6E6068946EC238813CE1"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-001053af3e00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3168"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:08.728058+00:00"
+                },
+                "EventRecordID": "384",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:08.661"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47bc-5ce3-0000-0010c6f03e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2236"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "66.0.5"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Firefox"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Firefox"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Mozilla Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"3168.6.1176946839\\1268428683\" -childID 1 -isForBrowser -prefsHandle 1844 -prefMapHandle 1836 -prefsLen 1 -prefMapSize 183351 -parentBuildID 20190507012018 -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\" - 3168 \"\\\\.\\pipe\\gecko-crash-server-pipe.3168\" 1680 tab"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-39cc-5ce3-0000-002096c70000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000c796"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Low"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B18D536DA2242D6D9BB66CBE63CF312ABC9987A8,MD5=6AC1B75613E6143F94FF7A933B7993FC,SHA256=ABCE2767221B43127068C82BE7EBDF66FAA38B72F67676311FA4589075502A7F,IMPHASH=C5596CA4210F5F3474B68D7D54A73D16"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-001053af3e00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3168"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:10.161518+00:00"
+                },
+                "EventRecordID": "385",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:10.062"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47be-5ce3-0000-0010cf0c3f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3920"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "66.0.5"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Firefox"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Firefox"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Mozilla Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"3168.13.1464597065\\1561502721\" -childID 2 -isForBrowser -prefsHandle 2432 -prefMapHandle 2436 -prefsLen 5401 -prefMapSize 183351 -parentBuildID 20190507012018 -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\" - 3168 \"\\\\.\\pipe\\gecko-crash-server-pipe.3168\" 2448 tab"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-39cc-5ce3-0000-002096c70000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000c796"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Low"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B18D536DA2242D6D9BB66CBE63CF312ABC9987A8,MD5=6AC1B75613E6143F94FF7A933B7993FC,SHA256=ABCE2767221B43127068C82BE7EBDF66FAA38B72F67676311FA4589075502A7F,IMPHASH=C5596CA4210F5F3474B68D7D54A73D16"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-001053af3e00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3168"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:35:12.705164+00:00"
+                },
+                "EventRecordID": "386",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:35:12.474"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-47c0-5ce3-0000-00108d243f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3372"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "66.0.5"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Firefox"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Firefox"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Mozilla Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"3168.20.1502540827\\1989220046\" -childID 3 -isForBrowser -prefsHandle 3032 -prefMapHandle 3056 -prefsLen 6207 -prefMapSize 183351 -parentBuildID 20190507012018 -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\" - 3168 \"\\\\.\\pipe\\gecko-crash-server-pipe.3168\" 3024 tab"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-39cc-5ce3-0000-002096c70000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000c796"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Low"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B18D536DA2242D6D9BB66CBE63CF312ABC9987A8,MD5=6AC1B75613E6143F94FF7A933B7993FC,SHA256=ABCE2767221B43127068C82BE7EBDF66FAA38B72F67676311FA4589075502A7F,IMPHASH=C5596CA4210F5F3474B68D7D54A73D16"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-47bb-5ce3-0000-001053af3e00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3168"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:36:14.747768+00:00"
+                },
+                "EventRecordID": "387",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:36:14.737"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-39cb-5ce3-0000-001046aa0000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "816"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\NetworkList\\Profiles\\{6ACC3724-ED52-4080-9712-AD6B9F4CD7E3}\\Category"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "DWORD (0x00000001)"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-21 00:36:14.747768+00:00"
+                },
+                "EventRecordID": "388",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3416",
+                    "@ThreadID": "3496"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-21 00:36:14.737"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-39cb-5ce3-0000-001046aa0000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "816"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\NetworkList\\Profiles\\{6ACC3724-ED52-4080-9712-AD6B9F4CD7E3}\\CategoryType"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "DWORD (0x00000000)"
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,1002 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 09:05:58.276333+00:00"
+                },
+                "EventRecordID": "400701",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1444",
+                    "@ThreadID": "3796"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "win10.ecorp.com",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-03 09:05:58.257"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{6661d424-ec73-5efe-0000-00109fea6300}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "6292"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\System\\CurrentControlSet\\Services\\bam\\State\\UserSettings\\S-1-5-21-2190595668-4244358899-639490025-500\\\\Device\\HarddiskVolume4\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "Binary Data"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 09:05:58.278154+00:00"
+                },
+                "EventRecordID": "400702",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1444",
+                    "@ThreadID": "3796"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "win10.ecorp.com",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-03 09:05:58.268"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{6661d424-f4f6-5efe-0000-0010e7eff800}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "6860"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Explorer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "EXPLORER.EXE"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "explorer.exe  /root,\"c:\\windows\\System32\\calc.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\Administrator.ECORP\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "ECORP\\Administrator"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{6661d424-948b-5eef-0000-002072300f00}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000f3072"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=59AB8548708342C77C51F70EEC5CED0A88DC4701,MD5=6A65873EA949C5CCC72DDEF9E9780AA5,SHA256=16656BBB748BA1C811BB2C68D987DC0F5CAF149E41A84E45F6B6ECAAF7D29AB2,IMPHASH=0B98A47B3DAF2EE45939EF2A0F188959"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{6661d424-ec73-5efe-0000-00109fea6300}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "6292"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\system32\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 09:05:58.364162+00:00"
+                },
+                "EventRecordID": "400703",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1444",
+                    "@ThreadID": "3796"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "win10.ecorp.com",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-03 09:05:58.319"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{6661d424-9438-5eef-0000-00104da20000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "792"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\System\\CurrentControlSet\\Services\\bam\\State\\UserSettings\\S-1-5-21-2190595668-4244358899-639490025-500\\\\Device\\HarddiskVolume4\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "Binary Data"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 09:05:58.367329+00:00"
+                },
+                "EventRecordID": "400704",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1444",
+                    "@ThreadID": "3796"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "win10.ecorp.com",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-03 09:05:58.333"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{6661d424-f4f6-5efe-0000-0010a2f6f800}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3612"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Explorer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "EXPLORER.EXE"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "C:\\Windows\\explorer.exe /factory,{75dff2b7-6936-4c06-a8bb-676a7b00b24b} -Embedding"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "ECORP\\Administrator"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{6661d424-948b-5eef-0000-002072300f00}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000f3072"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=59AB8548708342C77C51F70EEC5CED0A88DC4701,MD5=6A65873EA949C5CCC72DDEF9E9780AA5,SHA256=16656BBB748BA1C811BB2C68D987DC0F5CAF149E41A84E45F6B6ECAAF7D29AB2,IMPHASH=0B98A47B3DAF2EE45939EF2A0F188959"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{6661d424-9438-5eef-0000-00104da20000}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "792"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\svchost.exe -k DcomLaunch -p"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 09:05:58.583839+00:00"
+                },
+                "EventRecordID": "400705",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1444",
+                    "@ThreadID": "3796"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "win10.ecorp.com",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-03 09:05:58.510"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{6661d424-f4f6-5efe-0000-0010c00af900}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3224"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\calc.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Calculator"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "CALC.EXE"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\calc.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "ECORP\\Administrator"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{6661d424-948b-5eef-0000-002072300f00}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000f3072"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=F5ED372FD8EC7C455FF66BCE73F16CA51CBC0302,MD5=DEAD69D07BC33B762ABD466FB6F53E11,SHA256=3091E2ABFB55D05D6284B6C4B058B62C8C28AFC1D883B699E9A2B5482EC6FD51,IMPHASH=8EEAA9499666119D13B3F44ECD77A729"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{6661d424-f4f6-5efe-0000-0010a2f6f800}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3612"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\explorer.exe /factory,{75dff2b7-6936-4c06-a8bb-676a7b00b24b} -Embedding"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 09:05:58.612968+00:00"
+                },
+                "EventRecordID": "400706",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1444",
+                    "@ThreadID": "3796"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "win10.ecorp.com",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-03 09:05:58.547"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{6661d424-f4f6-5efe-0000-0010c00af900}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3224"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\calc.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Windows\\System32\\rpcrt4.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Remote Procedure Call Runtime"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "rpcrt4.dll"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=356FACA0C43B74BF97FBCC72AEFF85283FA8184F,MD5=202861ADD8A1B468FDA9601A49EB87CA,SHA256=46B88A02B582972592B218895ED9BC918365786822A28B6BE9EF91EB4DE45E4D,IMPHASH=88E7E7C7FA90052EC162DD37F2B7C7BD"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "Microsoft Windows"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 09:05:58.619638+00:00"
+                },
+                "EventRecordID": "400707",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1444",
+                    "@ThreadID": "3796"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "win10.ecorp.com",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-03 09:05:58.547"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00000000-0000-0000-0000-000000000000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "6860"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\System\\CurrentControlSet\\Services\\bam\\State\\UserSettings\\S-1-5-21-2190595668-4244358899-639490025-500\\\\Device\\HarddiskVolume4\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "Binary Data"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 09:05:58.737753+00:00"
+                },
+                "EventRecordID": "400708",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1444",
+                    "@ThreadID": "3796"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "win10.ecorp.com",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-03 09:05:58.707"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{6661d424-f4f6-5efe-0000-0010c00af900}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3224"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\calc.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\System\\CurrentControlSet\\Services\\bam\\State\\UserSettings\\S-1-5-21-2190595668-4244358899-639490025-500\\\\Device\\HarddiskVolume4\\Windows\\System32\\win32calc.exe"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "Binary Data"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 09:05:58.739813+00:00"
+                },
+                "EventRecordID": "400709",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1444",
+                    "@ThreadID": "3796"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "win10.ecorp.com",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-03 09:05:58.716"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{6661d424-f4f6-5efe-0000-00101d25f900}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2632"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\win32calc.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Calculator"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "WIN32CALC.EXE"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\win32calc.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "ECORP\\Administrator"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{6661d424-948b-5eef-0000-002072300f00}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000f3072"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EC73FCAB989C8D525FE3BBCC3736BC3E6192A112,MD5=46CDCA3D2EB9B837EC3C4CDA60D0D0D9,SHA256=3E2300394C15B59A964EAB45D9EB96D317650E2F7448FD1B4AE825A134402B7A,IMPHASH=BDE48881DABC2774907583E3DE072A63"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{6661d424-f4f6-5efe-0000-0010c00af900}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3224"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\calc.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\System32\\calc.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 09:05:58.743572+00:00"
+                },
+                "EventRecordID": "400710",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1444",
+                    "@ThreadID": "3796"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "win10.ecorp.com",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-03 09:05:58.723"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{6661d424-f4f6-5efe-0000-00101d25f900}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2632"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\win32calc.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Windows\\System32\\rpcrt4.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Remote Procedure Call Runtime"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "rpcrt4.dll"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=356FACA0C43B74BF97FBCC72AEFF85283FA8184F,MD5=202861ADD8A1B468FDA9601A49EB87CA,SHA256=46B88A02B582972592B218895ED9BC918365786822A28B6BE9EF91EB4DE45E4D,IMPHASH=88E7E7C7FA90052EC162DD37F2B7C7BD"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "Microsoft Windows"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,785 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-10 10:20:34.910334+00:00"
+                },
+                "EventRecordID": "311396",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3148",
+                    "@ThreadID": "4088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-10 10:20:34.877"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-40f2-5f08-0000-0010d8a92c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3304"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\rdpclip.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1131 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "RDP Clipboard Monitor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "rdpclip.exe"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "rdpclip"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-94cd-5f07-0000-0020abbf0300}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000003bfab"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=0265C1718EC95B025D9719F3B4872826F8F4661F,MD5=9E089ECF8B86983B7A77E3844CD02BB5,SHA256=AF5CAE4B514215E530643A7FEA2D7A47A1B15F6E5610347B217D1ABFA4AE0F92,IMPHASH=E3F33CEBF67721DAC951AFBD20321206"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-1350-5f08-0000-001014c50000}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "824"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\System32\\svchost.exe -k NetworkService -s TermService"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-10 10:20:35.589722+00:00"
+                },
+                "EventRecordID": "311397",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3148",
+                    "@ThreadID": "3896"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-10 02:19:35.898"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-1350-5f08-0000-001014c50000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "824"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\NETWORK SERVICE"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "192.168.56.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "LAPTOP-JU4M3I0E"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "53627"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "192.168.56.101"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "MSEDGEWIN10"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "3389"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "ms-wbt-server"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-10 10:20:35.886995+00:00"
+                },
+                "EventRecordID": "311398",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3148",
+                    "@ThreadID": "4088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "CreateKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-10 10:20:35.880"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-94cf-5f07-0000-0010bd590400}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3248"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-10 10:20:35.913134+00:00"
+                },
+                "EventRecordID": "311399",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3148",
+                    "@ThreadID": "4088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "CreateKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-10 10:20:35.898"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-94cf-5f07-0000-0010bd590400}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3248"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-10 10:20:37.637152+00:00"
+                },
+                "EventRecordID": "311411",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3148",
+                    "@ThreadID": "4088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-10 10:20:37.626"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-40f5-5f08-0000-001095812d00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "4236"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "\\\\tsclient\\c\\temp\\stack\\a.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"\\\\tsclient\\c\\temp\\stack\\a.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "\\\\tsclient\\c\\temp\\stack\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-94cd-5f07-0000-0020abbf0300}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000003bfab"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=C494051E7CBC27552D5E805A18D5EEAA01076F02,MD5=024DC9AA2127EF2A9018612F36CC66EF,SHA256=0EDC55867506DF98243526DC2C0FAFDDA40F5058D6932FAA89D179D57FEBFAB0,IMPHASH=69193DAE402063F5D8E635AA50D6F9BE"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-94cf-5f07-0000-0010bd590400}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3248"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-10 10:20:37.672472+00:00"
+                },
+                "EventRecordID": "311412",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3148",
+                    "@ThreadID": "4088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "CreateKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-10 10:20:37.668"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-94cf-5f07-0000-0010bd590400}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3248"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-10 10:20:37.672485+00:00"
+                },
+                "EventRecordID": "311413",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3148",
+                    "@ThreadID": "4088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-10 10:20:37.668"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-94cf-5f07-0000-0010bd590400}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3248"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU\\e"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "\\\\tsclient\\c\\temp\\stack\\a.exe\\1"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-10 10:20:37.672499+00:00"
+                },
+                "EventRecordID": "311414",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3148",
+                    "@ThreadID": "4088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-10 10:20:37.668"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-94cf-5f07-0000-0010bd590400}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3248"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU\\MRUList"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "edcba"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-10 10:20:58.942505+00:00"
+                },
+                "EventRecordID": "311423",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3148",
+                    "@ThreadID": "4088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "CreateKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-10 10:20:58.942"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-94dc-5f07-0000-00102fb00700}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "7128"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\mmc.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU"
+                    }
+                ]
+            }
+        }
+    }
+]

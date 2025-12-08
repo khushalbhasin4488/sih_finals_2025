@@ -1,0 +1,632 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4826"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "13573",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-03-10 01:01:24.417023+00:00"
+                },
+                "EventRecordID": "382006",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "4",
+                    "@ThreadID": "32"
+                },
+                "Channel": "Security",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "SubjectUserSid",
+                        "#text": "S-1-5-18"
+                    },
+                    {
+                        "@Name": "SubjectUserName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "SubjectDomainName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "SubjectLogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "LoadOptions",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "AdvancedOptions",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "ConfigAccessPolicy",
+                        "#text": "%%1846"
+                    },
+                    {
+                        "@Name": "RemoteEventLogging",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "KernelDebug",
+                        "#text": "%%1842"
+                    },
+                    {
+                        "@Name": "VsmLaunchType",
+                        "#text": "%%1848"
+                    },
+                    {
+                        "@Name": "TestSigning",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "FlightSigning",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "DisableIntegrityChecks",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "HypervisorLoadOptions",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "HypervisorLaunchType",
+                        "#text": "%%1848"
+                    },
+                    {
+                        "@Name": "HypervisorDebug",
+                        "#text": "%%1843"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4826"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "13573",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-03-09 21:17:15.873127+00:00"
+                },
+                "EventRecordID": "392357",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "4",
+                    "@ThreadID": "32"
+                },
+                "Channel": "Security",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "SubjectUserSid",
+                        "#text": "S-1-5-18"
+                    },
+                    {
+                        "@Name": "SubjectUserName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "SubjectDomainName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "SubjectLogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "LoadOptions",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "AdvancedOptions",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "ConfigAccessPolicy",
+                        "#text": "%%1846"
+                    },
+                    {
+                        "@Name": "RemoteEventLogging",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "KernelDebug",
+                        "#text": "%%1842"
+                    },
+                    {
+                        "@Name": "VsmLaunchType",
+                        "#text": "%%1848"
+                    },
+                    {
+                        "@Name": "TestSigning",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "FlightSigning",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "DisableIntegrityChecks",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "HypervisorLoadOptions",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "HypervisorLaunchType",
+                        "#text": "%%1848"
+                    },
+                    {
+                        "@Name": "HypervisorDebug",
+                        "#text": "%%1843"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4826"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "13573",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-03-09 21:22:56.427647+00:00"
+                },
+                "EventRecordID": "394186",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "4",
+                    "@ThreadID": "32"
+                },
+                "Channel": "Security",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "SubjectUserSid",
+                        "#text": "S-1-5-18"
+                    },
+                    {
+                        "@Name": "SubjectUserName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "SubjectDomainName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "SubjectLogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "LoadOptions",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "AdvancedOptions",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "ConfigAccessPolicy",
+                        "#text": "%%1846"
+                    },
+                    {
+                        "@Name": "RemoteEventLogging",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "KernelDebug",
+                        "#text": "%%1842"
+                    },
+                    {
+                        "@Name": "VsmLaunchType",
+                        "#text": "%%1848"
+                    },
+                    {
+                        "@Name": "TestSigning",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "FlightSigning",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "DisableIntegrityChecks",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "HypervisorLoadOptions",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "HypervisorLaunchType",
+                        "#text": "%%1848"
+                    },
+                    {
+                        "@Name": "HypervisorDebug",
+                        "#text": "%%1843"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4826"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "13573",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-03-10 06:09:32.459951+00:00"
+                },
+                "EventRecordID": "395852",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "4",
+                    "@ThreadID": "32"
+                },
+                "Channel": "Security",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "SubjectUserSid",
+                        "#text": "S-1-5-18"
+                    },
+                    {
+                        "@Name": "SubjectUserName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "SubjectDomainName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "SubjectLogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "LoadOptions",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "AdvancedOptions",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "ConfigAccessPolicy",
+                        "#text": "%%1846"
+                    },
+                    {
+                        "@Name": "RemoteEventLogging",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "KernelDebug",
+                        "#text": "%%1842"
+                    },
+                    {
+                        "@Name": "VsmLaunchType",
+                        "#text": "%%1848"
+                    },
+                    {
+                        "@Name": "TestSigning",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "FlightSigning",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "DisableIntegrityChecks",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "HypervisorLoadOptions",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "HypervisorLaunchType",
+                        "#text": "%%1848"
+                    },
+                    {
+                        "@Name": "HypervisorDebug",
+                        "#text": "%%1843"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4826"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "13573",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-03-09 22:17:17.529760+00:00"
+                },
+                "EventRecordID": "397543",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "4",
+                    "@ThreadID": "32"
+                },
+                "Channel": "Security",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "SubjectUserSid",
+                        "#text": "S-1-5-18"
+                    },
+                    {
+                        "@Name": "SubjectUserName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "SubjectDomainName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "SubjectLogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "LoadOptions",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "AdvancedOptions",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "ConfigAccessPolicy",
+                        "#text": "%%1846"
+                    },
+                    {
+                        "@Name": "RemoteEventLogging",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "KernelDebug",
+                        "#text": "%%1842"
+                    },
+                    {
+                        "@Name": "VsmLaunchType",
+                        "#text": "%%1848"
+                    },
+                    {
+                        "@Name": "TestSigning",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "FlightSigning",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "DisableIntegrityChecks",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "HypervisorLoadOptions",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "HypervisorLaunchType",
+                        "#text": "%%1848"
+                    },
+                    {
+                        "@Name": "HypervisorDebug",
+                        "#text": "%%1843"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4826"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "13573",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-03-09 22:54:06.108465+00:00"
+                },
+                "EventRecordID": "403082",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "4",
+                    "@ThreadID": "32"
+                },
+                "Channel": "Security",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "SubjectUserSid",
+                        "#text": "S-1-5-18"
+                    },
+                    {
+                        "@Name": "SubjectUserName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "SubjectDomainName",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "SubjectLogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "LoadOptions",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "AdvancedOptions",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "ConfigAccessPolicy",
+                        "#text": "%%1846"
+                    },
+                    {
+                        "@Name": "RemoteEventLogging",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "KernelDebug",
+                        "#text": "%%1842"
+                    },
+                    {
+                        "@Name": "VsmLaunchType",
+                        "#text": "%%1848"
+                    },
+                    {
+                        "@Name": "TestSigning",
+                        "#text": "%%1842"
+                    },
+                    {
+                        "@Name": "FlightSigning",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "DisableIntegrityChecks",
+                        "#text": "%%1843"
+                    },
+                    {
+                        "@Name": "HypervisorLoadOptions",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "HypervisorLaunchType",
+                        "#text": "%%1848"
+                    },
+                    {
+                        "@Name": "HypervisorDebug",
+                        "#text": "%%1843"
+                    }
+                ]
+            }
+        }
+    }
+]

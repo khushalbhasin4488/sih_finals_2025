@@ -1,0 +1,87 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-06-30 20:50:25.546713+00:00"
+                },
+                "EventRecordID": "303867",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3248",
+                    "@ThreadID": "4128"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Evasion Suspicious NtOpenProcess Call"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-06-30 20:50:25.539"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{747f3d96-a591-5efb-0000-00109fe4cc01}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "1972"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "7192"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Users\\Public\\za3bollo.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{747f3d96-59bb-5efb-0000-0010d81b6400}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "2996"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "UNKNOWN(000001F3C35A0014)"
+                    }
+                ]
+            }
+        }
+    }
+]

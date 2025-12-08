@@ -14,6 +14,7 @@ import {
     ChevronLeft,
     ChevronRight
 } from "lucide-react";
+import { useNetwork } from "@/lib/NetworkContext";
 
 interface Log {
     id: string;
@@ -41,6 +42,7 @@ export default function LogsPage() {
     const [selectedLog, setSelectedLog] = useState<Log | null>(null);
     const [currentPage, setCurrentPage] = useState(1);
     const [autoRefresh, setAutoRefresh] = useState(false);
+    const { selectedNetwork } = useNetwork();
     const logsPerPage = 50;
 
     const fetchFilters = useCallback(async () => {
@@ -70,6 +72,7 @@ export default function LogsPage() {
             if (selectedAppname) params.append("appname", selectedAppname);
             if (selectedHost) params.append("host", selectedHost);
             if (searchTerm) params.append("search", searchTerm);
+            if (selectedNetwork) params.append("network", selectedNetwork);
 
             const response = await fetch(`${API_BASE}/api/v1/logs?${params}`);
 
@@ -101,7 +104,7 @@ export default function LogsPage() {
         } finally {
             setLoading(false);
         }
-    }, [selectedAppname, selectedHost, searchTerm]);
+    }, [selectedAppname, selectedHost, searchTerm, selectedNetwork]);
 
     useEffect(() => {
         fetchFilters();

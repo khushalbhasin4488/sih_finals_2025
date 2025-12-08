@@ -1,0 +1,644 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-02-10 08:28:12.856363+00:00"
+                },
+                "EventRecordID": "18762",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2728",
+                    "@ThreadID": "3876"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "suspicious execution path"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-02-10 08:28:12.848"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-141c-5e41-0000-0010788b1e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3768"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\Public\\BYOV\\TDL\\Furutaka.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "1.1.5.1904"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Turla Driver Loader"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "TurlaDriverLoader"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "UG North"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "Furutaka.exe"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "Furutaka.exe  dummy2.sys"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "c:\\Users\\Public\\BYOV\\TDL\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-12fa-5e41-0000-0020171a0300}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000031a17"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=68B26C16080D71013123C6DEE7B1AABC3D2857D0,MD5=B1B981CD8B111783B80F3C4E10086912,SHA256=37805CC7AE226647753ACA1A32D7106D804556A98E1A21AC324E5B880B9A04DA,IMPHASH=114E27FBB0E975697F2F9988DE884FA7"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-1363-5e41-0000-0010356f1500}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "8864"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\system32\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-02-10 08:28:12.876766+00:00"
+                },
+                "EventRecordID": "18763",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2728",
+                    "@ThreadID": "3876"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-02-10 08:28:12.870"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-141c-5e41-0000-0010788b1e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3768"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "c:\\Users\\Public\\BYOV\\TDL\\Furutaka.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Windows\\System32\\drivers\\VBoxDrv.sys"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2020-02-10 08:28:12.870"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-02-10 08:28:12.888628+00:00"
+                },
+                "EventRecordID": "18764",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2728",
+                    "@ThreadID": "3876"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-02-10 08:28:12.870"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-12f2-5e41-0000-00101c510000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "564"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\services.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\System\\CurrentControlSet\\Services\\VBoxDrv\\Start"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "DWORD (0x00000003)"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-02-10 08:28:12.899734+00:00"
+                },
+                "EventRecordID": "18765",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2728",
+                    "@ThreadID": "3876"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-02-10 08:28:12.870"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-12f2-5e41-0000-00101c510000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "564"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\services.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\System\\CurrentControlSet\\Services\\VBoxDrv\\ImagePath"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "\\??\\C:\\Windows\\system32\\drivers\\VBoxDrv.sys"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "6"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "6",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-02-10 08:28:12.981071+00:00"
+                },
+                "EventRecordID": "18766",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2728",
+                    "@ThreadID": "3888"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-02-10 08:28:12.870"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Windows\\System32\\drivers\\VBoxDrv.sys"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=7C1B25518DEE1E30B5A6EAA1EA8E4A3780C24D0C,MD5=EAEA9CCB40C82AF8F3867CD0F4DD5E9D,SHA256=CF3A7D4285D65BF8688215407BCE1B51D7C6B22497F09021F0FCE31CBEB78986,IMPHASH=B262E8D078EDE007EBD0AA71B9152863"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "innotek GmbH"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-02-10 08:28:13.091459+00:00"
+                },
+                "EventRecordID": "18767",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2728",
+                    "@ThreadID": "3876"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-02-10 08:28:13.062"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-12f2-5e41-0000-00101c510000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "564"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\services.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\System\\CurrentControlSet\\Services\\VBoxDrv\\Start"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "DWORD (0x00000004)"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "5"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "5",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-02-10 08:28:13.098280+00:00"
+                },
+                "EventRecordID": "18768",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2728",
+                    "@ThreadID": "3876"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-02-10 08:28:13.062"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-141c-5e41-0000-0010788b1e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3768"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\Public\\BYOV\\TDL\\Furutaka.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-02-10 08:28:13.147581+00:00"
+                },
+                "EventRecordID": "18769",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2728",
+                    "@ThreadID": "3888"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Supicious image loaded - ntoskrnl"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-02-10 08:28:13.062"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-141c-5e41-0000-0010788b1e00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3768"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\Public\\BYOV\\TDL\\Furutaka.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Windows\\System32\\ntoskrnl.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.973 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "NT Kernel & System"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "ntkrnlmp.exe"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=667AFD98C8BAA2CF95C9EE087CB36A0F6508A942,MD5=0EED97AD8D855B5EDF948A7866D5F874,SHA256=C36A8FAC48690632731D56747CBBDCE2453D3E5303A73896505D495F7678DFF0,IMPHASH=4D717BA02FC8AA76777B033C52AA4694"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "Microsoft Windows"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    }
+]

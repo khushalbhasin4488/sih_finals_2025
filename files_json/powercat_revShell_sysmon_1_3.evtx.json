@@ -1,0 +1,980 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-20 08:07:42.331810+00:00"
+                },
+                "EventRecordID": "8112",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2020",
+                    "@ThreadID": "2088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-20 08:07:42.316"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-3ece-5d0b-0000-00107f7f1a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1284"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\NETSTAT.EXE"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "TCP/IP Netstat Command"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\NETSTAT.EXE\"  -na"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\ProgramData\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-3991-5d0b-0000-002029350100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013529"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=F08D57DD80AEDDD7645CBDF27E5AF5EDF99C1F46,MD5=32297BB17E6EC700D0FC869F9ACAF561,SHA256=986F524F38B973531002DCEB17414BF8C691B60FB0EA2E4C53C3C7BD3F9EE54E,IMPHASH=4F363D04B89AE69BC1DC8E2A6305E862"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-3d05-5d0b-0000-001004220d00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "816"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-20 08:07:42.331810+00:00"
+                },
+                "EventRecordID": "8113",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2020",
+                    "@ThreadID": "2088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-20 08:07:42.331"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{365abb72-3d05-5d0b-0000-001004220d00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "816"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "2000"
+                    },
+                    {
+                        "@Name": "SourceImage"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{365abb72-3ece-5d0b-0000-00107f7f1a00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "1284"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\NETSTAT.EXE"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+4530c|C:\\Windows\\system32\\kernel32.dll+51133|C:\\Windows\\system32\\kernel32.dll+2079|C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\mscorwks.dll+1ce7|UNKNOWN(01BE1547)|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System\\e10fc0c922927179f29b495cf47d62dc\\System.ni.dll+553119|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System\\e10fc0c922927179f29b495cf47d62dc\\System.ni.dll+55371a|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-20 08:07:48.909935+00:00"
+                },
+                "EventRecordID": "8114",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2020",
+                    "@ThreadID": "2088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-20 08:07:48.894"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-3ed4-5d0b-0000-00106c871a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "888"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7601.17514 (win7sp1_rtm.101119-1850)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"cmd\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "c:\\ProgramData\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-3991-5d0b-0000-002029350100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013529"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EE8CBF12D87C4D388F09B4F69BED2E91682920B5,MD5=AD7B9C14083B52BC532FBA5948342B98,SHA256=17F746D82695FA9B35493B41859D39D786D32B23A9D2E00F4011DEC7A02402AE,IMPHASH=CEEFB55F764020CC5C5F8F23349AB163"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-3d05-5d0b-0000-001004220d00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "816"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-20 08:07:48.909935+00:00"
+                },
+                "EventRecordID": "8115",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2020",
+                    "@ThreadID": "2088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-20 08:07:48.894"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{365abb72-3d05-5d0b-0000-001004220d00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "816"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "2000"
+                    },
+                    {
+                        "@Name": "SourceImage"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{365abb72-3ed4-5d0b-0000-00106c871a00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "888"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+4530c|C:\\Windows\\system32\\kernel32.dll+51133|C:\\Windows\\system32\\kernel32.dll+2079|C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\mscorwks.dll+1ce7|UNKNOWN(01BE1547)|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System\\e10fc0c922927179f29b495cf47d62dc\\System.ni.dll+553119|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System\\e10fc0c922927179f29b495cf47d62dc\\System.ni.dll+55371a|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System\\e10fc0c922927179f29b495cf47d62dc\\System.ni.dll+552676|UNKNOWN(046A1BCD)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-20 08:07:48.925562+00:00"
+                },
+                "EventRecordID": "8116",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2020",
+                    "@ThreadID": "2088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-20 08:07:48.909"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-3ed4-5d0b-0000-0010b2871a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1440"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7601.17514 (win7sp1_rtm.101119-1850)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"cmd\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "c:\\ProgramData\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-3991-5d0b-0000-002029350100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013529"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EE8CBF12D87C4D388F09B4F69BED2E91682920B5,MD5=AD7B9C14083B52BC532FBA5948342B98,SHA256=17F746D82695FA9B35493B41859D39D786D32B23A9D2E00F4011DEC7A02402AE,IMPHASH=CEEFB55F764020CC5C5F8F23349AB163"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-3d05-5d0b-0000-001004220d00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "816"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "powershell"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-20 08:07:48.925562+00:00"
+                },
+                "EventRecordID": "8117",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2020",
+                    "@ThreadID": "2088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-20 08:07:48.909"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{365abb72-3d05-5d0b-0000-001004220d00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "816"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "2000"
+                    },
+                    {
+                        "@Name": "SourceImage"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{365abb72-3ed4-5d0b-0000-0010b2871a00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "1440"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+4530c|C:\\Windows\\system32\\kernel32.dll+51133|C:\\Windows\\system32\\kernel32.dll+2079|C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\mscorwks.dll+1ce7|UNKNOWN(01BE1547)|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System\\e10fc0c922927179f29b495cf47d62dc\\System.ni.dll+553119|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System\\e10fc0c922927179f29b495cf47d62dc\\System.ni.dll+55371a|UNKNOWN(046A1C49)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)|UNKNOWN(00000000)"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-20 08:07:50.378685+00:00"
+                },
+                "EventRecordID": "8118",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2020",
+                    "@ThreadID": "2092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-20 08:07:48.721"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-3d05-5d0b-0000-001004220d00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "816"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.0.2.13"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "4444"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.0.2.18"
+                    },
+                    {
+                        "@Name": "DestinationHostname"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "38208"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-20 08:07:52.956810+00:00"
+                },
+                "EventRecordID": "8119",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2020",
+                    "@ThreadID": "2088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-20 08:07:52.956"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-3ed8-5d0b-0000-0010398f1a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1476"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\whoami.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "whoami - displays logged on user information"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "whoami"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "c:\\ProgramData\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-3991-5d0b-0000-002029350100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013529"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=DC058F52AD8ACBD316827B6DCAC2434AB3CC515C,MD5=0EBF71E33EF09CA65D9683AFA999C473,SHA256=599EFD455AEEEFE2044A9B597061F271595033F5D0DF2C99DFDBCA8394BBCEC3,IMPHASH=C5352B949915AB8CD5E1844790D19274"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-3ed4-5d0b-0000-0010b2871a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1440"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"cmd\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-20 08:07:58.816185+00:00"
+                },
+                "EventRecordID": "8120",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2020",
+                    "@ThreadID": "2088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-20 08:07:58.784"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-3ede-5d0b-0000-001032961a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3820"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\systeminfo.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Displays system information"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "systeminfo"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "c:\\ProgramData\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-3991-5d0b-0000-002029350100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000013529"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=5A3D9211F06A9D4B4DE16AB40E02EC2D5F8C258E,MD5=258B2ED54FC7F74E2FDCCE5861549C1A,SHA256=DCE2C5EA1DA23E63EEFF2620141FBC2CA45FC4A64F40AF89E722F4B5FAFED27C,IMPHASH=C4E7D54B41A3FB8BFD24209B32BF260D"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-3ed4-5d0b-0000-0010b2871a00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1440"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"cmd\""
+                    }
+                ]
+            }
+        }
+    }
+]

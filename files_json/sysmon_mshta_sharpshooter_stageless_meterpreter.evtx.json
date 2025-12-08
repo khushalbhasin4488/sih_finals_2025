@@ -1,0 +1,359 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-15 07:13:42.294109+00:00"
+                },
+                "EventRecordID": "7648",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2044",
+                    "@ThreadID": "2092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-15 07:13:42.278"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-9aa6-5d04-0000-00109c850f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "652"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\mshta.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "11.00.9600.16428 (winblue_gdr.131013-1700)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Microsoft (R) HTML Application host"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Internet Explorer"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\mshta.exe\" \"C:\\Users\\IEUser\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files\\Content.IE5\\S97WTYG7\\update.hta\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-98e4-5d04-0000-0020a4350100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000135a4"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=D4F0397F83083E1C6FB0894187CC72AEBCF2F34F,MD5=ABDFC692D9FE43E2BA8FE6CB5A8CB95A,SHA256=949485BA939953642714AE6831D7DCB261691CAC7CBB8C1A9220333801F60820,IMPHASH=00B1859A95A316FD37DFF4210480907A"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9972-5d04-0000-0010f0490c00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3660"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Program Files\\Internet Explorer\\iexplore.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" C:\\Users\\IEUser\\Downloads\\update.html"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-15 07:13:44.106609+00:00"
+                },
+                "EventRecordID": "7649",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2044",
+                    "@ThreadID": "2088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-15 07:13:42.577"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-9aa6-5d04-0000-00109c850f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "652"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\mshta.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.0.2.13"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49159"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.0.2.18"
+                    },
+                    {
+                        "@Name": "DestinationHostname"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "4443"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-15 07:14:32.809734+00:00"
+                },
+                "EventRecordID": "7650",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2044",
+                    "@ThreadID": "2092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-15 07:14:32.622"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-9ad8-5d04-0000-0010c08c1000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3892"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\dllhost.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "COM Surrogate"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "C:\\Windows\\system32\\DllHost.exe /Processid:{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-98e4-5d04-0000-0020a4350100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000135a4"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=ACE762C51DB1908C858C898D7E0F9B36F788D2D9,MD5=A63DC5C2EA944E6657203E0C8EDEAF61,SHA256=F7AD4B09AFB301CE46DF695B22114331A57D52E6D4163FF74787BF68CCF44C78,IMPHASH=EB9A02895A60E58547EFF153D6FF8829"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-1771-5d05-0000-001030790000}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "616"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\svchost.exe -k DcomLaunch"
+                    }
+                ]
+            }
+        }
+    }
+]

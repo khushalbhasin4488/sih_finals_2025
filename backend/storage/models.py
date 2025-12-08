@@ -37,6 +37,7 @@ class LogEntry:
     message: Optional[str] = None
     procid: Optional[int] = None
     source_type: Optional[str] = None
+    network_id: Optional[str] = None  # Network identifier for multi-tenant filtering
     
     # Normalized fields (structured data)
     normalized: Optional[Dict[str, Any]] = field(default_factory=dict)
@@ -56,7 +57,7 @@ class LogEntry:
         # Extract known fields
         known_fields = {
             'id', 'timestamp', 'raw', 'appname', 'file', 'host', 
-            'hostname', 'message', 'procid', 'source_type', 'normalized'
+            'hostname', 'message', 'procid', 'source_type', 'normalized', 'network_id'
         }
         
         # Separate known fields from metadata

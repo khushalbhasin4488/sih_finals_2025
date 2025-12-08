@@ -1,0 +1,690 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-12 00:32:24.461386+00:00"
+                },
+                "EventRecordID": "16242",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1996",
+                    "@ThreadID": "1832"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-12 00:32:24.461"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-6998-5cd7-0000-00104e422200}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2740"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "python  winpwnage.py -u elevate -i 4 -p c:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "c:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-5dec-5cd7-0000-00204a380100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000001384a"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=ECA93AAAA5039E12D2F0CC3F0C8F5AF8FDB15C71,MD5=E11683E4A1E88666DD5E0331F969E0C6,SHA256=B6B4BD10303797C209C4F3C3FCC863A925A77AE2C38090FB8B3FF1BF9C4DDE84,IMPHASH=F3F3DE6C332CF6049756A5B794EBD0C5"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-694a-5cd7-0000-0010bcfa2100}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3672"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\System32\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-12 00:32:30.211386+00:00"
+                },
+                "EventRecordID": "16243",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1996",
+                    "@ThreadID": "1832"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-12 00:32:30.023"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-699e-5cd7-0000-001073582200}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3876"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\schtasks.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Manages scheduled tasks"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\schtasks.exe\" /create /xml c:\\users\\ieuser\\appdata\\local\\temp\\elevator.xml /tn elevator"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "c:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-5dec-5cd7-0000-00204a380100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000001384a"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=8A7E8B05A122B768AB85466B2A3DAF7A358F90F4,MD5=2003E9B15E1C502B146DAD2E383AC1E3,SHA256=15018D0093BEFABBA8B927743191030D1F8C17BB97FDB48C2FC3EAB20E2D4B3D,IMPHASH=D92C80D49382091310FB8DB089F856A9"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-6998-5cd7-0000-00104e422200}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2740"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "python  winpwnage.py -u elevate -i 4 -p c:\\Windows\\System32\\cmd.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-12 00:32:30.227013+00:00"
+                },
+                "EventRecordID": "16244",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1996",
+                    "@ThreadID": "1832"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-12 00:32:30.086"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-5dea-5cd7-0000-001077d20000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "972"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Windows\\System32\\Tasks\\elevator"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-05-12 00:32:30.086"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-12 00:32:35.258263+00:00"
+                },
+                "EventRecordID": "16245",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1996",
+                    "@ThreadID": "1832"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-12 00:32:35.070"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-69a3-5cd7-0000-0010306f2200}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3752"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\schtasks.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Manages scheduled tasks"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\schtasks.exe\" /run /tn elevator"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "c:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-5dec-5cd7-0000-00204a380100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000001384a"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=8A7E8B05A122B768AB85466B2A3DAF7A358F90F4,MD5=2003E9B15E1C502B146DAD2E383AC1E3,SHA256=15018D0093BEFABBA8B927743191030D1F8C17BB97FDB48C2FC3EAB20E2D4B3D,IMPHASH=D92C80D49382091310FB8DB089F856A9"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-6998-5cd7-0000-00104e422200}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2740"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "python  winpwnage.py -u elevate -i 4 -p c:\\Windows\\System32\\cmd.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-12 00:32:35.352013+00:00"
+                },
+                "EventRecordID": "16248",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1996",
+                    "@ThreadID": "1832"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-12 00:32:35.289"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-69a3-5cd7-0000-00109d7f2200}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1860"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7601.17514 (win7sp1_rtm.101119-1850)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "c:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-dc77-5cd7-0000-0020e7030000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EE8CBF12D87C4D388F09B4F69BED2E91682920B5,MD5=AD7B9C14083B52BC532FBA5948342B98,SHA256=17F746D82695FA9B35493B41859D39D786D32B23A9D2E00F4011DEC7A02402AE,IMPHASH=CEEFB55F764020CC5C5F8F23349AB163"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-69a3-5cd7-0000-001064792200}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3432"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\taskeng.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "taskeng.exe {9C7BC894-6658-423B-9B58-61636DBB1451} S-1-5-18:NT AUTHORITY\\System:Service:"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-12 00:32:40.342245+00:00"
+                },
+                "EventRecordID": "16249",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1996",
+                    "@ThreadID": "1832"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-12 00:32:40.164"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-69a8-5cd7-0000-0010c0982200}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3792"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\schtasks.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Manages scheduled tasks"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\schtasks.exe\" /delete /tn elevator"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "c:\\Users\\IEUser\\Downloads\\WinPwnage-master\\WinPwnage-master\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-5dec-5cd7-0000-00204a380100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000001384a"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=8A7E8B05A122B768AB85466B2A3DAF7A358F90F4,MD5=2003E9B15E1C502B146DAD2E383AC1E3,SHA256=15018D0093BEFABBA8B927743191030D1F8C17BB97FDB48C2FC3EAB20E2D4B3D,IMPHASH=D92C80D49382091310FB8DB089F856A9"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-6998-5cd7-0000-00104e422200}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2740"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Python27\\python.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "python  winpwnage.py -u elevate -i 4 -p c:\\Windows\\System32\\cmd.exe"
+                    }
+                ]
+            }
+        }
+    }
+]

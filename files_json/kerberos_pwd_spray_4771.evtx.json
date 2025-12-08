@@ -1,0 +1,1058 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Eventlog",
+                    "@Guid": "{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1102"
+                },
+                "Version": "0",
+                "Level": "4",
+                "Task": "104",
+                "Opcode": "0",
+                "Keywords": "0x4020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-22 20:29:27.321770+00:00"
+                },
+                "EventRecordID": "887106",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "8",
+                    "@ThreadID": "6640"
+                },
+                "Channel": "Security",
+                "Computer": "01566s-win16-ir.threebeesco.com",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "UserData": {
+                "LogFileCleared": {
+                    "@xmlns": "http://manifests.microsoft.com/win/2004/08/windows/eventlog",
+                    "SubjectUserSid": "S-1-5-21-308926384-506822093-3341789130-1106",
+                    "SubjectUserName": "a-jbrown",
+                    "SubjectDomainName": "3B",
+                    "SubjectLogonId": "0x000000000003a17a"
+                }
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4768"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "14339",
+                "Opcode": "0",
+                "Keywords": "0x8010000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-22 20:29:36.414827+00:00"
+                },
+                "EventRecordID": "887107",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "568",
+                    "@ThreadID": "2476"
+                },
+                "Channel": "Security",
+                "Computer": "01566s-win16-ir.threebeesco.com",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "TargetUserName",
+                        "#text": "HD01"
+                    },
+                    {
+                        "@Name": "TargetDomainName",
+                        "#text": "THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "TargetSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "ServiceName",
+                        "#text": "krbtgt/THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "ServiceSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "TicketOptions",
+                        "#text": "0x00000010"
+                    },
+                    {
+                        "@Name": "Status",
+                        "#text": "0x00000006"
+                    },
+                    {
+                        "@Name": "TicketEncryptionType",
+                        "#text": "0xffffffff"
+                    },
+                    {
+                        "@Name": "PreAuthType",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "172.16.66.1"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "55961"
+                    },
+                    {
+                        "@Name": "CertIssuerName"
+                    },
+                    {
+                        "@Name": "CertSerialNumber"
+                    },
+                    {
+                        "@Name": "CertThumbprint"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4768"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "14339",
+                "Opcode": "0",
+                "Keywords": "0x8010000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-22 20:29:36.414856+00:00"
+                },
+                "EventRecordID": "887108",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "568",
+                    "@ThreadID": "1680"
+                },
+                "Channel": "Security",
+                "Computer": "01566s-win16-ir.threebeesco.com",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "TargetUserName",
+                        "#text": "admin"
+                    },
+                    {
+                        "@Name": "TargetDomainName",
+                        "#text": "THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "TargetSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "ServiceName",
+                        "#text": "krbtgt/THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "ServiceSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "TicketOptions",
+                        "#text": "0x00000010"
+                    },
+                    {
+                        "@Name": "Status",
+                        "#text": "0x00000006"
+                    },
+                    {
+                        "@Name": "TicketEncryptionType",
+                        "#text": "0xffffffff"
+                    },
+                    {
+                        "@Name": "PreAuthType",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "172.16.66.1"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "55958"
+                    },
+                    {
+                        "@Name": "CertIssuerName"
+                    },
+                    {
+                        "@Name": "CertSerialNumber"
+                    },
+                    {
+                        "@Name": "CertThumbprint"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4768"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "14339",
+                "Opcode": "0",
+                "Keywords": "0x8010000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-22 20:29:36.414928+00:00"
+                },
+                "EventRecordID": "887109",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "568",
+                    "@ThreadID": "6916"
+                },
+                "Channel": "Security",
+                "Computer": "01566s-win16-ir.threebeesco.com",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "TargetUserName",
+                        "#text": "svc-02"
+                    },
+                    {
+                        "@Name": "TargetDomainName",
+                        "#text": "THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "TargetSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "ServiceName",
+                        "#text": "krbtgt/THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "ServiceSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "TicketOptions",
+                        "#text": "0x00000010"
+                    },
+                    {
+                        "@Name": "Status",
+                        "#text": "0x00000006"
+                    },
+                    {
+                        "@Name": "TicketEncryptionType",
+                        "#text": "0xffffffff"
+                    },
+                    {
+                        "@Name": "PreAuthType",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "172.16.66.1"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "55963"
+                    },
+                    {
+                        "@Name": "CertIssuerName"
+                    },
+                    {
+                        "@Name": "CertSerialNumber"
+                    },
+                    {
+                        "@Name": "CertThumbprint"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4768"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "14339",
+                "Opcode": "0",
+                "Keywords": "0x8010000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-22 20:29:36.414967+00:00"
+                },
+                "EventRecordID": "887110",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "568",
+                    "@ThreadID": "2320"
+                },
+                "Channel": "Security",
+                "Computer": "01566s-win16-ir.threebeesco.com",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "TargetUserName",
+                        "#text": "HD02"
+                    },
+                    {
+                        "@Name": "TargetDomainName",
+                        "#text": "THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "TargetSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "ServiceName",
+                        "#text": "krbtgt/THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "ServiceSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "TicketOptions",
+                        "#text": "0x00000010"
+                    },
+                    {
+                        "@Name": "Status",
+                        "#text": "0x00000006"
+                    },
+                    {
+                        "@Name": "TicketEncryptionType",
+                        "#text": "0xffffffff"
+                    },
+                    {
+                        "@Name": "PreAuthType",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "172.16.66.1"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "55962"
+                    },
+                    {
+                        "@Name": "CertIssuerName"
+                    },
+                    {
+                        "@Name": "CertSerialNumber"
+                    },
+                    {
+                        "@Name": "CertThumbprint"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4768"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "14339",
+                "Opcode": "0",
+                "Keywords": "0x8010000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-22 20:29:36.414984+00:00"
+                },
+                "EventRecordID": "887111",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "568",
+                    "@ThreadID": "3384"
+                },
+                "Channel": "Security",
+                "Computer": "01566s-win16-ir.threebeesco.com",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "TargetUserName",
+                        "#text": "svc-01"
+                    },
+                    {
+                        "@Name": "TargetDomainName",
+                        "#text": "THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "TargetSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "ServiceName",
+                        "#text": "krbtgt/THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "ServiceSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "TicketOptions",
+                        "#text": "0x00000010"
+                    },
+                    {
+                        "@Name": "Status",
+                        "#text": "0x00000006"
+                    },
+                    {
+                        "@Name": "TicketEncryptionType",
+                        "#text": "0xffffffff"
+                    },
+                    {
+                        "@Name": "PreAuthType",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "172.16.66.1"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "55960"
+                    },
+                    {
+                        "@Name": "CertIssuerName"
+                    },
+                    {
+                        "@Name": "CertSerialNumber"
+                    },
+                    {
+                        "@Name": "CertThumbprint"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4768"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "14339",
+                "Opcode": "0",
+                "Keywords": "0x8010000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-22 20:29:36.415049+00:00"
+                },
+                "EventRecordID": "887112",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "568",
+                    "@ThreadID": "7012"
+                },
+                "Channel": "Security",
+                "Computer": "01566s-win16-ir.threebeesco.com",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "TargetUserName",
+                        "#text": "bob"
+                    },
+                    {
+                        "@Name": "TargetDomainName",
+                        "#text": "THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "TargetSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "ServiceName",
+                        "#text": "krbtgt/THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "ServiceSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "TicketOptions",
+                        "#text": "0x00000010"
+                    },
+                    {
+                        "@Name": "Status",
+                        "#text": "0x00000006"
+                    },
+                    {
+                        "@Name": "TicketEncryptionType",
+                        "#text": "0xffffffff"
+                    },
+                    {
+                        "@Name": "PreAuthType",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "172.16.66.1"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "55957"
+                    },
+                    {
+                        "@Name": "CertIssuerName"
+                    },
+                    {
+                        "@Name": "CertSerialNumber"
+                    },
+                    {
+                        "@Name": "CertThumbprint"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4768"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "14339",
+                "Opcode": "0",
+                "Keywords": "0x8010000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-22 20:29:36.415371+00:00"
+                },
+                "EventRecordID": "887113",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "568",
+                    "@ThreadID": "3384"
+                },
+                "Channel": "Security",
+                "Computer": "01566s-win16-ir.threebeesco.com",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "TargetUserName",
+                        "#text": "admin02"
+                    },
+                    {
+                        "@Name": "TargetDomainName",
+                        "#text": "THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "TargetSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "ServiceName",
+                        "#text": "krbtgt/THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "ServiceSid",
+                        "#text": "S-1-0-0"
+                    },
+                    {
+                        "@Name": "TicketOptions",
+                        "#text": "0x00000010"
+                    },
+                    {
+                        "@Name": "Status",
+                        "#text": "0x00000006"
+                    },
+                    {
+                        "@Name": "TicketEncryptionType",
+                        "#text": "0xffffffff"
+                    },
+                    {
+                        "@Name": "PreAuthType",
+                        "#text": "-"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "172.16.66.1"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "55966"
+                    },
+                    {
+                        "@Name": "CertIssuerName"
+                    },
+                    {
+                        "@Name": "CertSerialNumber"
+                    },
+                    {
+                        "@Name": "CertThumbprint"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4771"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "14339",
+                "Opcode": "0",
+                "Keywords": "0x8010000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-22 20:29:36.425364+00:00"
+                },
+                "EventRecordID": "887114",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "568",
+                    "@ThreadID": "2356"
+                },
+                "Channel": "Security",
+                "Computer": "01566s-win16-ir.threebeesco.com",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "TargetUserName",
+                        "#text": "Administrator"
+                    },
+                    {
+                        "@Name": "TargetSid",
+                        "#text": "S-1-5-21-308926384-506822093-3341789130-500"
+                    },
+                    {
+                        "@Name": "ServiceName",
+                        "#text": "krbtgt/THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "TicketOptions",
+                        "#text": "0x00000010"
+                    },
+                    {
+                        "@Name": "Status",
+                        "#text": "0x00000018"
+                    },
+                    {
+                        "@Name": "PreAuthType",
+                        "#text": "2"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "172.16.66.1"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "55967"
+                    },
+                    {
+                        "@Name": "CertIssuerName"
+                    },
+                    {
+                        "@Name": "CertSerialNumber"
+                    },
+                    {
+                        "@Name": "CertThumbprint"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4771"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "14339",
+                "Opcode": "0",
+                "Keywords": "0x8010000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-22 20:29:36.425838+00:00"
+                },
+                "EventRecordID": "887115",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "568",
+                    "@ThreadID": "4856"
+                },
+                "Channel": "Security",
+                "Computer": "01566s-win16-ir.threebeesco.com",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "TargetUserName",
+                        "#text": "backdoor"
+                    },
+                    {
+                        "@Name": "TargetSid",
+                        "#text": "S-1-5-21-308926384-506822093-3341789130-107103"
+                    },
+                    {
+                        "@Name": "ServiceName",
+                        "#text": "krbtgt/THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "TicketOptions",
+                        "#text": "0x00000010"
+                    },
+                    {
+                        "@Name": "Status",
+                        "#text": "0x00000018"
+                    },
+                    {
+                        "@Name": "PreAuthType",
+                        "#text": "2"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "172.16.66.1"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "55968"
+                    },
+                    {
+                        "@Name": "CertIssuerName"
+                    },
+                    {
+                        "@Name": "CertSerialNumber"
+                    },
+                    {
+                        "@Name": "CertThumbprint"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4768"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "14339",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-22 20:29:36.434698+00:00"
+                },
+                "EventRecordID": "887116",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "568",
+                    "@ThreadID": "3384"
+                },
+                "Channel": "Security",
+                "Computer": "01566s-win16-ir.threebeesco.com",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "TargetUserName",
+                        "#text": "normal"
+                    },
+                    {
+                        "@Name": "TargetDomainName",
+                        "#text": "THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "TargetSid",
+                        "#text": "S-1-5-21-308926384-506822093-3341789130-109603"
+                    },
+                    {
+                        "@Name": "ServiceName",
+                        "#text": "krbtgt"
+                    },
+                    {
+                        "@Name": "ServiceSid",
+                        "#text": "S-1-5-21-308926384-506822093-3341789130-502"
+                    },
+                    {
+                        "@Name": "TicketOptions",
+                        "#text": "0x00000010"
+                    },
+                    {
+                        "@Name": "Status",
+                        "#text": "0x00000000"
+                    },
+                    {
+                        "@Name": "TicketEncryptionType",
+                        "#text": "0x00000012"
+                    },
+                    {
+                        "@Name": "PreAuthType",
+                        "#text": "2"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "172.16.66.1"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "55969"
+                    },
+                    {
+                        "@Name": "CertIssuerName"
+                    },
+                    {
+                        "@Name": "CertSerialNumber"
+                    },
+                    {
+                        "@Name": "CertThumbprint"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Security-Auditing",
+                    "@Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4768"
+                },
+                "Version": "0",
+                "Level": "0",
+                "Task": "14339",
+                "Opcode": "0",
+                "Keywords": "0x8020000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-22 20:29:36.437702+00:00"
+                },
+                "EventRecordID": "887117",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "568",
+                    "@ThreadID": "2356"
+                },
+                "Channel": "Security",
+                "Computer": "01566s-win16-ir.threebeesco.com",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "TargetUserName",
+                        "#text": "normal"
+                    },
+                    {
+                        "@Name": "TargetDomainName",
+                        "#text": "THREEBEESCO.COM"
+                    },
+                    {
+                        "@Name": "TargetSid",
+                        "#text": "S-1-5-21-308926384-506822093-3341789130-109603"
+                    },
+                    {
+                        "@Name": "ServiceName",
+                        "#text": "krbtgt"
+                    },
+                    {
+                        "@Name": "ServiceSid",
+                        "#text": "S-1-5-21-308926384-506822093-3341789130-502"
+                    },
+                    {
+                        "@Name": "TicketOptions",
+                        "#text": "0x00000010"
+                    },
+                    {
+                        "@Name": "Status",
+                        "#text": "0x00000000"
+                    },
+                    {
+                        "@Name": "TicketEncryptionType",
+                        "#text": "0x00000012"
+                    },
+                    {
+                        "@Name": "PreAuthType",
+                        "#text": "2"
+                    },
+                    {
+                        "@Name": "IpAddress",
+                        "#text": "::ffff:172.16.66.1"
+                    },
+                    {
+                        "@Name": "IpPort",
+                        "#text": "52559"
+                    },
+                    {
+                        "@Name": "CertIssuerName"
+                    },
+                    {
+                        "@Name": "CertSerialNumber"
+                    },
+                    {
+                        "@Name": "CertThumbprint"
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,274 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-14 14:03:45.100849+00:00"
+                },
+                "EventRecordID": "31144",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1580",
+                    "@ThreadID": "2324"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-14 14:03:45.073"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-ca56-5cda-0000-00102de71000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3596"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\RunDll32.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\AppCrash_sysmon.exe_10b542d1f1b162e715ed4ef4ccd38dc6e1393c_7bfbbfce_09c49153\\Report.wer.tmp"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-05-14 14:03:45.071"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-14 14:04:05.697491+00:00"
+                },
+                "EventRecordID": "31145",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1580",
+                    "@ThreadID": "2324"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-14 14:04:05.696"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-c903-5cda-0000-0010340f1000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2580"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\mstsc.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\administrator\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\cmd.exe"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-05-14 13:55:57.243"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-14 14:04:06.339355+00:00"
+                },
+                "EventRecordID": "31146",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1580",
+                    "@ThreadID": "2324"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-14 14:04:06.310"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-ca56-5cda-0000-00102de71000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3596"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\RunDll32.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\AppCrash_sysmon.exe_10b542d1f1b162e715ed4ef4ccd38dc6e1393c_7bfbbfce_09cc920e\\Report.wer.tmp"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-05-14 14:04:06.309"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-14 14:04:28.860777+00:00"
+                },
+                "EventRecordID": "31147",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1580",
+                    "@ThreadID": "2324"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-14 14:04:28.849"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-ca56-5cda-0000-00102de71000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3596"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\RunDll32.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\AppCrash_sysmon.exe_10b542d1f1b162e715ed4ef4ccd38dc6e1393c_7bfbbfce_09e09039\\Report.wer.tmp"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-05-14 14:04:28.849"
+                    }
+                ]
+            }
+        }
+    }
+]

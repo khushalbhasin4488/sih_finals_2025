@@ -1,0 +1,1177 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-07-03 20:39:29.223482+00:00"
+                },
+                "EventRecordID": "8342",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "112",
+                    "@ThreadID": "2084"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-07-03 20:39:29.223"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{365abb72-0c16-5d1d-0000-00108b721100}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3092"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "2768"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "\u3100"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{365abb72-1256-5d1d-0000-0010fb1a1b00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "1632"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001f1fff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+4591c|C:\\Windows\\system32\\KERNELBASE.dll+8185|C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\mscorwks.dll+1d59|UNKNOWN(043F99AB)|UNKNOWN(04396942)|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System.Management.A#\\4a19b10c25d9e1a0dbdf5baf4b3561ea\\System.Management.Automation.ni.dll+f1ffa800|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System.Management.A#\\4a19b10c25d9e1a0dbdf5baf4b3561ea\\System.Management.Automation.ni.dll+f1ffa800|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System.Management.A#\\4a19b10c25d9e1a0dbdf5baf4b3561ea\\System.Management.Automation.ni.dll+f1ffa800|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System.Management.A#\\4a19b10c25d9e1a0dbdf5baf4b3561ea\\System.Management.Automation.ni.dll+f1ffa800|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System.Management.A#\\4a19b10c25d9e1a0dbdf5baf4b3561ea\\System.Management.Automation.ni.dll+f1ffa800|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System.Management.A#\\4a19b10c25d9e1a0dbdf5baf4b3561ea\\System.Management.Automation.ni.dll+f1ffa800|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System.Management.A#\\4a19b10c25d9e1a0dbdf5baf4b3561ea\\System.Management.Automation.ni.dll+f1ffa800|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System.Management.A#\\4a19b10c25d9e1a0dbdf5baf4b3561ea\\System.Management.Automation.ni.dll+f1ffa800|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System.Management.A#\\4a19b10c25d9e1a0dbdf5baf4b3561ea\\System.Management.Automation.ni.dll+f1ffa800|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System.Management.A#\\4a19b10c25d9e1a0dbdf5baf4b3561ea\\System.Management.Automation.ni.dll+f1ffa800|C:\\Windows\\assembly\\NativeImages_v2.0.50727_32\\System.Management.A#\\4a19b10c25d9e1a0dbdf5baf4b3561ea\\System.Management.Automation.ni.dll+f1ffa800"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-07-03 20:39:30.129732+00:00"
+                },
+                "EventRecordID": "8343",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "112",
+                    "@ThreadID": "2084"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-07-03 20:39:30.129"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-0c16-5d1d-0000-00108b721100}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3092"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-1256-5d1d-0000-0010fb1a1b00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "1632"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "3788"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x00560000"
+                    },
+                    {
+                        "@Name": "StartModule"
+                    },
+                    {
+                        "@Name": "StartFunction"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-07-03 20:39:30.145357+00:00"
+                },
+                "EventRecordID": "8344",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "112",
+                    "@ThreadID": "2084"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-07-03 20:39:30.145"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-0c16-5d1d-0000-00108b721100}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3092"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-1256-5d1d-0000-0010fb1a1b00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "1632"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "2804"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x00560000"
+                    },
+                    {
+                        "@Name": "StartModule"
+                    },
+                    {
+                        "@Name": "StartFunction"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-07-03 20:39:30.160984+00:00"
+                },
+                "EventRecordID": "8345",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "112",
+                    "@ThreadID": "2084"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-07-03 20:39:30.160"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-0c16-5d1d-0000-00108b721100}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3092"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-1256-5d1d-0000-0010fb1a1b00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "1632"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "2588"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x00560000"
+                    },
+                    {
+                        "@Name": "StartModule"
+                    },
+                    {
+                        "@Name": "StartFunction"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-07-03 20:39:30.176607+00:00"
+                },
+                "EventRecordID": "8346",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "112",
+                    "@ThreadID": "2084"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-07-03 20:39:30.176"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-0c16-5d1d-0000-00108b721100}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3092"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-1256-5d1d-0000-0010fb1a1b00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "1632"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "3536"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x00560000"
+                    },
+                    {
+                        "@Name": "StartModule"
+                    },
+                    {
+                        "@Name": "StartFunction"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-07-03 20:39:30.192232+00:00"
+                },
+                "EventRecordID": "8347",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "112",
+                    "@ThreadID": "2084"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-07-03 20:39:30.192"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-0c16-5d1d-0000-00108b721100}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3092"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-1256-5d1d-0000-0010fb1a1b00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "1632"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "3916"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x00560000"
+                    },
+                    {
+                        "@Name": "StartModule"
+                    },
+                    {
+                        "@Name": "StartFunction"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-07-03 20:39:30.207859+00:00"
+                },
+                "EventRecordID": "8348",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "112",
+                    "@ThreadID": "2084"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-07-03 20:39:30.207"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-0c16-5d1d-0000-00108b721100}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3092"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-1256-5d1d-0000-0010fb1a1b00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "1632"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "1028"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x00560000"
+                    },
+                    {
+                        "@Name": "StartModule"
+                    },
+                    {
+                        "@Name": "StartFunction"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-07-03 20:39:30.223482+00:00"
+                },
+                "EventRecordID": "8349",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "112",
+                    "@ThreadID": "2084"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-07-03 20:39:30.223"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-0c16-5d1d-0000-00108b721100}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3092"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-1256-5d1d-0000-0010fb1a1b00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "1632"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "916"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x00560000"
+                    },
+                    {
+                        "@Name": "StartModule"
+                    },
+                    {
+                        "@Name": "StartFunction"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-07-03 20:39:30.239109+00:00"
+                },
+                "EventRecordID": "8350",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "112",
+                    "@ThreadID": "2084"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-07-03 20:39:30.239"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-0c16-5d1d-0000-00108b721100}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3092"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-1256-5d1d-0000-0010fb1a1b00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "1632"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "3252"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x00560000"
+                    },
+                    {
+                        "@Name": "StartModule"
+                    },
+                    {
+                        "@Name": "StartFunction"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-07-03 20:39:30.254732+00:00"
+                },
+                "EventRecordID": "8351",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "112",
+                    "@ThreadID": "2084"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-07-03 20:39:30.254"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-0c16-5d1d-0000-00108b721100}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3092"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-1256-5d1d-0000-0010fb1a1b00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "1632"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "3148"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x00540000"
+                    },
+                    {
+                        "@Name": "StartModule"
+                    },
+                    {
+                        "@Name": "StartFunction"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-07-03 20:39:30.254732+00:00"
+                },
+                "EventRecordID": "8352",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "112",
+                    "@ThreadID": "2084"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-07-03 20:39:30.254"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-1282-5d1d-0000-0010dd401b00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2328"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows host process (Rundll32)"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "rundll32.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-0a6f-5d1d-0000-0020ca350100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000135ca"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "Medium"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=892503B20247B341CFD20DDA5FDACFA41527A087,MD5=C648901695E275C8F2AD04B687A68CE2,SHA256=3FA4912EB43FC304652D7B01F118589259861E2D628FA7C86193E54D5F987670,IMPHASH=239D911DFA7551A8B735680BC39B2238"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-1256-5d1d-0000-0010fb1a1b00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1632"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\system32\\notepad.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-07-03 20:39:30.254732+00:00"
+                },
+                "EventRecordID": "8353",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "112",
+                    "@ThreadID": "2084"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-07-03 20:39:30.254"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{365abb72-1256-5d1d-0000-0010fb1a1b00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "1632"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "3148"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\system32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{365abb72-1282-5d1d-0000-0010dd401b00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "2328"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+4530c|C:\\Windows\\system32\\kernel32.dll+51133|C:\\Windows\\system32\\kernel32.dll+5cc37|C:\\Windows\\system32\\kernel32.dll+20ae|UNKNOWN(0053108F)|UNKNOWN(00531147)|UNKNOWN(0054001F)|C:\\Windows\\SYSTEM32\\ntdll.dll+63618|C:\\Windows\\SYSTEM32\\ntdll.dll+635eb"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-07-03 20:39:31.707859+00:00"
+                },
+                "EventRecordID": "8354",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "112",
+                    "@ThreadID": "2096"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-07-03 20:39:30.305"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-1282-5d1d-0000-0010dd401b00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2328"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.0.2.13"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49159"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.0.2.18"
+                    },
+                    {
+                        "@Name": "DestinationHostname"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "8181"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    }
+]

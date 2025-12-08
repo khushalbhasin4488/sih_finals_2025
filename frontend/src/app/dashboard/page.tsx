@@ -22,6 +22,7 @@ import {
     LogsTimelineChart,
     DetectionMethodsChart
 } from "@/components/charts/DashboardCharts";
+import { useNetwork } from "@/lib/NetworkContext";
 
 interface Stats {
     total_logs: number;
@@ -52,6 +53,7 @@ export default function DashboardPage() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [currentTime, setCurrentTime] = useState(new Date());
+    const { selectedNetwork } = useNetwork();
 
     useEffect(() => {
         fetchAllData();
@@ -61,13 +63,14 @@ export default function DashboardPage() {
             clearInterval(interval);
             clearInterval(timeInterval);
         };
-    }, []);
+    }, [selectedNetwork]); // Re-fetch when network changes
 
     const fetchAllData = async () => {
         try {
+            const networkParam = selectedNetwork ? `?network=${encodeURIComponent(selectedNetwork)}` : '';
             const [statsRes, alertStatsRes] = await Promise.all([
-                fetch(`${API_BASE}/api/v1/stats`),
-                fetch(`${API_BASE}/api/v1/alerts/stats`)
+                fetch(`${API_BASE}/api/v1/stats${networkParam}`),
+                fetch(`${API_BASE}/api/v1/alerts/stats${networkParam}`)
             ]);
 
             if (statsRes.ok) {

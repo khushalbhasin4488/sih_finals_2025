@@ -1,0 +1,1362 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 15:47:56.667118+00:00"
+                },
+                "EventRecordID": "5408",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "324",
+                    "@ThreadID": "2260"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 15:47:56.627"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-b52c-5cea-0000-00107a0d1100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3388"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Notepad"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "c:\\windows\\system32\\inetsrv\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IIS APPPOOL\\DefaultAppPool"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-b26b-5cea-0000-002023240800}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000000082423"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=FC64B1EF19E7F35642B2A2EA5F5D9F4246866243,MD5=A4F6DF0E33E644E802C8798ED94D80EA,SHA256=B56AFE7165AD341A749D2D3BD925D879728A1FE4A4DF206145C1A69AA233F68B,IMPHASH=53A6715F589E88C4FD4541C81B4F57C3"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-b26b-5cea-0000-0010582a0800}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2744"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\inetsrv\\w3wp.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "c:\\windows\\system32\\inetsrv\\w3wp.exe -ap \"DefaultAppPool\" -v \"v2.0\" -l \"webengine4.dll\" -a \\\\.\\pipe\\iisipmb9da32d5-aa43-42fc-aeea-0cc226e10973 -h \"C:\\inetpub\\temp\\apppools\\DefaultAppPool\\DefaultAppPool.config\" -w \"\" -m 0 -t 20"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 15:47:56.667118+00:00"
+                },
+                "EventRecordID": "5409",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "324",
+                    "@ThreadID": "2260"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 15:47:56.627"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{365abb72-b26b-5cea-0000-0010582a0800}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "2744"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "168"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "c:\\windows\\system32\\inetsrv\\w3wp.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{365abb72-b52c-5cea-0000-00107a0d1100}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "3388"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+4530c|C:\\Windows\\system32\\kernel32.dll+51133|C:\\Windows\\system32\\kernel32.dll+5cc37|C:\\Windows\\system32\\kernel32.dll+20ae|UNKNOWN(0358F723)|UNKNOWN(010B7486)|UNKNOWN(010B73A0)|UNKNOWN(010B78A3)|C:\\Windows\\system32\\kernel32.dll+4ef3c|C:\\Windows\\SYSTEM32\\ntdll.dll+63618|C:\\Windows\\SYSTEM32\\ntdll.dll+635eb"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 15:47:56.727203+00:00"
+                },
+                "EventRecordID": "5410",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "324",
+                    "@ThreadID": "2260"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 15:47:56.727"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{365abb72-b26b-5cea-0000-0010582a0800}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "2744"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "932"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "c:\\windows\\system32\\inetsrv\\w3wp.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{365abb72-b52c-5cea-0000-00107a0d1100}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "3388"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x00001fff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+4591c|C:\\Windows\\system32\\KERNELBASE.dll+8185|UNKNOWN(0358F03E)|UNKNOWN(010B7486)|UNKNOWN(010B73A0)|UNKNOWN(010B78A3)|C:\\Windows\\system32\\kernel32.dll+4ef3c|C:\\Windows\\SYSTEM32\\ntdll.dll+63618|C:\\Windows\\SYSTEM32\\ntdll.dll+635eb"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 15:47:57.628500+00:00"
+                },
+                "EventRecordID": "5411",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "324",
+                    "@ThreadID": "2260"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 15:47:57.628"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-b26b-5cea-0000-0010582a0800}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "2744"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\System32\\inetsrv\\w3wp.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-b52c-5cea-0000-00107a0d1100}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "3388"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "3520"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x005A28D0"
+                    },
+                    {
+                        "@Name": "StartModule"
+                    },
+                    {
+                        "@Name": "StartFunction"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 15:47:58.830229+00:00"
+                },
+                "EventRecordID": "5412",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "324",
+                    "@ThreadID": "2264"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 15:47:57.111"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-b52c-5cea-0000-00107a0d1100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3388"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IIS APPPOOL\\DefaultAppPool"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49166"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "135"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "epmap"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 15:47:58.830229+00:00"
+                },
+                "EventRecordID": "5413",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "324",
+                    "@ThreadID": "2264"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 15:47:57.119"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-b52c-5cea-0000-00107a0d1100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3388"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IIS APPPOOL\\DefaultAppPool"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "7777"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "49167"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 15:47:59.871725+00:00"
+                },
+                "EventRecordID": "5414",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "324",
+                    "@ThreadID": "2264"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 15:47:58.117"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-b52c-5cea-0000-00107a0d1100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3388"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IIS APPPOOL\\DefaultAppPool"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "7777"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "49168"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 15:47:59.871725+00:00"
+                },
+                "EventRecordID": "5415",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "324",
+                    "@ThreadID": "2264"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 15:47:58.140"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-b52c-5cea-0000-00107a0d1100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3388"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IIS APPPOOL\\DefaultAppPool"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49169"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "135"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "epmap"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 15:48:00.732964+00:00"
+                },
+                "EventRecordID": "5416",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "324",
+                    "@ThreadID": "2264"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 15:47:59.147"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-b52c-5cea-0000-00107a0d1100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3388"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IIS APPPOOL\\DefaultAppPool"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "7777"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "49170"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 15:48:00.732964+00:00"
+                },
+                "EventRecordID": "5417",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "324",
+                    "@ThreadID": "2264"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 15:47:59.148"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-b52c-5cea-0000-00107a0d1100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3388"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IIS APPPOOL\\DefaultAppPool"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49171"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "127.0.0.1"
+                    },
+                    {
+                        "@Name": "DestinationHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "135"
+                    },
+                    {
+                        "@Name": "DestinationPortName",
+                        "#text": "epmap"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 15:48:00.752993+00:00"
+                },
+                "EventRecordID": "5418",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "324",
+                    "@ThreadID": "2260"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 15:48:00.742"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-b530-5cea-0000-0010621a1100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1240"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Notepad"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\notepad.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-b135-5cea-0000-0020e7030000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000003e7"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "System"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=FC64B1EF19E7F35642B2A2EA5F5D9F4246866243,MD5=A4F6DF0E33E644E802C8798ED94D80EA,SHA256=B56AFE7165AD341A749D2D3BD925D879728A1FE4A4DF206145C1A69AA233F68B,IMPHASH=53A6715F589E88C4FD4541C81B4F57C3"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-b52c-5cea-0000-00107a0d1100}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3388"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "8"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "8",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 15:48:00.752993+00:00"
+                },
+                "EventRecordID": "5419",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "324",
+                    "@ThreadID": "2260"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 15:48:00.752"
+                    },
+                    {
+                        "@Name": "SourceProcessGuid",
+                        "#text": "{365abb72-b52c-5cea-0000-00107a0d1100}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3388"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGuid",
+                        "#text": "{365abb72-b530-5cea-0000-0010621a1100}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "1240"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "NewThreadId",
+                        "#text": "1948"
+                    },
+                    {
+                        "@Name": "StartAddress",
+                        "#text": "0x00060000"
+                    },
+                    {
+                        "@Name": "StartModule"
+                    },
+                    {
+                        "@Name": "StartFunction"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-26 15:48:01.864592+00:00"
+                },
+                "EventRecordID": "5420",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "324",
+                    "@ThreadID": "2264"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-26 15:48:00.245"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-b530-5cea-0000-0010621a1100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1240"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "NT AUTHORITY\\SYSTEM"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.0.2.13"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49172"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.0.2.18"
+                    },
+                    {
+                        "@Name": "DestinationHostname"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "888"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    }
+]

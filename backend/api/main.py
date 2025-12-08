@@ -20,7 +20,7 @@ from services.analysis_service import AnalysisService
 from services.baseline_scheduler import BaselineScheduler
 
 # Import analytics routes
-from api.routes import analytics
+from api.routers import analytics, networks
 
 logger = structlog.get_logger()
 
@@ -41,7 +41,8 @@ app.add_middleware(
 )
 
 # Include analytics router
-app.include_router(analytics.router)
+app.include_router(analytics.router, prefix="/api/v1")
+app.include_router(networks.router, prefix="/api/v1")
 
 # Initialize database
 # Use parent directory's data folder since API runs from backend/

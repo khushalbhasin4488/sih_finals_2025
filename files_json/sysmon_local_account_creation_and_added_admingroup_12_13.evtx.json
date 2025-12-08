@@ -1,0 +1,1211 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 09:28:22.280329+00:00"
+                },
+                "EventRecordID": "2134364",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Local Account Created or Deleted"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "CreateKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 09:28:22.279"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\Names\\support"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 09:28:22.280355+00:00"
+                },
+                "EventRecordID": "2134365",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Local Account Created or Deleted"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 09:28:22.279"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\Names\\support\\(Default)"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "Binary Data"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 09:28:42.976925+00:00"
+                },
+                "EventRecordID": "2134366",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Local Account Created or Deleted"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "DeleteKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 09:28:42.976"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\Names\\support"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 10:03:04.489452+00:00"
+                },
+                "EventRecordID": "2134384",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Local Account Created or Deleted"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "CreateKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 10:03:04.489"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\Names\\support"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 10:03:04.489479+00:00"
+                },
+                "EventRecordID": "2134385",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Local Account Created or Deleted"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 10:03:04.489"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\Names\\support\\(Default)"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "Binary Data"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 10:33:31.843452+00:00"
+                },
+                "EventRecordID": "2134398",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Local Account Created or Deleted"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "CreateKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 10:33:31.842"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\Names\\sqlsvc"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 10:33:31.843489+00:00"
+                },
+                "EventRecordID": "2134399",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Local Account Created or Deleted"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 10:33:31.842"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\Names\\sqlsvc\\(Default)"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "Binary Data"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 10:45:30.650631+00:00"
+                },
+                "EventRecordID": "2134403",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Account Added or Deleted from Local Administrators Group"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 10:45:30.650"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Builtin\\Aliases\\00000220\\C"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "Binary Data"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 10:45:33.802858+00:00"
+                },
+                "EventRecordID": "2134404",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Account Added or Deleted from Local Administrators Group"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 10:45:33.802"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Builtin\\Aliases\\00000220\\C"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "Binary Data"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 10:54:20.005436+00:00"
+                },
+                "EventRecordID": "2134405",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Account Added or Deleted from Local Administrators Group"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 10:54:20.005"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Builtin\\Aliases\\00000220\\C"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "Binary Data"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 10:54:20.005775+00:00"
+                },
+                "EventRecordID": "2134406",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Local Account Created or Deleted"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "DeleteKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 10:54:20.005"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\Names\\support"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 10:54:22.974304+00:00"
+                },
+                "EventRecordID": "2134407",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Local Account Created or Deleted"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "CreateKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 10:54:22.973"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\Names\\support"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 10:54:22.974354+00:00"
+                },
+                "EventRecordID": "2134408",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Local Account Created or Deleted"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 10:54:22.973"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\Names\\support\\(Default)"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "Binary Data"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 11:00:13.713789+00:00"
+                },
+                "EventRecordID": "2134409",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Local Account Created or Deleted"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "DeleteKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 11:00:13.713"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\Names\\support"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "12"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "12",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 11:00:24.602482+00:00"
+                },
+                "EventRecordID": "2134410",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Local Account Created or Deleted"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "CreateKey"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 11:00:24.601"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\Names\\support"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 11:00:24.602531+00:00"
+                },
+                "EventRecordID": "2134411",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Local Account Created or Deleted"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 11:00:24.601"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\Names\\support\\(Default)"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "Binary Data"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-09-04 11:02:16.084930+00:00"
+                },
+                "EventRecordID": "2134412",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5424",
+                    "@ThreadID": "6528"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Valid Account - Account Added or Deleted from Local Administrators Group"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-09-04 11:02:16.084"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-7509-5f4e-0b00-000000002a00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKLM\\SAM\\SAM\\Domains\\Builtin\\Aliases\\00000220\\C"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "Binary Data"
+                    }
+                ]
+            }
+        }
+    }
+]

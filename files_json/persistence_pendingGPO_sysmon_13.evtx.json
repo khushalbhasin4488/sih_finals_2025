@@ -1,0 +1,293 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-04 14:31:23.903599+00:00"
+                },
+                "EventRecordID": "306383",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3400",
+                    "@ThreadID": "4136"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-04 14:31:23.825"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-8dec-5f00-0000-0010f0460800}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "5128"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FileExts\\.reg\\OpenWithList\\b"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "{F38BF404-1D43-42F2-9305-67DE0B28FC23}\\regedit.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-04 14:31:26.838831+00:00"
+                },
+                "EventRecordID": "306384",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3400",
+                    "@ThreadID": "4136"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Persistence - Pending GPO"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-04 14:31:26.607"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-92bb-5f00-0000-0010c1a73100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1452"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\regedit.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000\\Software\\Microsoft\\IEAK\\GroupPolicy\\PendingGPOs\\Count"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "DWORD (0x00000001)"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-04 14:31:26.849140+00:00"
+                },
+                "EventRecordID": "306385",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3400",
+                    "@ThreadID": "4136"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Persistence - Pending GPO"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-04 14:31:26.607"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-92bb-5f00-0000-0010c1a73100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1452"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\regedit.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000\\Software\\Microsoft\\IEAK\\GroupPolicy\\PendingGPOs\\Section1"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "DefaultInstall"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-04 14:31:26.856657+00:00"
+                },
+                "EventRecordID": "306386",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3400",
+                    "@ThreadID": "4136"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Persistence - Pending GPO"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-04 14:31:26.607"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-92bb-5f00-0000-0010c1a73100}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1452"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\regedit.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3461203602-4096304019-2269080069-1000\\Software\\Microsoft\\IEAK\\GroupPolicy\\PendingGPOs\\Path1"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "c:\\programdata\\gpo.inf"
+                    }
+                ]
+            }
+        }
+    }
+]

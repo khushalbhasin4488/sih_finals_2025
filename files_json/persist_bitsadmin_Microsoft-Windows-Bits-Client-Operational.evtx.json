@@ -1,0 +1,480 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Bits-Client",
+                    "@Guid": "{ef1cc15b-46c1-414e-bb95-e76b077bd51e}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "0",
+                "Level": "4",
+                "Task": "0",
+                "Opcode": "0",
+                "Keywords": "0x4000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-12 18:02:05.215199+00:00"
+                },
+                "EventRecordID": "3815",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "964",
+                    "@ThreadID": "984"
+                },
+                "Channel": "Microsoft-Windows-Bits-Client/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "string",
+                        "#text": "backdoor"
+                    },
+                    {
+                        "@Name": "string2",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "string3"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Bits-Client",
+                    "@Guid": "{ef1cc15b-46c1-414e-bb95-e76b077bd51e}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "59"
+                },
+                "Version": "1",
+                "Level": "4",
+                "Task": "0",
+                "Opcode": "1",
+                "Keywords": "0x4000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-12 18:04:50.121447+00:00"
+                },
+                "EventRecordID": "3817",
+                "Correlation": {
+                    "@ActivityID": "{2515f08c-3969-4086-b4ec-6e8eca6b722e}",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "964",
+                    "@ThreadID": "1404"
+                },
+                "Channel": "Microsoft-Windows-Bits-Client/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "transferId",
+                        "#text": "{2515f08c-3969-4086-b4ec-6e8eca6b722e}"
+                    },
+                    {
+                        "@Name": "name",
+                        "#text": "backdoor"
+                    },
+                    {
+                        "@Name": "Id",
+                        "#text": "{b35c4a1d-4425-45be-92d1-b67183ae222f}"
+                    },
+                    {
+                        "@Name": "url",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "peer"
+                    },
+                    {
+                        "@Name": "fileTime",
+                        "#text": "2010-11-20 12:17:00.400999+00:00"
+                    },
+                    {
+                        "@Name": "fileLength",
+                        "#text": "302592"
+                    },
+                    {
+                        "@Name": "bytesTotal",
+                        "#text": "302592"
+                    },
+                    {
+                        "@Name": "bytesTransferred",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "bytesTransferredFromPeer",
+                        "#text": "0"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Bits-Client",
+                    "@Guid": "{ef1cc15b-46c1-414e-bb95-e76b077bd51e}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "60"
+                },
+                "Version": "1",
+                "Level": "4",
+                "Task": "0",
+                "Opcode": "2",
+                "Keywords": "0x4000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-12 18:04:50.137072+00:00"
+                },
+                "EventRecordID": "3818",
+                "Correlation": {
+                    "@ActivityID": "{2515f08c-3969-4086-b4ec-6e8eca6b722e}",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "964",
+                    "@ThreadID": "2428"
+                },
+                "Channel": "Microsoft-Windows-Bits-Client/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "transferId",
+                        "#text": "{2515f08c-3969-4086-b4ec-6e8eca6b722e}"
+                    },
+                    {
+                        "@Name": "name",
+                        "#text": "backdoor"
+                    },
+                    {
+                        "@Name": "Id",
+                        "#text": "{b35c4a1d-4425-45be-92d1-b67183ae222f}"
+                    },
+                    {
+                        "@Name": "url",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "peer"
+                    },
+                    {
+                        "@Name": "hr",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "fileTime",
+                        "#text": "2010-11-20 12:17:00.400999+00:00"
+                    },
+                    {
+                        "@Name": "fileLength",
+                        "#text": "302592"
+                    },
+                    {
+                        "@Name": "bytesTotal",
+                        "#text": "302592"
+                    },
+                    {
+                        "@Name": "bytesTransferred",
+                        "#text": "302592"
+                    },
+                    {
+                        "@Name": "proxy"
+                    },
+                    {
+                        "@Name": "peerProtocolFlags",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "bytesTransferredFromPeer",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "AdditionalInfoHr",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "PeerContextInfo",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "bandwidthLimit",
+                        "#text": "18446744073709551615"
+                    },
+                    {
+                        "@Name": "ignoreBandwidthLimitsOnLan",
+                        "#text": "False"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Bits-Client",
+                    "@Guid": "{ef1cc15b-46c1-414e-bb95-e76b077bd51e}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "0",
+                "Level": "4",
+                "Task": "0",
+                "Opcode": "0",
+                "Keywords": "0x4000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-13 14:50:01.999050+00:00"
+                },
+                "EventRecordID": "3825",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "964",
+                    "@ThreadID": "2088"
+                },
+                "Channel": "Microsoft-Windows-Bits-Client/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "string",
+                        "#text": "hola"
+                    },
+                    {
+                        "@Name": "string2",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "string3"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Bits-Client",
+                    "@Guid": "{ef1cc15b-46c1-414e-bb95-e76b077bd51e}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "59"
+                },
+                "Version": "1",
+                "Level": "4",
+                "Task": "0",
+                "Opcode": "1",
+                "Keywords": "0x4000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-13 14:50:59.389677+00:00"
+                },
+                "EventRecordID": "3827",
+                "Correlation": {
+                    "@ActivityID": "{905eb165-b377-4dec-929b-6f6f124e02aa}",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "964",
+                    "@ThreadID": "1460"
+                },
+                "Channel": "Microsoft-Windows-Bits-Client/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "transferId",
+                        "#text": "{905eb165-b377-4dec-929b-6f6f124e02aa}"
+                    },
+                    {
+                        "@Name": "name",
+                        "#text": "hola"
+                    },
+                    {
+                        "@Name": "Id",
+                        "#text": "{51607467-5ab5-4dcb-aaf0-fb92c997c0bd}"
+                    },
+                    {
+                        "@Name": "url",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "peer"
+                    },
+                    {
+                        "@Name": "fileTime",
+                        "#text": "2010-11-20 12:17:00.400999+00:00"
+                    },
+                    {
+                        "@Name": "fileLength",
+                        "#text": "302592"
+                    },
+                    {
+                        "@Name": "bytesTotal",
+                        "#text": "302592"
+                    },
+                    {
+                        "@Name": "bytesTransferred",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "bytesTransferredFromPeer",
+                        "#text": "0"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Bits-Client",
+                    "@Guid": "{ef1cc15b-46c1-414e-bb95-e76b077bd51e}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "60"
+                },
+                "Version": "1",
+                "Level": "4",
+                "Task": "0",
+                "Opcode": "2",
+                "Keywords": "0x4000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-13 14:50:59.405300+00:00"
+                },
+                "EventRecordID": "3828",
+                "Correlation": {
+                    "@ActivityID": "{905eb165-b377-4dec-929b-6f6f124e02aa}",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "964",
+                    "@ThreadID": "3176"
+                },
+                "Channel": "Microsoft-Windows-Bits-Client/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "transferId",
+                        "#text": "{905eb165-b377-4dec-929b-6f6f124e02aa}"
+                    },
+                    {
+                        "@Name": "name",
+                        "#text": "hola"
+                    },
+                    {
+                        "@Name": "Id",
+                        "#text": "{51607467-5ab5-4dcb-aaf0-fb92c997c0bd}"
+                    },
+                    {
+                        "@Name": "url",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "peer"
+                    },
+                    {
+                        "@Name": "hr",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "fileTime",
+                        "#text": "2010-11-20 12:17:00.400999+00:00"
+                    },
+                    {
+                        "@Name": "fileLength",
+                        "#text": "302592"
+                    },
+                    {
+                        "@Name": "bytesTotal",
+                        "#text": "302592"
+                    },
+                    {
+                        "@Name": "bytesTransferred",
+                        "#text": "302592"
+                    },
+                    {
+                        "@Name": "proxy"
+                    },
+                    {
+                        "@Name": "peerProtocolFlags",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "bytesTransferredFromPeer",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "AdditionalInfoHr",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "PeerContextInfo",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "bandwidthLimit",
+                        "#text": "18446744073709551615"
+                    },
+                    {
+                        "@Name": "ignoreBandwidthLimitsOnLan",
+                        "#text": "False"
+                    }
+                ]
+            }
+        }
+    }
+]

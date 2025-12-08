@@ -14,12 +14,14 @@ import {
     Activity
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import NetworkSwitcher from "@/components/NetworkSwitcher";
 
 const navigation = [
-    { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
+    { name: "Analytics", href: "/analytics", icon: Activity },
+    { name: "Attacks", href: "/dashboard", icon: LayoutDashboard },
     { name: "Logs", href: "/logs", icon: FileText },
     { name: "Alerts", href: "/alerts", icon: AlertTriangle },
-    { name: "Threat Intel", href: "/threat-intel", icon: Globe },
+    // { name: "Threat Intel", href: "/threat-intel", icon: Globe },
     { name: "Ingest", href: "/ingest", icon: FileBarChart },
     { name: "Settings", href: "/settings", icon: Settings },
 ];
@@ -44,6 +46,11 @@ export default function Sidebar() {
                         <p className="text-xs text-zinc-500">Security Monitor</p>
                     </div>
                 </div>
+            </div>
+
+            {/* Network Switcher */}
+            <div className="relative z-10 mb-4">
+                <NetworkSwitcher />
             </div>
 
             <nav className="flex-1 px-3 space-y-1 relative z-10">

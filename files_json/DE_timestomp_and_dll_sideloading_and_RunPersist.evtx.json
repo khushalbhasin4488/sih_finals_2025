@@ -1,0 +1,2082 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:25.868864+00:00"
+                },
+                "EventRecordID": "6575",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:25.868"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7acc-5cc4-0000-0010b2470300}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2772"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\Flash_update.exe"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-04-27 15:57:25.868"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:27.087612+00:00"
+                },
+                "EventRecordID": "6576",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:27.087"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7ab0-5cc4-0000-0010c5be0000}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "944"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\svchost.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Windows\\System32\\Tasks\\Microsoft\\Windows Defender\\MP Scheduled Scan"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2009-07-14 04:42:30.134"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.368864+00:00"
+                },
+                "EventRecordID": "6577",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "technique_id=T1036,technique_name=Masquerading"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.368"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-00102b3e0c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2680"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\Flash_update.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Users\\IEUser\\Downloads\\Flash_update.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-7ab1-5cc4-0000-0020bef40000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000f4be"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=B4E581F173F782A2F1DA5D29C95946EE500EB2D0,MD5=42893ADBC36605EC79B5BD610759947E,SHA256=1A061C74619DE6AF8C02CBA0FA00754BDD9E3515C0E08CAD6350C7ADFC8CDD5B,IMPHASH=40BEC1A4A3BCB7D3089B5E1532386613"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-7acc-5cc4-0000-0010b2470300}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2772"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.587612+00:00"
+                },
+                "EventRecordID": "6578",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "1120"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "dll side loading"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.509"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-00102b3e0c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2680"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\Flash_update.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Windows\\System32\\winmm.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "MCI API DLL"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=41905C387FA657D91DA8A743ABC04B6C11A38B52,MD5=D5AEFAD57C08349A4393D987DF7C715D,SHA256=C36A45BC2448DF30CD17BD2F8A17FC196FAFB685612CACCEB22DC7B58515C201,IMPHASH=1A7210F2C9930AF9B51025300C67DA77"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "Microsoft Windows"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.650112+00:00"
+                },
+                "EventRecordID": "6579",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.634"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-00102b3e0c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2680"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\Flash_update.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-04-27 15:57:53.634"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "2"
+                },
+                "Version": "4",
+                "Level": "4",
+                "Task": "2",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.650112+00:00"
+                },
+                "EventRecordID": "6580",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "technique_id=T1099,technique_name=Timestomp"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.634"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-00102b3e0c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2680"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\Flash_update.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2013-09-04 16:29:27.000"
+                    },
+                    {
+                        "@Name": "PreviousCreationUtcTime",
+                        "#text": "2019-04-27 15:57:53.634"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.650112+00:00"
+                },
+                "EventRecordID": "6581",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.634"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-00102b3e0c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2680"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\Flash_update.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmartMax.dll"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-04-27 15:57:53.634"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "2"
+                },
+                "Version": "4",
+                "Level": "4",
+                "Task": "2",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.650112+00:00"
+                },
+                "EventRecordID": "6582",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "technique_id=T1099,technique_name=Timestomp"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.650"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-00102b3e0c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2680"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\Flash_update.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmartMax.dll"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2013-09-04 16:29:27.000"
+                    },
+                    {
+                        "@Name": "PreviousCreationUtcTime",
+                        "#text": "2019-04-27 15:57:53.634"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "2"
+                },
+                "Version": "4",
+                "Level": "4",
+                "Task": "2",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.650112+00:00"
+                },
+                "EventRecordID": "6583",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "technique_id=T1099,technique_name=Timestomp"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.650"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-00102b3e0c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2680"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\Flash_update.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmartMax.dll.url"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2013-09-05 17:50:28.000"
+                    },
+                    {
+                        "@Name": "PreviousCreationUtcTime",
+                        "#text": "2019-04-27 15:57:53.650"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.837612+00:00"
+                },
+                "EventRecordID": "6584",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "technique_id=T1036,technique_name=Masquerading"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.696"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-0010f9530c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2992"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.14.10.100.01"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "NVIDIA Smart Maximise Helper Host"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "NVIDIA Smart Maximise Helper Host version 100.01"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-7ab1-5cc4-0000-0020bef40000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000f4be"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=6474D0369F97E72E01E4971128D1062F5C2B3656,MD5=09B8B54F78A10C435CD319070AA13C28,SHA256=523D28DF917F9D265CD2C0D38DF26277BC56A535145100ED82E6F5FDEAAE7256,IMPHASH=DF7251FDCE5E0D0813311EC9D52FDE93"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-00102b3e0c00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2680"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\Flash_update.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Users\\IEUser\\Downloads\\Flash_update.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.837612+00:00"
+                },
+                "EventRecordID": "6585",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "dll side loading"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.696"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-00102b3e0c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2680"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\Flash_update.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=6474D0369F97E72E01E4971128D1062F5C2B3656,MD5=09B8B54F78A10C435CD319070AA13C28,SHA256=523D28DF917F9D265CD2C0D38DF26277BC56A535145100ED82E6F5FDEAAE7256,IMPHASH=DF7251FDCE5E0D0813311EC9D52FDE93"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "NVIDIA Corporation"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.837612+00:00"
+                },
+                "EventRecordID": "6586",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "dll side loading"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.712"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-00102b3e0c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2680"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\Flash_update.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=6474D0369F97E72E01E4971128D1062F5C2B3656,MD5=09B8B54F78A10C435CD319070AA13C28,SHA256=523D28DF917F9D265CD2C0D38DF26277BC56A535145100ED82E6F5FDEAAE7256,IMPHASH=DF7251FDCE5E0D0813311EC9D52FDE93"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "NVIDIA Corporation"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.837612+00:00"
+                },
+                "EventRecordID": "6587",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "dll side loading"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.712"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-0010f9530c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2992"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=6474D0369F97E72E01E4971128D1062F5C2B3656,MD5=09B8B54F78A10C435CD319070AA13C28,SHA256=523D28DF917F9D265CD2C0D38DF26277BC56A535145100ED82E6F5FDEAAE7256,IMPHASH=DF7251FDCE5E0D0813311EC9D52FDE93"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "NVIDIA Corporation"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.853237+00:00"
+                },
+                "EventRecordID": "6588",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "dll side loading"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.728"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-0010f9530c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2992"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmartMax.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=4E14894860034FEFBAB41CFE9A763D8061D19EF9,MD5=2D8FB1F82724CF542CD2E3A5E041FB52,SHA256=ECE29E4AF4B33C02DAFAC24748A9C125B057E39455ACF3C45464DB36BFE74881,IMPHASH=9599F61759CDFD742AFA0B8EC24B5599"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "false"
+                    },
+                    {
+                        "@Name": "Signature"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Unavailable"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.853237+00:00"
+                },
+                "EventRecordID": "6589",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "dll side loading"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.743"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-0010f9530c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2992"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Windows\\System32\\winmm.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7600.16385 (win7_rtm.090713-1255)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "MCI API DLL"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=41905C387FA657D91DA8A743ABC04B6C11A38B52,MD5=D5AEFAD57C08349A4393D987DF7C715D,SHA256=C36A45BC2448DF30CD17BD2F8A17FC196FAFB685612CACCEB22DC7B58515C201,IMPHASH=1A7210F2C9930AF9B51025300C67DA77"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "Microsoft Windows"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.868864+00:00"
+                },
+                "EventRecordID": "6590",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "dll side loading"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.775"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-0010f9530c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2992"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=6474D0369F97E72E01E4971128D1062F5C2B3656,MD5=09B8B54F78A10C435CD319070AA13C28,SHA256=523D28DF917F9D265CD2C0D38DF26277BC56A535145100ED82E6F5FDEAAE7256,IMPHASH=DF7251FDCE5E0D0813311EC9D52FDE93"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "NVIDIA Corporation"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.868864+00:00"
+                },
+                "EventRecordID": "6591",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "dll side loading"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.790"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-0010f9530c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2992"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=6474D0369F97E72E01E4971128D1062F5C2B3656,MD5=09B8B54F78A10C435CD319070AA13C28,SHA256=523D28DF917F9D265CD2C0D38DF26277BC56A535145100ED82E6F5FDEAAE7256,IMPHASH=DF7251FDCE5E0D0813311EC9D52FDE93"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "NVIDIA Corporation"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.868864+00:00"
+                },
+                "EventRecordID": "6592",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "dll side loading"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.790"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-0010f9530c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2992"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=6474D0369F97E72E01E4971128D1062F5C2B3656,MD5=09B8B54F78A10C435CD319070AA13C28,SHA256=523D28DF917F9D265CD2C0D38DF26277BC56A535145100ED82E6F5FDEAAE7256,IMPHASH=DF7251FDCE5E0D0813311EC9D52FDE93"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "NVIDIA Corporation"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "13"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "13",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.884487+00:00"
+                },
+                "EventRecordID": "6593",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "technique_id=T1060,technique_name=Registry Run Keys / Start Folder"
+                    },
+                    {
+                        "@Name": "EventType",
+                        "#text": "SetValue"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.806"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-0010f9530c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2992"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "TargetObject",
+                        "#text": "HKU\\S-1-5-21-3583694148-1414552638-2922671848-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\360v"
+                    },
+                    {
+                        "@Name": "Details",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\svchost.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.931362+00:00"
+                },
+                "EventRecordID": "6594",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "technique_id=T1059,technique_name=Command-Line Interface"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.806"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-00105c5c0c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3076"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7601.17514 (win7sp1_rtm.101119-1850)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "cmd.exe /A"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-7ab1-5cc4-0000-0020bef40000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000f4be"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EE8CBF12D87C4D388F09B4F69BED2E91682920B5,MD5=AD7B9C14083B52BC532FBA5948342B98,SHA256=17F746D82695FA9B35493B41859D39D786D32B23A9D2E00F4011DEC7A02402AE,IMPHASH=CEEFB55F764020CC5C5F8F23349AB163"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-0010f9530c00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2992"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:53.931362+00:00"
+                },
+                "EventRecordID": "6595",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:53.806"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{365abb72-7c01-5cc4-0000-0010f9530c00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "2992"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "3008"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\NvSmart.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{365abb72-7c01-5cc4-0000-00105c5c0c00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "3076"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+4534c|C:\\Windows\\system32\\kernel32.dll+5112b|C:\\Windows\\system32\\kernel32.dll+2079|UNKNOWN(100013EA)|UNKNOWN(10001D84)|UNKNOWN(1000249F)|UNKNOWN(100025A6)|UNKNOWN(0020082A)|UNKNOWN(002008D0)|UNKNOWN(00200A72)|UNKNOWN(00200022)|C:\\Windows\\system32\\kernel32.dll+4ef8c|C:\\Windows\\SYSTEM32\\ntdll.dll+6367a|C:\\Windows\\SYSTEM32\\ntdll.dll+6364d"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:54.134487+00:00"
+                },
+                "EventRecordID": "6622",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "technique_id=T1059,technique_name=Command-Line Interface"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:54.087"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c02-5cc4-0000-0010fd6e0c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3188"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.1.7601.17514 (win7sp1_rtm.101119-1850)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows Command Processor"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\cmd.exe\" /c del /q \"C:\\Users\\IEUser\\Downloads\\Flash_update.exe\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\AppData\\Roaming\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-7ab1-5cc4-0000-0020bef40000}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000000f4be"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=EE8CBF12D87C4D388F09B4F69BED2E91682920B5,MD5=AD7B9C14083B52BC532FBA5948342B98,SHA256=17F746D82695FA9B35493B41859D39D786D32B23A9D2E00F4011DEC7A02402AE,IMPHASH=CEEFB55F764020CC5C5F8F23349AB163"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-00102b3e0c00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2680"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\Flash_update.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Users\\IEUser\\Downloads\\Flash_update.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "5"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "5",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-04-27 15:57:54.165737+00:00"
+                },
+                "EventRecordID": "6623",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1912",
+                    "@ThreadID": "996"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-04-27 15:57:54.165"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-7c01-5cc4-0000-00102b3e0c00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2680"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\Flash_update.exe"
+                    }
+                ]
+            }
+        }
+    }
+]

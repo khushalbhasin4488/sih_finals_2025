@@ -1,0 +1,302 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "MSSQLSERVER"
+                },
+                "EventID": {
+                    "@Qualifiers": "49152",
+                    "#text": "18456"
+                },
+                "Level": "0",
+                "Task": "4",
+                "Keywords": "0x0090000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-04 13:46:01.171339+00:00"
+                },
+                "EventRecordID": "13026",
+                "Channel": "Application",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>sa</string>\n<string> Reason: Password did not match that for the login provided.</string>\n<string> [CLIENT: 10.0.2.17]</string>",
+                "Binary": "GEgAAA4AAAAMAAAATQBTAEUARABHAEUAVwBJAE4AMQAwAAAABwAAAG0AYQBzAHQAZQByAAAA"
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "MSSQLSERVER"
+                },
+                "EventID": {
+                    "@Qualifiers": "49152",
+                    "#text": "18456"
+                },
+                "Level": "0",
+                "Task": "4",
+                "Keywords": "0x0090000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-04 13:46:01.187637+00:00"
+                },
+                "EventRecordID": "13027",
+                "Channel": "Application",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>##MS_SQLResourceSigningCertificate##</string>\n<string> Reason: Attempting to use an NT account name with SQL Server Authentication.</string>\n<string> [CLIENT: 10.0.2.17]</string>",
+                "Binary": "GEgAAA4AAAAMAAAATQBTAEUARABHAEUAVwBJAE4AMQAwAAAABwAAAG0AYQBzAHQAZQByAAAA"
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "MSSQLSERVER"
+                },
+                "EventID": {
+                    "@Qualifiers": "49152",
+                    "#text": "18456"
+                },
+                "Level": "0",
+                "Task": "4",
+                "Keywords": "0x0090000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-04 13:46:01.202730+00:00"
+                },
+                "EventRecordID": "13028",
+                "Channel": "Application",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>##MS_SQLReplicationSigningCertificate##</string>\n<string> Reason: Attempting to use an NT account name with SQL Server Authentication.</string>\n<string> [CLIENT: 10.0.2.17]</string>",
+                "Binary": "GEgAAA4AAAAMAAAATQBTAEUARABHAEUAVwBJAE4AMQAwAAAABwAAAG0AYQBzAHQAZQByAAAA"
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "MSSQLSERVER"
+                },
+                "EventID": {
+                    "@Qualifiers": "49152",
+                    "#text": "18456"
+                },
+                "Level": "0",
+                "Task": "4",
+                "Keywords": "0x0090000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-04 13:46:01.202730+00:00"
+                },
+                "EventRecordID": "13029",
+                "Channel": "Application",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>##MS_SQLAuthenticatorCertificate##</string>\n<string> Reason: Attempting to use an NT account name with SQL Server Authentication.</string>\n<string> [CLIENT: 10.0.2.17]</string>",
+                "Binary": "GEgAAA4AAAAMAAAATQBTAEUARABHAEUAVwBJAE4AMQAwAAAABwAAAG0AYQBzAHQAZQByAAAA"
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "MSSQLSERVER"
+                },
+                "EventID": {
+                    "@Qualifiers": "49152",
+                    "#text": "18456"
+                },
+                "Level": "0",
+                "Task": "4",
+                "Keywords": "0x0090000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-04 13:46:01.222452+00:00"
+                },
+                "EventRecordID": "13030",
+                "Channel": "Application",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>##MS_PolicySigningCertificate##</string>\n<string> Reason: Attempting to use an NT account name with SQL Server Authentication.</string>\n<string> [CLIENT: 10.0.2.17]</string>",
+                "Binary": "GEgAAA4AAAAMAAAATQBTAEUARABHAEUAVwBJAE4AMQAwAAAABwAAAG0AYQBzAHQAZQByAAAA"
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "MSSQLSERVER"
+                },
+                "EventID": {
+                    "@Qualifiers": "49152",
+                    "#text": "18456"
+                },
+                "Level": "0",
+                "Task": "4",
+                "Keywords": "0x0090000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-04 13:46:01.233944+00:00"
+                },
+                "EventRecordID": "13031",
+                "Channel": "Application",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>##MS_SmoExtendedSigningCertificate##</string>\n<string> Reason: Attempting to use an NT account name with SQL Server Authentication.</string>\n<string> [CLIENT: 10.0.2.17]</string>",
+                "Binary": "GEgAAA4AAAAMAAAATQBTAEUARABHAEUAVwBJAE4AMQAwAAAABwAAAG0AYQBzAHQAZQByAAAA"
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "MSSQLSERVER"
+                },
+                "EventID": {
+                    "@Qualifiers": "49152",
+                    "#text": "18456"
+                },
+                "Level": "0",
+                "Task": "4",
+                "Keywords": "0x0090000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-04 13:46:01.248423+00:00"
+                },
+                "EventRecordID": "13032",
+                "Channel": "Application",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>##MS_PolicyEventProcessingLogin##</string>\n<string> Reason: An error occurred while evaluating the password.</string>\n<string> [CLIENT: 10.0.2.17]</string>",
+                "Binary": "GEgAAA4AAAAMAAAATQBTAEUARABHAEUAVwBJAE4AMQAwAAAABwAAAG0AYQBzAHQAZQByAAAA"
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "MSSQLSERVER"
+                },
+                "EventID": {
+                    "@Qualifiers": "49152",
+                    "#text": "18456"
+                },
+                "Level": "0",
+                "Task": "4",
+                "Keywords": "0x0090000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-04 13:46:01.248882+00:00"
+                },
+                "EventRecordID": "13033",
+                "Channel": "Application",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>##MS_PolicyTsqlExecutionLogin##</string>\n<string> Reason: An error occurred while evaluating the password.</string>\n<string> [CLIENT: 10.0.2.17]</string>",
+                "Binary": "GEgAAA4AAAAMAAAATQBTAEUARABHAEUAVwBJAE4AMQAwAAAABwAAAG0AYQBzAHQAZQByAAAA"
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "MSSQLSERVER"
+                },
+                "EventID": {
+                    "@Qualifiers": "49152",
+                    "#text": "18456"
+                },
+                "Level": "0",
+                "Task": "4",
+                "Keywords": "0x0090000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-04 13:46:01.266434+00:00"
+                },
+                "EventRecordID": "13034",
+                "Channel": "Application",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>##MS_AgentSigningCertificate##</string>\n<string> Reason: Attempting to use an NT account name with SQL Server Authentication.</string>\n<string> [CLIENT: 10.0.2.17]</string>",
+                "Binary": "GEgAAA4AAAAMAAAATQBTAEUARABHAEUAVwBJAE4AMQAwAAAABwAAAG0AYQBzAHQAZQByAAAA"
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "MSSQLSERVER"
+                },
+                "EventID": {
+                    "@Qualifiers": "49152",
+                    "#text": "18456"
+                },
+                "Level": "0",
+                "Task": "4",
+                "Keywords": "0x0090000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-04 13:46:01.279825+00:00"
+                },
+                "EventRecordID": "13035",
+                "Channel": "Application",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>root</string>\n<string> Reason: Password did not match that for the login provided.</string>\n<string> [CLIENT: 10.0.2.17]</string>",
+                "Binary": "GEgAAA4AAAAMAAAATQBTAEUARABHAEUAVwBJAE4AMQAwAAAABwAAAG0AYQBzAHQAZQByAAAA"
+            }
+        }
+    }
+]

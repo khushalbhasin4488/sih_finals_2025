@@ -1,0 +1,127 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-05-16 01:38:19.630865+00:00"
+                },
+                "EventRecordID": "18002",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1792",
+                    "@ThreadID": "2232"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "DC1.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Lateral Movement - Windows Remote Management"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-05-16 01:38:19.616"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{dfae8213-bf0b-5cdc-0000-00105a951600}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2936"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\HOSTNAME.EXE"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.3.9600.16384 (winblue_rtm.130821-1623)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Hostname APP"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\system32\\HOSTNAME.EXE\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\administrator\\Documents\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "insecurebank\\Administrator"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{dfae8213-bead-5cdc-0000-0020afda1500}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x000000000015daaf"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=4ED8B225C9CC97DD02C9A5DFD9F733C353F83E36,MD5=74D1E6E8AC6ABCC1DE934C8C5E422B64,SHA256=CA40BB9470E8E73767F3AA43DDF51F814481167DEC6C2FAA1996C18AB2C621DB,IMPHASH=65F157041816229C2919A683CBA86F70"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{dfae8213-bead-5cdc-0000-0010dddb1500}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3332"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\wsmprovhost.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\wsmprovhost.exe -Embedding"
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,1332 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:35:37.185148+00:00"
+                },
+                "EventRecordID": "238373",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "suspicious execution path"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:35:37.101"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-88c9-5d0c-0000-0010348c1d00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3572"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "Outflank-Dumpert.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\administrator\\Desktop\\x64\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "insecurebank\\Administrator"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{ecad0485-87e3-5d0c-0000-0020266a0f00}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000f6a26"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "2"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=3A41FF5A6CDEC8829876E0486A0072BC8D13DCF1,MD5=D4940C501545BCFD11D6DC75B5D0FEC9,SHA256=38879FE4AA25044DB241B093E6A1CF904BA9F4E999041C0CC039E2D5F7ABA044,IMPHASH=88788EE624180BE467F3C32F4720AA97"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{ecad0485-8897-5d0c-0000-0010a2fa1c00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3964"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\system32\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:35:37.329185+00:00"
+                },
+                "EventRecordID": "238374",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:35:37.316"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{ecad0485-88c9-5d0c-0000-0010348c1d00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3572"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "3532"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{ecad0485-822f-5d0c-0000-0010635e0000}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "520"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe+134da|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe+12e6d|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe+13f09|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe+13dae|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe+13c6e|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe+13f99|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+154f4"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:35:37.329185+00:00"
+                },
+                "EventRecordID": "238375",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:35:37.324"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-88c9-5d0c-0000-0010348c1d00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3572"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Windows\\Temp\\dumpert.dmp"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-06-21 06:53:03.227"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:35:37.377197+00:00"
+                },
+                "EventRecordID": "238376",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:35:37.377"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{ecad0485-88c9-5d0c-0000-0010348c1d00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3572"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "3532"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{ecad0485-822f-5d0c-0000-0010635e0000}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "520"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+909ba|C:\\Windows\\system32\\ctiuser.dll+1b132|C:\\Windows\\SYSTEM32\\ntdll.dll+80498|C:\\Windows\\system32\\KERNEL32.DLL+1e1d4|C:\\Windows\\system32\\KERNEL32.DLL+1dc17|C:\\Windows\\system32\\ctiuser.dll+141be|C:\\Windows\\SYSTEM32\\dbghelp.dll+1244d8|C:\\Windows\\SYSTEM32\\dbghelp.dll+11ebd5|C:\\Windows\\SYSTEM32\\dbghelp.dll+118402|C:\\Windows\\SYSTEM32\\dbghelp.dll+1137e2|C:\\Windows\\SYSTEM32\\dbghelp.dll+113c84|C:\\Windows\\system32\\ctiuser.dll+22232|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe+130a5|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe+13f09|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe+13dae|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe+13c6e|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert.exe+13f99|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+154f4"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:35:50.128027+00:00"
+                },
+                "EventRecordID": "238378",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:35:50.093"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-88d6-5d0c-0000-001007aa1d00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1568"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "6.3.9600.17415 (winblue_r4.141028-1500)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows host process (Rundll32)"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "RUNDLL32.EXE"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "rundll32.exe  .\\Outflank-Dumpert-DLL.dll, Dump"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\administrator\\Desktop\\x64\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "insecurebank\\Administrator"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{ecad0485-87e3-5d0c-0000-0020266a0f00}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000f6a26"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "2"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=D4AC232D507769FFD004439C15302916A40D9831,MD5=6C308D32AFA41D26CE2A0EA8F7B79565,SHA256=5CC2C563D89257964C4B446F54AFE1E57BBEE49315A9FC001FF5A6BCB6650393,IMPHASH=156B2AC675B1B9202AF35C643105610C"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{ecad0485-8897-5d0c-0000-0010a2fa1c00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3964"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\system32\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:35:50.259077+00:00"
+                },
+                "EventRecordID": "238379",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:35:50.254"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{ecad0485-88d6-5d0c-0000-001007aa1d00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "1568"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "3808"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\system32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{ecad0485-822f-5d0c-0000-0010635e0000}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "520"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert-DLL.dll+12d1a|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert-DLL.dll+11c1f|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert-DLL.dll+1187b|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert-DLL.dll+136f8|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert-DLL.dll+138d1|C:\\Windows\\SYSTEM32\\ntdll.dll+1c114|C:\\Windows\\SYSTEM32\\ntdll.dll+1b88e|C:\\Windows\\SYSTEM32\\ntdll.dll+1b684|C:\\Windows\\SYSTEM32\\ntdll.dll+19cab|C:\\Windows\\SYSTEM32\\ntdll.dll+2b3ef|C:\\Windows\\SYSTEM32\\ntdll.dll+68df9|C:\\Windows\\system32\\KERNELBASE.dll+858a|C:\\Windows\\system32\\ctiuser.dll+15adb|C:\\Windows\\system32\\rundll32.exe+21fa|C:\\Windows\\system32\\rundll32.exe+2647|C:\\Windows\\system32\\rundll32.exe+44c4|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+154f4"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:35:50.259077+00:00"
+                },
+                "EventRecordID": "238380",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:35:50.258"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-88d6-5d0c-0000-001007aa1d00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1568"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Windows\\Temp\\dumpert.dmp"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-06-21 06:53:03.227"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:35:50.264109+00:00"
+                },
+                "EventRecordID": "238381",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:35:50.263"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{ecad0485-88d6-5d0c-0000-001007aa1d00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "1568"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "3808"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\system32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{ecad0485-822f-5d0c-0000-0010635e0000}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "520"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+909ba|C:\\Windows\\system32\\ctiuser.dll+1b132|C:\\Windows\\SYSTEM32\\ntdll.dll+80498|C:\\Windows\\system32\\KERNEL32.DLL+1e1d4|C:\\Windows\\system32\\KERNEL32.DLL+1dc17|C:\\Windows\\system32\\ctiuser.dll+141be|C:\\Windows\\SYSTEM32\\dbghelp.dll+1244d8|C:\\Windows\\SYSTEM32\\dbghelp.dll+11ebd5|C:\\Windows\\SYSTEM32\\dbghelp.dll+118402|C:\\Windows\\SYSTEM32\\dbghelp.dll+1137e2|C:\\Windows\\SYSTEM32\\dbghelp.dll+113c84|C:\\Windows\\system32\\ctiuser.dll+22232|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert-DLL.dll+11df1|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert-DLL.dll+1187b|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert-DLL.dll+136f8|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert-DLL.dll+138d1|C:\\Windows\\SYSTEM32\\ntdll.dll+1c114|C:\\Windows\\SYSTEM32\\ntdll.dll+1b88e|C:\\Windows\\SYSTEM32\\ntdll.dll+1b684|C:\\Windows\\SYSTEM32\\ntdll.dll+19cab|C:\\Windows\\SYSTEM32\\ntdll.dll+2b3ef|C:\\Windows\\SYSTEM32\\ntdll.dll+68df9|C:\\Windows\\system32\\KERNELBASE.dll+858a|C:\\Windows\\system32\\ctiuser.dll+15adb"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:35:50.729225+00:00"
+                },
+                "EventRecordID": "238382",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:35:50.724"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{ecad0485-88d6-5d0c-0000-001007aa1d00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "1568"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "3808"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\system32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{ecad0485-822f-5d0c-0000-0010635e0000}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "520"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert-DLL.dll+12d1a|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert-DLL.dll+11c1f|C:\\Windows\\system32\\rundll32.exe+2709|C:\\Windows\\system32\\rundll32.exe+44c4|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+154f4"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:35:50.729225+00:00"
+                },
+                "EventRecordID": "238383",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:35:50.727"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-88d6-5d0c-0000-001007aa1d00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "1568"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Windows\\Temp\\dumpert.dmp"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-06-21 06:53:03.227"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:35:50.749237+00:00"
+                },
+                "EventRecordID": "238384",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:35:50.730"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{ecad0485-88d6-5d0c-0000-001007aa1d00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "1568"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "3808"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\system32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{ecad0485-822f-5d0c-0000-0010635e0000}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "520"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+909ba|C:\\Windows\\system32\\ctiuser.dll+1b132|C:\\Windows\\SYSTEM32\\ntdll.dll+80498|C:\\Windows\\system32\\KERNEL32.DLL+1e1d4|C:\\Windows\\system32\\KERNEL32.DLL+1dc17|C:\\Windows\\system32\\ctiuser.dll+141be|C:\\Windows\\SYSTEM32\\dbghelp.dll+1244d8|C:\\Windows\\SYSTEM32\\dbghelp.dll+11ebd5|C:\\Windows\\SYSTEM32\\dbghelp.dll+118402|C:\\Windows\\SYSTEM32\\dbghelp.dll+1137e2|C:\\Windows\\SYSTEM32\\dbghelp.dll+113c84|C:\\Windows\\system32\\ctiuser.dll+22232|C:\\Users\\administrator\\Desktop\\x64\\Outflank-Dumpert-DLL.dll+11df1|C:\\Windows\\system32\\rundll32.exe+2709|C:\\Windows\\system32\\rundll32.exe+44c4|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+154f4"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:36:50.450184+00:00"
+                },
+                "EventRecordID": "238385",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "suspicious execution path"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:36:50.277"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-8912-5d0c-0000-0010fd2f1f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3552"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\administrator\\Desktop\\AndrewSpecial.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "AndrewSpecial.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\administrator\\Desktop\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "insecurebank\\Administrator"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{ecad0485-87e3-5d0c-0000-0020266a0f00}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000f6a26"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "2"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=FE6BEB0E26F71F8587415507B318B161FBC3338B,MD5=4791C98C096587DB8DFECD5CA894DD56,SHA256=2969E70B74A12E3B0441D0BDA498322464A8614421B00321E889756D60AB4200,IMPHASH=40B5A4911712471B34D39C3AC7E99193"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{ecad0485-8897-5d0c-0000-0010a2fa1c00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "3964"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Windows\\system32\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:36:51.681566+00:00"
+                },
+                "EventRecordID": "238386",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:36:50.983"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{ecad0485-8912-5d0c-0000-0010fd2f1f00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3552"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "3532"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Users\\administrator\\Desktop\\AndrewSpecial.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{ecad0485-822f-5d0c-0000-0010635e0000}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "520"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+909ba|C:\\Windows\\SYSTEM32\\wow64.dll+7174|C:\\Windows\\SYSTEM32\\wow64.dll+9c7b|C:\\Windows\\system32\\wow64cpu.dll+1dc5|C:\\Windows\\SYSTEM32\\wow64.dll+1235a|C:\\Windows\\SYSTEM32\\wow64.dll+12292|C:\\Windows\\SYSTEM32\\ntdll.dll+c3d95|C:\\Windows\\SYSTEM32\\ntdll.dll+a24de|C:\\Windows\\SYSTEM32\\ntdll.dll+18c9e|C:\\Windows\\SYSTEM32\\ntdll.dll+3c55c(wow64)|C:\\Windows\\SYSTEM32\\ctiuser.dll+1a81e(wow64)|C:\\Windows\\SYSTEM32\\KERNELBASE.dll+17468(wow64)|C:\\Windows\\SYSTEM32\\ctiuser.dll+1605f(wow64)|C:\\Users\\administrator\\Desktop\\AndrewSpecial.exe+1135|C:\\Users\\administrator\\Desktop\\AndrewSpecial.exe+16ad|C:\\Users\\administrator\\Desktop\\AndrewSpecial.exe+1b1b|C:\\Windows\\SYSTEM32\\KERNEL32.DLL+17c04(wow64)|C:\\Windows\\SYSTEM32\\ntdll.dll+5ad8f(wow64)|C:\\Windows\\SYSTEM32\\ntdll.dll+5ad5a(wow64)"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:36:51.681566+00:00"
+                },
+                "EventRecordID": "238387",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:36:50.985"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{ecad0485-8912-5d0c-0000-0010fd2f1f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "3552"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\administrator\\Desktop\\AndrewSpecial.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Users\\administrator\\Desktop\\Andrew.dmp"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-06-21 07:36:50.985"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-21 07:36:51.682571+00:00"
+                },
+                "EventRecordID": "238388",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1560",
+                    "@ThreadID": "2316"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "alice.insecurebank.local",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-21 07:36:50.992"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{ecad0485-8912-5d0c-0000-0010fd2f1f00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "3552"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "3532"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Users\\administrator\\Desktop\\AndrewSpecial.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{ecad0485-822f-5d0c-0000-0010635e0000}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "520"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\lsass.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+909ba|C:\\Windows\\SYSTEM32\\wow64.dll+7174|C:\\Windows\\SYSTEM32\\wow64.dll+9c7b|C:\\Windows\\system32\\wow64cpu.dll+1dc5|C:\\Windows\\SYSTEM32\\wow64.dll+1235a|C:\\Windows\\SYSTEM32\\wow64.dll+12292|C:\\Windows\\SYSTEM32\\ntdll.dll+c3d95|C:\\Windows\\SYSTEM32\\ntdll.dll+a24de|C:\\Windows\\SYSTEM32\\ntdll.dll+18c9e|C:\\Windows\\SYSTEM32\\ntdll.dll+3c55c(wow64)|C:\\Windows\\SYSTEM32\\ctiuser.dll+1a81e(wow64)|C:\\Windows\\SYSTEM32\\ntdll.dll+b7088(wow64)|C:\\Windows\\SYSTEM32\\KERNEL32.DLL+39bb1(wow64)|C:\\Windows\\SYSTEM32\\KERNEL32.DLL+29911(wow64)|C:\\Windows\\SYSTEM32\\ctiuser.dll+13d59(wow64)|C:\\Windows\\SYSTEM32\\dbghelp.dll+f852f(wow64)|C:\\Windows\\SYSTEM32\\dbghelp.dll+f39c3(wow64)|C:\\Windows\\SYSTEM32\\dbghelp.dll+ee1a7(wow64)|C:\\Windows\\SYSTEM32\\dbghelp.dll+e9e2e(wow64)|C:\\Windows\\SYSTEM32\\dbghelp.dll+ea1f5(wow64)|C:\\Windows\\SYSTEM32\\ctiuser.dll+214b2(wow64)|C:\\Users\\administrator\\Desktop\\AndrewSpecial.exe+11c9|C:\\Users\\administrator\\Desktop\\AndrewSpecial.exe+16ad|C:\\Users\\administrator\\Desktop\\AndrewSpecial.exe+1b1b"
+                    }
+                ]
+            }
+        }
+    }
+]

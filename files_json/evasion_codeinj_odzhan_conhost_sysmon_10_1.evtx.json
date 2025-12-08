@@ -1,0 +1,427 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-02 18:00:29.615841+00:00"
+                },
+                "EventRecordID": "2116720",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5320",
+                    "@ThreadID": "6908"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "suspicious execution path"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-02 18:00:29.612"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-20bd-5efe-0000-00106d029d3a}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "16900"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Users\\Public\\tools\\evasion\\chost.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "?"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "chost.exe  payload.bin"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\Public\\tools\\evasion\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "LAPTOP-JU4M3I0E\\bouss"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{00247c92-8e79-5efd-0000-0020b446e837}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000037e846b4"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "7"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=06A1D9CC580F1CC239E643302CAB9166E0DF6355,MD5=7724B90C1D66AB3FA2A781E344AD2BE5,SHA256=805CA4E5A08C2366923D46680FDFBAD8C3012AB6A93D518624C377FA8A610A43,IMPHASH=A4DE9CE85347166ACB42B7FA4676BF25"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{00247c92-1117-5efe-0000-001025004e3a}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "30572"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\windows\\system32\\cmd.exe\""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-02 18:00:29.617786+00:00"
+                },
+                "EventRecordID": "2116721",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5320",
+                    "@ThreadID": "6908"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-02 18:00:29.616"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{00247c92-1117-5efe-0000-00105a024e3a}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "29168"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "4580"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\windows\\system32\\conhost.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{00247c92-20bd-5efe-0000-00106d029d3a}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "16900"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Users\\Public\\tools\\evasion\\chost.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\windows\\SYSTEM32\\ntdll.dll+9c534|C:\\windows\\System32\\KERNELBASE.dll+2726e|C:\\windows\\system32\\conhost.exe+1260d|C:\\windows\\system32\\conhost.exe+12505|C:\\windows\\system32\\conhost.exe+895c|C:\\windows\\system32\\conhost.exe+f2e6|C:\\windows\\System32\\KERNEL32.DLL+17bd4|C:\\windows\\SYSTEM32\\ntdll.dll+6ce51"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-02 18:00:29.650400+00:00"
+                },
+                "EventRecordID": "2116722",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5320",
+                    "@ThreadID": "6908"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-02 18:00:29.642"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{00247c92-20bd-5efe-0000-00105c059d3a}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "16788"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.18362.693 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Notepad"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "OriginalFileName",
+                        "#text": "NOTEPAD.EXE"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "notepad"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\windows\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "LAPTOP-JU4M3I0E\\bouss"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{00247c92-8e79-5efd-0000-0020b446e837}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x0000000037e846b4"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "7"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=C401CD335BA6A3BDAF8799FDC09CDC0721F06015,MD5=06E6C0482562459ADB462CA9008262F8,SHA256=E5D90BEEB6F13F4613C3153DABBD1466F4A062B7252D931F37210907A7F914F7,IMPHASH=E2D17AC7541817AA681AE8FF7734AD89"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{00247c92-1117-5efe-0000-00105a024e3a}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "29168"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\conhost.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\\??\\C:\\windows\\system32\\conhost.exe 0xffffffff -ForceV1"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-02 18:00:29.650454+00:00"
+                },
+                "EventRecordID": "2116723",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "5320",
+                    "@ThreadID": "6908"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "LAPTOP-JU4M3I0E",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2020-07-02 18:00:29.642"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{00247c92-1117-5efe-0000-00105a024e3a}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "29168"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "19060"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\windows\\system32\\conhost.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{00247c92-20bd-5efe-0000-00105c059d3a}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "16788"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\windows\\system32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\windows\\SYSTEM32\\ntdll.dll+9d8e4|C:\\windows\\System32\\KERNELBASE.dll+5f36a|C:\\windows\\System32\\KERNELBASE.dll+5c5ca|C:\\windows\\System32\\KERNELBASE.dll+5bd86|C:\\windows\\System32\\KERNEL32.DLL+5e90b|UNKNOWN(000002022934003D)"
+                    }
+                ]
+            }
+        }
+    }
+]

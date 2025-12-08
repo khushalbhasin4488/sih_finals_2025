@@ -1,0 +1,372 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Bits-Client",
+                    "@Guid": "{ef1cc15b-46c1-414e-bb95-e76b077bd51e}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "0",
+                "Opcode": "0",
+                "Keywords": "0x4000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 08:55:46.352339+00:00"
+                },
+                "EventRecordID": "2774",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1556",
+                    "@ThreadID": "8344"
+                },
+                "Channel": "Microsoft-Windows-Bits-Client/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "jobTitle",
+                        "#text": "Download LockScreen Image"
+                    },
+                    {
+                        "@Name": "jobId",
+                        "#text": "{ff819706-9ff9-490b-ade5-b069232c5d23}"
+                    },
+                    {
+                        "@Name": "jobOwner",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "processPath",
+                        "#text": "C:\\Windows\\System32\\desktopimgdownldr.exe"
+                    },
+                    {
+                        "@Name": "processId",
+                        "#text": "1996"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Bits-Client",
+                    "@Guid": "{ef1cc15b-46c1-414e-bb95-e76b077bd51e}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "209"
+                },
+                "Version": "0",
+                "Level": "4",
+                "Task": "0",
+                "Opcode": "0",
+                "Keywords": "0x4000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 08:55:46.357986+00:00"
+                },
+                "EventRecordID": "2775",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1556",
+                    "@ThreadID": "668"
+                },
+                "Channel": "Microsoft-Windows-Bits-Client/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "jobName",
+                        "#text": "Download LockScreen Image"
+                    },
+                    {
+                        "@Name": "jobId",
+                        "#text": "{ff819706-9ff9-490b-ade5-b069232c5d23}"
+                    },
+                    {
+                        "@Name": "isRoaming",
+                        "#text": "1"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Bits-Client",
+                    "@Guid": "{ef1cc15b-46c1-414e-bb95-e76b077bd51e}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "59"
+                },
+                "Version": "1",
+                "Level": "4",
+                "Task": "0",
+                "Opcode": "1",
+                "Keywords": "0x4000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 08:55:49.123472+00:00"
+                },
+                "EventRecordID": "2776",
+                "Correlation": {
+                    "@ActivityID": "{fcc284db-aa62-40bb-b372-b5ba6a5ad840}",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1556",
+                    "@ThreadID": "7676"
+                },
+                "Channel": "Microsoft-Windows-Bits-Client/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "transferId",
+                        "#text": "{fcc284db-aa62-40bb-b372-b5ba6a5ad840}"
+                    },
+                    {
+                        "@Name": "name",
+                        "#text": "Download LockScreen Image"
+                    },
+                    {
+                        "@Name": "Id",
+                        "#text": "{ff819706-9ff9-490b-ade5-b069232c5d23}"
+                    },
+                    {
+                        "@Name": "url",
+                        "#text": "https://a.uguu.se/Hv0bgvgHGNeH_Bin.7z"
+                    },
+                    {
+                        "@Name": "peer"
+                    },
+                    {
+                        "@Name": "fileTime",
+                        "#text": "2020-07-03 08:44:00+00:00"
+                    },
+                    {
+                        "@Name": "fileLength",
+                        "#text": "162791"
+                    },
+                    {
+                        "@Name": "bytesTotal",
+                        "#text": "162791"
+                    },
+                    {
+                        "@Name": "bytesTransferred",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "bytesTransferredFromPeer",
+                        "#text": "0"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Bits-Client",
+                    "@Guid": "{ef1cc15b-46c1-414e-bb95-e76b077bd51e}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "60"
+                },
+                "Version": "1",
+                "Level": "4",
+                "Task": "0",
+                "Opcode": "2",
+                "Keywords": "0x4000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 08:55:51.349384+00:00"
+                },
+                "EventRecordID": "2777",
+                "Correlation": {
+                    "@ActivityID": "{fcc284db-aa62-40bb-b372-b5ba6a5ad840}",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1556",
+                    "@ThreadID": "8344"
+                },
+                "Channel": "Microsoft-Windows-Bits-Client/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "transferId",
+                        "#text": "{fcc284db-aa62-40bb-b372-b5ba6a5ad840}"
+                    },
+                    {
+                        "@Name": "name",
+                        "#text": "Download LockScreen Image"
+                    },
+                    {
+                        "@Name": "Id",
+                        "#text": "{ff819706-9ff9-490b-ade5-b069232c5d23}"
+                    },
+                    {
+                        "@Name": "url",
+                        "#text": "https://a.uguu.se/Hv0bgvgHGNeH_Bin.7z"
+                    },
+                    {
+                        "@Name": "peer"
+                    },
+                    {
+                        "@Name": "hr",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "fileTime",
+                        "#text": "2020-07-03 08:44:00+00:00"
+                    },
+                    {
+                        "@Name": "fileLength",
+                        "#text": "162791"
+                    },
+                    {
+                        "@Name": "bytesTotal",
+                        "#text": "162791"
+                    },
+                    {
+                        "@Name": "bytesTransferred",
+                        "#text": "162791"
+                    },
+                    {
+                        "@Name": "proxy"
+                    },
+                    {
+                        "@Name": "peerProtocolFlags",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "bytesTransferredFromPeer",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "AdditionalInfoHr",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "PeerContextInfo",
+                        "#text": "0"
+                    },
+                    {
+                        "@Name": "bandwidthLimit",
+                        "#text": "18446744073709551615"
+                    },
+                    {
+                        "@Name": "ignoreBandwidthLimitsOnLan",
+                        "#text": "False"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Bits-Client",
+                    "@Guid": "{ef1cc15b-46c1-414e-bb95-e76b077bd51e}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "4"
+                },
+                "Version": "1",
+                "Level": "4",
+                "Task": "0",
+                "Opcode": "0",
+                "Keywords": "0x4000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2020-07-03 08:55:51.356258+00:00"
+                },
+                "EventRecordID": "2778",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "1556",
+                    "@ThreadID": "4812"
+                },
+                "Channel": "Microsoft-Windows-Bits-Client/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "jobTitle",
+                        "#text": "Download LockScreen Image"
+                    },
+                    {
+                        "@Name": "jobId",
+                        "#text": "{ff819706-9ff9-490b-ade5-b069232c5d23}"
+                    },
+                    {
+                        "@Name": "jobOwner",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "fileCount",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "bytesTransferred",
+                        "#text": "162791"
+                    },
+                    {
+                        "@Name": "bytesTransferredFromPeer",
+                        "#text": "0"
+                    }
+                ]
+            }
+        }
+    }
+]

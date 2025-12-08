@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Sidebar from "../components/layout/Sidebar";
+import { NetworkProvider } from "@/lib/NetworkContext";
 
 export const metadata: Metadata = {
-    title: "Log Analyzer Tool",
-    description: "Portable log analysis tool for cyber security monitoring",
+    title: "Log Analyzer - Security Monitoring",
+    description: "Advanced log analysis and security monitoring system",
 };
 
 export default function RootLayout({
@@ -15,10 +16,12 @@ export default function RootLayout({
     return (
         <html lang="en" className="dark">
             <body className="flex min-h-screen bg-zinc-950 text-zinc-50 antialiased">
-                <Sidebar />
-                <main className="flex-1 overflow-auto relative">
-                    {children}
-                </main>
+                <NetworkProvider>
+                    <Sidebar />
+                    <main className="flex-1 overflow-auto relative">
+                        {children}
+                    </main>
+                </NetworkProvider>
             </body>
         </html>
     );

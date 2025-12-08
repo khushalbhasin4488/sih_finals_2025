@@ -17,6 +17,7 @@ import {
     ChevronDown,
     ChevronUp
 } from "lucide-react";
+import { useNetwork } from "@/lib/NetworkContext";
 
 interface Alert {
     id: string;
@@ -110,6 +111,7 @@ export default function AlertsPage() {
     const [selectedMethod, setSelectedMethod] = useState("");
     const [selectedAlert, setSelectedAlert] = useState<Alert | null>(null);
     const [expandedAlerts, setExpandedAlerts] = useState<Set<string>>(new Set());
+    const { selectedNetwork } = useNetwork();
 
     const fetchAlerts = useCallback(async () => {
         setLoading(true);
@@ -117,6 +119,7 @@ export default function AlertsPage() {
             const params = new URLSearchParams();
             params.append("limit", "100");
             if (selectedSeverity) params.append("severity", selectedSeverity);
+            if (selectedNetwork) params.append("network", selectedNetwork);
 
             const response = await fetch(`${API_BASE}/api/v1/alerts?${params}`);
             const data = await response.json();
@@ -134,7 +137,7 @@ export default function AlertsPage() {
         } finally {
             setLoading(false);
         }
-    }, [selectedSeverity, selectedMethod]);
+    }, [selectedSeverity, selectedMethod, selectedNetwork]);
 
     useEffect(() => {
         fetchAlerts();
@@ -172,7 +175,7 @@ export default function AlertsPage() {
     const renderExplanation = (alert: Alert) => {
         const method = alert.detection_method;
         const causation = alert.causation_info;
-        
+
         // Use causation_info if available, otherwise fall back to metadata
         const info = causation || alert.metadata || {};
 
@@ -219,7 +222,7 @@ export default function AlertsPage() {
                             )}
                         </div>
                     )}
-                    
+
                     {alert.related_log && (
                         <div className="mt-4 pt-4 border-t border-zinc-800">
                             <h5 className="text-sm font-semibold text-zinc-400 mb-2">Related Log</h5>
@@ -253,28 +256,28 @@ export default function AlertsPage() {
                     </div>
 
                     <div className="pl-6 space-y-2">
-                        {(info.observed_value !== undefined || info.current_value !== undefined) && 
-                         (info.baseline_value !== undefined || info.baseline_mean !== undefined) && (
-                            <div className="grid grid-cols-2 gap-4 text-xs">
-                                <div>
-                                    <span className="text-zinc-500">Observed Value:</span>
-                                    <div className="text-lg font-bold text-white mt-1">
-                                        {typeof (info.observed_value ?? info.current_value) === 'number'
-                                            ? (info.observed_value ?? info.current_value).toFixed(1)
-                                            : (info.observed_value ?? info.current_value)}
+                        {(info.observed_value !== undefined || info.current_value !== undefined) &&
+                            (info.baseline_value !== undefined || info.baseline_mean !== undefined) && (
+                                <div className="grid grid-cols-2 gap-4 text-xs">
+                                    <div>
+                                        <span className="text-zinc-500">Observed Value:</span>
+                                        <div className="text-lg font-bold text-white mt-1">
+                                            {typeof (info.observed_value ?? info.current_value) === 'number'
+                                                ? (info.observed_value ?? info.current_value).toFixed(1)
+                                                : (info.observed_value ?? info.current_value)}
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span className="text-zinc-500">Normal Baseline:</span>
+                                        <div className="text-lg font-bold text-zinc-400 mt-1">
+                                            {typeof (info.baseline_value ?? info.baseline_mean) === 'number'
+                                                ? (info.baseline_value ?? info.baseline_mean).toFixed(1)
+                                                : (info.baseline_value ?? info.baseline_mean)}
+                                            {info.baseline_std && ` ± ${info.baseline_std.toFixed(1)}`}
+                                        </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <span className="text-zinc-500">Normal Baseline:</span>
-                                    <div className="text-lg font-bold text-zinc-400 mt-1">
-                                        {typeof (info.baseline_value ?? info.baseline_mean) === 'number'
-                                            ? (info.baseline_value ?? info.baseline_mean).toFixed(1)
-                                            : (info.baseline_value ?? info.baseline_mean)}
-                                        {info.baseline_std && ` ± ${info.baseline_std.toFixed(1)}`}
-                                    </div>
-                                </div>
-                            </div>
-                        )}
+                            )}
 
                         {(info.z_score !== undefined || alert.metadata?.z_score) && (
                             <div className="text-xs">
@@ -305,14 +308,14 @@ export default function AlertsPage() {
                                 </p>
                             </div>
                         )}
-                        
+
                         {info.metric && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Anomaly Metric:</span>
                                 <span className="ml-2 text-zinc-300 capitalize">{info.metric.replace(/_/g, ' ')}</span>
                             </div>
                         )}
-                        
+
                         {info.deviation && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Deviation:</span>
@@ -328,35 +331,35 @@ export default function AlertsPage() {
                                 </span>
                             </div>
                         )}
-                        
+
                         {info.rule_id && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Rule ID:</span>
                                 <span className="ml-2 text-zinc-300 font-mono">{info.rule_id}</span>
                             </div>
                         )}
-                        
+
                         {info.rule_name && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Rule Name:</span>
                                 <span className="ml-2 text-zinc-300">{info.rule_name}</span>
                             </div>
                         )}
-                        
+
                         {info.mitre_technique && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">MITRE Technique:</span>
                                 <span className="ml-2 text-purple-400 font-bold">{info.mitre_technique}</span>
                             </div>
                         )}
-                        
+
                         {info.mitre_tactic && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">MITRE Tactic:</span>
                                 <span className="ml-2 text-purple-400">{info.mitre_tactic}</span>
                             </div>
                         )}
-                        
+
                         {info.indicator_type && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Threat Intel Indicator:</span>
@@ -365,42 +368,42 @@ export default function AlertsPage() {
                                 </span>
                             </div>
                         )}
-                        
+
                         {info.threat_type && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Threat Type:</span>
                                 <span className="ml-2 text-red-400">{info.threat_type}</span>
                             </div>
                         )}
-                        
+
                         {info.confidence !== undefined && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Confidence:</span>
                                 <span className="ml-2 text-yellow-400 font-bold">{(info.confidence * 100).toFixed(1)}%</span>
                             </div>
                         )}
-                        
+
                         {info.ports_scanned && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Ports Scanned:</span>
                                 <span className="ml-2 text-orange-400 font-bold">{info.ports_scanned}</span>
                             </div>
                         )}
-                        
+
                         {info.connections && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Connections:</span>
                                 <span className="ml-2 text-orange-400 font-bold">{info.connections}</span>
                             </div>
                         )}
-                        
+
                         {info.hosts_accessed && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Hosts Accessed:</span>
                                 <span className="ml-2 text-purple-400 font-bold">{info.hosts_accessed}</span>
                             </div>
                         )}
-                        
+
                         {info.data_transferred && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Data Transferred:</span>
@@ -409,28 +412,28 @@ export default function AlertsPage() {
                                 </span>
                             </div>
                         )}
-                        
+
                         {info.deviation_type && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Behavioral Deviation:</span>
                                 <span className="ml-2 text-cyan-400 capitalize">{info.deviation_type.replace(/_/g, ' ')}</span>
                             </div>
                         )}
-                        
+
                         {info.unusual_hour !== undefined && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Unusual Login Hour:</span>
                                 <span className="ml-2 text-yellow-400 font-bold">{info.unusual_hour}:00</span>
                             </div>
                         )}
-                        
+
                         {info.unusual_ip && (
                             <div className="text-xs">
                                 <span className="text-zinc-500">Unusual Source IP:</span>
                                 <span className="ml-2 text-red-400 font-mono">{info.unusual_ip}</span>
                             </div>
                         )}
-                        
+
                         {alert.related_log && (
                             <div className="mt-4 pt-4 border-t border-zinc-800">
                                 <h5 className="text-sm font-semibold text-zinc-400 mb-2">Related Log</h5>

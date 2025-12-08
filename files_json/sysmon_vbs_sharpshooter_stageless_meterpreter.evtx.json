@@ -1,0 +1,580 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-15 07:21:50.488632+00:00"
+                },
+                "EventRecordID": "7679",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2044",
+                    "@ThreadID": "2092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-15 07:21:50.488"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-9c8e-5d04-0000-0010d0421600}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "540"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Program Files\\Internet Explorer\\iexplore.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "11.00.9600.16428 (winblue_gdr.131013-1700)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Internet Explorer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Internet Explorer"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" C:\\Users\\IEUser\\Downloads\\updatevbs.html"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Downloads\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-98e4-5d04-0000-0020a4350100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000135a4"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=515970F2B0200C205D1028EE00CFB08100253F05,MD5=54A62243A249240B5721A5E9E4A3623F,SHA256=81C35E20CD6F496D4D4B33E67D9ACB4EC2A57EF3E6EC7F3F09EE3164381C24DB,IMPHASH=362EFA589A64DDE27E8263C301B1E564"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-98fa-5d04-0000-00101b350600}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2816"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\explorer.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\Explorer.EXE"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-15 07:21:51.035509+00:00"
+                },
+                "EventRecordID": "7680",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2044",
+                    "@ThreadID": "2092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-15 07:21:50.644"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-9c8e-5d04-0000-001080561600}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "984"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Program Files\\Internet Explorer\\iexplore.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "11.00.9600.16428 (winblue_gdr.131013-1700)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Internet Explorer"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Internet Explorer"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" SCODEF:540 CREDAT:275457 /prefetch:2"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-98e4-5d04-0000-0020a4350100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000135a4"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=515970F2B0200C205D1028EE00CFB08100253F05,MD5=54A62243A249240B5721A5E9E4A3623F,SHA256=81C35E20CD6F496D4D4B33E67D9ACB4EC2A57EF3E6EC7F3F09EE3164381C24DB,IMPHASH=362EFA589A64DDE27E8263C301B1E564"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9c8e-5d04-0000-0010d0421600}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "540"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Program Files\\Internet Explorer\\iexplore.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" C:\\Users\\IEUser\\Downloads\\updatevbs.html"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-15 07:22:05.691757+00:00"
+                },
+                "EventRecordID": "7681",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2044",
+                    "@ThreadID": "2092"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-15 07:22:05.660"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-9c9d-5d04-0000-001039ce1600}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "172"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wscript.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "5.8.7600.16385"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Microsoft \u00ae Windows Based Script Host"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft \u00ae Windows Script Host"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\IEUser\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files\\Content.IE5\\S97WTYG7\\updatevbs.vbs\""
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Users\\IEUser\\Desktop\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{365abb72-98e4-5d04-0000-0020a4350100}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000135a4"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=C2752A6515D97D5906232828004BC54C587E6780,MD5=BA7AC4381D685354FF87E0553E950A4E,SHA256=BED1028BADEE2ADE8A8A8EDD25AA4C3E70A6BEEFAFBDFFD6426E5E467F24EB01,IMPHASH=317C8DE06F7AEE57A3ACF4722FE00983"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{365abb72-9c8e-5d04-0000-0010d0421600}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "540"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Program Files\\Internet Explorer\\iexplore.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" C:\\Users\\IEUser\\Downloads\\updatevbs.html"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-15 07:22:05.973009+00:00"
+                },
+                "EventRecordID": "7682",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2044",
+                    "@ThreadID": "2100"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Execution - Suspicious Microsoft.XMLDOM module load"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-15 07:22:05.910"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-9c9d-5d04-0000-001039ce1600}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "172"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wscript.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Windows\\System32\\msxml3.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "8.110.7601.24402"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "MSXML 3.0 SP11"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft(R) MSXML 3.0 SP11"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=F4F7354475114E39447975211F5D0A5FA8DB8367,MD5=77B25423AD769057258786540205F6C8,SHA256=20B2A5B34D764D92028CF5EAB46A91F2F7F1A0ECC3FEBA4FC3CDF881AB3A136C,IMPHASH=EF7BEA73AB4F834F0C44DDE0150B5648"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "Microsoft Windows"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "3"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "3",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-06-15 07:22:08.473009+00:00"
+                },
+                "EventRecordID": "7683",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "2044",
+                    "@ThreadID": "2088"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "IEWIN7",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-06-15 07:22:06.122"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{365abb72-9c9d-5d04-0000-001039ce1600}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "172"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\wscript.exe"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "IEWIN7\\IEUser"
+                    },
+                    {
+                        "@Name": "Protocol",
+                        "#text": "tcp"
+                    },
+                    {
+                        "@Name": "Initiated",
+                        "#text": "True"
+                    },
+                    {
+                        "@Name": "SourceIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "SourceIp",
+                        "#text": "10.0.2.13"
+                    },
+                    {
+                        "@Name": "SourceHostname",
+                        "#text": "IEWIN7"
+                    },
+                    {
+                        "@Name": "SourcePort",
+                        "#text": "49162"
+                    },
+                    {
+                        "@Name": "SourcePortName"
+                    },
+                    {
+                        "@Name": "DestinationIsIpv6",
+                        "#text": "False"
+                    },
+                    {
+                        "@Name": "DestinationIp",
+                        "#text": "10.0.2.18"
+                    },
+                    {
+                        "@Name": "DestinationHostname"
+                    },
+                    {
+                        "@Name": "DestinationPort",
+                        "#text": "4443"
+                    },
+                    {
+                        "@Name": "DestinationPortName"
+                    }
+                ]
+            }
+        }
+    }
+]

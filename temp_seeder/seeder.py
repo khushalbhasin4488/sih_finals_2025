@@ -16,7 +16,78 @@ DB_PATH = "data/duckdb/logs.db"
 HOSTS = [f"server-{i:02d}" for i in range(1, 21)]
 APPS = ["sshd", "nginx", "apache2", "mysql", "postgresql", "kernel", "systemd", "cron", "auth"]
 USERS = ["root", "admin", "user", "deploy", "backup", "guest", "ubuntu", "ec2-user"]
-IPS = [f"192.168.1.{i}" for i in range(1, 255)] + [f"10.0.0.{i}" for i in range(1, 255)]
+# IP ranges matching network configurations
+IPS = (
+    [f"192.168.1.{i}" for i in range(1, 255)] +  # Corporate network
+    [f"10.0.0.{i}" for i in range(1, 255)] +      # DMZ network
+    [f"192.168.100.{i}" for i in range(1, 50)] +  # IoT network
+    [f"192.168.200.{i}" for i in range(1, 50)]    # Guest network
+)
+
+# Network Domain Configuration
+# Define different network domains for multi-tenant filtering
+NETWORKS = {
+    "corporate": {
+        "name": "Corporate Network",
+        "hosts": [f"server-{i:02d}" for i in range(1, 11)],  # server-01 to server-10
+        "ip_ranges": ["192.168.1."],  # IP prefix
+    },
+    "dmz": {
+        "name": "DMZ Network",
+        "hosts": [f"server-{i:02d}" for i in range(11, 15)],  # server-11 to server-14
+        "ip_ranges": ["10.0.0."],
+    },
+    "iot": {
+        "name": "IoT Network",
+        "hosts": [f"server-{i:02d}" for i in range(15, 17)],  # server-15 to server-16
+        "ip_ranges": ["192.168.100."],
+    },
+    "guest": {
+        "name": "Guest Network",
+        "hosts": [f"server-{i:02d}" for i in range(17, 19)],  # server-17 to server-18
+        "ip_ranges": ["192.168.200."],
+    },
+    "public": {
+        "name": "Public Network",
+        "hosts": [f"server-{i:02d}" for i in range(19, 21)],  # server-19 to server-20
+        "ip_ranges": [],  # External/various IPs
+    }
+}
+
+# Create reverse mapping: host -> network_id
+HOST_TO_NETWORK = {}
+for network_id, network_config in NETWORKS.items():
+    for host in network_config["hosts"]:
+        HOST_TO_NETWORK[host] = network_id
+
+def get_network_id(host, ip=None):
+    """
+    Determine network_id based on host or IP address
+    
+    Args:
+        host: Hostname
+        ip: IP address (optional)
+    
+    Returns:
+        network_id string
+    """
+    # First try host-based lookup
+    if host in HOST_TO_NETWORK:
+        return HOST_TO_NETWORK[host]
+    
+    # If IP is provided, try IP-based lookup
+    if ip:
+        for network_id, network_config in NETWORKS.items():
+            for ip_prefix in network_config["ip_ranges"]:
+                if ip.startswith(ip_prefix):
+                    return network_id
+        # If no specific match and it's an external IP, classify as public
+        if not any(ip.startswith(prefix) for prefix in ["192.168.", "10.0.", "172.16."]):
+            return "public"
+    
+    # Default fallback
+    return "corporate"
+
 
 # Include some blocked IPs from our threat intel
 BLOCKED_IPS = [
@@ -182,6 +253,7 @@ def initialize_schema(conn):
             message VARCHAR,
             procid INTEGER,
             source_type VARCHAR,
+            network_id VARCHAR,
             normalized JSON,
             metadata JSON,
             ingestion_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -207,6 +279,11 @@ def initialize_schema(conn):
     conn.execute("""
         CREATE INDEX IF NOT EXISTS idx_logs_ingestion_time 
         ON logs(ingestion_time)
+    """)
+    
+    conn.execute("""
+        CREATE INDEX IF NOT EXISTS idx_logs_network_id 
+        ON logs(network_id)
     """)
     
     # Alerts table (for API use, but create it here too)
@@ -315,6 +392,9 @@ def create_log_entry(app, host, ip, user, port, pid, message, normalized_extra=N
     log_id = str(uuid.uuid4())
     timestamp = datetime.now().isoformat()
     
+    # Determine network_id based on host and IP
+    network_id = get_network_id(host, ip)
+    
     # Normalized data
     normalized = {
         "timestamp": timestamp,
@@ -340,10 +420,12 @@ def create_log_entry(app, host, ip, user, port, pid, message, normalized_extra=N
         "message": message,
         "procid": pid,
         "source_type": "file",
+        "network_id": network_id,
         "normalized": json.dumps(normalized),
         "metadata": json.dumps({"environment": "production", "region": "us-east-1"}),
         "ingestion_time": datetime.now()
     }
+
 
 
 def generate_signature_detection_log():

@@ -1,0 +1,596 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-30 12:54:07.873791+00:00"
+                },
+                "EventRecordID": "32151",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3292",
+                    "@ThreadID": "928"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-30 12:54:07.823"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-1c6f-5d69-0000-0010323c1f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2576"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cscript.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "5.812.10240.16384"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Microsoft \u00ae Console Based Script Host"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft \u00ae Windows Script Host"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "cscript  c:\\ProgramData\\memdump.vbs notepad.exe"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-1b6a-5d69-0000-0020e5810e00}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000e81e5"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=0E3C0779D8EAAD3B00363D7890DDC8272B510D49,MD5=A45586B3A5A291516CD10EF4FD3EE768,SHA256=59D3CDC7D51FA34C6B27B8B04EA17992955466EB25022B7BD64880AB35DF0BBC,IMPHASH=2B44D2206B9865383429E9C1524F1CAC"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-1b6c-5d69-0000-00106f060f00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "2128"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\System32\\cmd.exe"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-30 12:54:08.171875+00:00"
+                },
+                "EventRecordID": "32152",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3292",
+                    "@ThreadID": "4120"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-30 12:54:08.079"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-1c6f-5d69-0000-0010323c1f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2576"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cscript.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Windows\\System32\\scrobj.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "5.812.10240.16384"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows \u00ae Script Component Runtime"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft \u00ae Windows \u00ae Script Component Runtime"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=5B139E692D2A376CCA16D536612EF87AD946EC6B,MD5=3F4DB17E9534DB1CEDA28FF77C27F535,SHA256=14A2C790E3E82DAF7918B61AB79F84228E7CA4494F5C2D311A1179CCA67B02C2,IMPHASH=C928D4D30D6B6FC0A3B011AA381044CA"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "Microsoft Windows"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "7"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "7",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-30 12:54:08.257122+00:00"
+                },
+                "EventRecordID": "32153",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3292",
+                    "@ThreadID": "4120"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "Execution - Suspicious WMI module load"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-30 12:54:08.127"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-1c6f-5d69-0000-0010323c1f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2576"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\cscript.exe"
+                    },
+                    {
+                        "@Name": "ImageLoaded",
+                        "#text": "C:\\Windows\\System32\\wbem\\wmiutils.dll"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "WMI"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=2E6A63BC5189CA5DF3E85CDF58593F3DF3935DE6,MD5=A081AAD3A296EB414CB6839B744C67C9,SHA256=3D77E7769CFC8B4A1098E9A1F2BDE4432A6A70253EA6C2A58C8F8403A9038288,IMPHASH=0D31E6D27B954AD879CB4DF742982F1A"
+                    },
+                    {
+                        "@Name": "Signed",
+                        "#text": "true"
+                    },
+                    {
+                        "@Name": "Signature",
+                        "#text": "Microsoft Windows"
+                    },
+                    {
+                        "@Name": "SignatureStatus",
+                        "#text": "Valid"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "1"
+                },
+                "Version": "5",
+                "Level": "4",
+                "Task": "1",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-30 12:54:08.354050+00:00"
+                },
+                "EventRecordID": "32154",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3292",
+                    "@ThreadID": "928"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-30 12:54:08.331"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-1c70-5d69-0000-0010c9661f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2888"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\System32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "FileVersion",
+                        "#text": "10.0.17763.1 (WinBuild.160101.0800)"
+                    },
+                    {
+                        "@Name": "Description",
+                        "#text": "Windows host process (Rundll32)"
+                    },
+                    {
+                        "@Name": "Product",
+                        "#text": "Microsoft\u00ae Windows\u00ae Operating System"
+                    },
+                    {
+                        "@Name": "Company",
+                        "#text": "Microsoft Corporation"
+                    },
+                    {
+                        "@Name": "CommandLine",
+                        "#text": "rundll32 C:\\windows\\system32\\comsvcs.dll, MiniDump 4868 C:\\Windows\\System32\\notepad.bin full"
+                    },
+                    {
+                        "@Name": "CurrentDirectory",
+                        "#text": "C:\\Windows\\system32\\"
+                    },
+                    {
+                        "@Name": "User",
+                        "#text": "MSEDGEWIN10\\IEUser"
+                    },
+                    {
+                        "@Name": "LogonGuid",
+                        "#text": "{747f3d96-1b6a-5d69-0000-0020e5810e00}"
+                    },
+                    {
+                        "@Name": "LogonId",
+                        "#text": "0x00000000000e81e5"
+                    },
+                    {
+                        "@Name": "TerminalSessionId",
+                        "#text": "1"
+                    },
+                    {
+                        "@Name": "IntegrityLevel",
+                        "#text": "High"
+                    },
+                    {
+                        "@Name": "Hashes",
+                        "#text": "SHA1=F3BA3415DD068A8871F285570BEA2E29874CBFF1,MD5=C73BA51880F5A7FB20C84185A23212EF,SHA256=01B407AF0200B66A34D9B1FA6D9EAAB758EFA36A36BB99B554384F59F8690B1A,IMPHASH=F27A7FC3A53E74F45BE370131953896A"
+                    },
+                    {
+                        "@Name": "ParentProcessGuid",
+                        "#text": "{747f3d96-1c70-5d69-0000-0010d4551f00}"
+                    },
+                    {
+                        "@Name": "ParentProcessId",
+                        "#text": "1144"
+                    },
+                    {
+                        "@Name": "ParentImage",
+                        "#text": "C:\\Windows\\System32\\wbem\\WmiPrvSE.exe"
+                    },
+                    {
+                        "@Name": "ParentCommandLine",
+                        "#text": "C:\\Windows\\system32\\wbem\\wmiprvse.exe -secured -Embedding"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "11"
+                },
+                "Version": "2",
+                "Level": "4",
+                "Task": "11",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-30 12:54:08.396725+00:00"
+                },
+                "EventRecordID": "32155",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3292",
+                    "@ThreadID": "928"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-30 12:54:08.392"
+                    },
+                    {
+                        "@Name": "ProcessGuid",
+                        "#text": "{747f3d96-1c70-5d69-0000-0010c9661f00}"
+                    },
+                    {
+                        "@Name": "ProcessId",
+                        "#text": "2888"
+                    },
+                    {
+                        "@Name": "Image",
+                        "#text": "C:\\Windows\\system32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "TargetFilename",
+                        "#text": "C:\\Windows\\System32\\notepad.bin"
+                    },
+                    {
+                        "@Name": "CreationUtcTime",
+                        "#text": "2019-08-30 12:54:08.392"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "Microsoft-Windows-Sysmon",
+                    "@Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+                },
+                "EventID": {
+                    "@Qualifiers": "",
+                    "#text": "10"
+                },
+                "Version": "3",
+                "Level": "4",
+                "Task": "10",
+                "Opcode": "0",
+                "Keywords": "0x8000000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-08-30 12:54:08.439957+00:00"
+                },
+                "EventRecordID": "32156",
+                "Correlation": {
+                    "@ActivityID": "",
+                    "@RelatedActivityID": ""
+                },
+                "Execution": {
+                    "@ProcessID": "3292",
+                    "@ThreadID": "928"
+                },
+                "Channel": "Microsoft-Windows-Sysmon/Operational",
+                "Computer": "MSEDGEWIN10",
+                "Security": {
+                    "@UserID": "S-1-5-18"
+                }
+            },
+            "EventData": {
+                "Data": [
+                    {
+                        "@Name": "RuleName",
+                        "#text": "CredAccess - Memdump"
+                    },
+                    {
+                        "@Name": "UtcTime",
+                        "#text": "2019-08-30 12:54:08.424"
+                    },
+                    {
+                        "@Name": "SourceProcessGUID",
+                        "#text": "{747f3d96-1c70-5d69-0000-0010c9661f00}"
+                    },
+                    {
+                        "@Name": "SourceProcessId",
+                        "#text": "2888"
+                    },
+                    {
+                        "@Name": "SourceThreadId",
+                        "#text": "2796"
+                    },
+                    {
+                        "@Name": "SourceImage",
+                        "#text": "C:\\Windows\\system32\\rundll32.exe"
+                    },
+                    {
+                        "@Name": "TargetProcessGUID",
+                        "#text": "{747f3d96-1c5c-5d69-0000-0010feb71e00}"
+                    },
+                    {
+                        "@Name": "TargetProcessId",
+                        "#text": "4868"
+                    },
+                    {
+                        "@Name": "TargetImage",
+                        "#text": "C:\\Windows\\system32\\notepad.exe"
+                    },
+                    {
+                        "@Name": "GrantedAccess",
+                        "#text": "0x001fffff"
+                    },
+                    {
+                        "@Name": "CallTrace",
+                        "#text": "C:\\Windows\\SYSTEM32\\ntdll.dll+9fc24|C:\\Windows\\SYSTEM32\\ntdll.dll+7a747|C:\\Windows\\System32\\KERNEL32.DLL+1c5b4|C:\\Windows\\System32\\KERNEL32.DLL+237f8|C:\\Windows\\SYSTEM32\\dbgcore.DLL+9247|C:\\Windows\\SYSTEM32\\dbgcore.DLL+15dc5|C:\\Windows\\SYSTEM32\\dbgcore.DLL+fec6|C:\\Windows\\SYSTEM32\\dbgcore.DLL+5f56|C:\\Windows\\SYSTEM32\\dbgcore.DLL+69f7|C:\\windows\\system32\\comsvcs.dll+3c3d4|C:\\Windows\\system32\\rundll32.exe+3bcf|C:\\Windows\\system32\\rundll32.exe+6299|C:\\Windows\\System32\\KERNEL32.DLL+17974|C:\\Windows\\SYSTEM32\\ntdll.dll+6a271"
+                    }
+                ]
+            }
+        }
+    }
+]

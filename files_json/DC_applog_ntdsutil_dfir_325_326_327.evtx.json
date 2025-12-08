@@ -1,0 +1,122 @@
+[
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "ESENT"
+                },
+                "EventID": {
+                    "@Qualifiers": "0",
+                    "#text": "326"
+                },
+                "Level": "4",
+                "Task": "1",
+                "Keywords": "0x0080000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-26 23:55:00+00:00"
+                },
+                "EventRecordID": "1969",
+                "Channel": "Application",
+                "Computer": "DC1.insecurebank.local",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>NTDS</string>\n<string>3392</string>\n<string></string>\n<string>1</string>\n<string>C:\\$SNAP_201911270054_VOLUMEC$\\Windows\\NTDS\\ntds.dit</string>\n<string>0</string>\n<string>[1] 0.000, [2] 0.000, [3] 0.000, [4] 0.000, [5] 0.000, [6] 0.000, [7] 0.000, [8] 0.000, [9] 0.000, [10] 0.000, [11] 0.000, [12] 0.000.</string>\n<string>1 0</string>",
+                "Binary": null
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "ESENT"
+                },
+                "EventID": {
+                    "@Qualifiers": "0",
+                    "#text": "325"
+                },
+                "Level": "4",
+                "Task": "1",
+                "Keywords": "0x0080000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-26 23:55:00+00:00"
+                },
+                "EventRecordID": "1970",
+                "Channel": "Application",
+                "Computer": "DC1.insecurebank.local",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>NTDS</string>\n<string>3392</string>\n<string></string>\n<string>2</string>\n<string>C:\\Users\\bob\\Desktop\\test\\Folder\\ntds\\Active Directory\\ntds.dit</string>\n<string>0</string>\n<string>[1] 0.000, [2] 0.000, [3] 0.000, [4] 0.047, [5] 0.000, [6] 0.000, [7] 0.000, [8] 0.000, [9] 0.000, [10] 0.000, [11] 0.000.</string>",
+                "Binary": null
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "ESENT"
+                },
+                "EventID": {
+                    "@Qualifiers": "0",
+                    "#text": "327"
+                },
+                "Level": "4",
+                "Task": "1",
+                "Keywords": "0x0080000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-26 23:55:02+00:00"
+                },
+                "EventRecordID": "1971",
+                "Channel": "Application",
+                "Computer": "DC1.insecurebank.local",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>NTDS</string>\n<string>3392</string>\n<string></string>\n<string>2</string>\n<string>C:\\Users\\bob\\Desktop\\test\\Folder\\ntds\\Active Directory\\ntds.dit</string>\n<string>0</string>\n<string>[1] 0.000, [2] 0.000, [3] 0.000, [4] 0.110, [5] 0.000, [6] 0.015, [7] 0.000, [8] 0.000, [9] 0.000, [10] 0.266, [11] 0.000, [12] 0.000.</string>\n<string>0 0</string>",
+                "Binary": null
+            }
+        }
+    },
+    {
+        "Event": {
+            "@xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+            "System": {
+                "Provider": {
+                    "@Name": "ESENT"
+                },
+                "EventID": {
+                    "@Qualifiers": "0",
+                    "#text": "327"
+                },
+                "Level": "4",
+                "Task": "1",
+                "Keywords": "0x0080000000000000",
+                "TimeCreated": {
+                    "@SystemTime": "2019-11-26 23:55:02+00:00"
+                },
+                "EventRecordID": "1972",
+                "Channel": "Application",
+                "Computer": "DC1.insecurebank.local",
+                "Security": {
+                    "@UserID": ""
+                }
+            },
+            "EventData": {
+                "Data": "<string>NTDS</string>\n<string>3392</string>\n<string></string>\n<string>1</string>\n<string>C:\\$SNAP_201911270054_VOLUMEC$\\Windows\\NTDS\\ntds.dit</string>\n<string>0</string>\n<string>[1] 0.000, [2] 0.000, [3] 0.000, [4] 0.000, [5] 0.000, [6] 0.000, [7] 0.000, [8] 0.000, [9] 0.000, [10] 0.000, [11] 0.000, [12] 0.000.</string>\n<string>0 0</string>",
+                "Binary": null
+            }
+        }
+    }
+]
